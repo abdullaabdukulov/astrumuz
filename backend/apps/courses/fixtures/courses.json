@@ -1,0 +1,3109 @@
+[
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Компания",
+      "content_type": 7,
+      "codename": "add_company"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Компания",
+      "content_type": 7,
+      "codename": "change_company"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Компания",
+      "content_type": 7,
+      "codename": "delete_company"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Компания",
+      "content_type": 7,
+      "codename": "view_company"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Заявка на контакт",
+      "content_type": 8,
+      "codename": "add_contactrequest"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Заявка на контакт",
+      "content_type": 8,
+      "codename": "change_contactrequest"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Заявка на контакт",
+      "content_type": 8,
+      "codename": "delete_contactrequest"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Заявка на контакт",
+      "content_type": 8,
+      "codename": "view_contactrequest"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Категория курса",
+      "content_type": 9,
+      "codename": "add_coursecategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Категория курса",
+      "content_type": 9,
+      "codename": "change_coursecategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Категория курса",
+      "content_type": 9,
+      "codename": "delete_coursecategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Категория курса",
+      "content_type": 9,
+      "codename": "view_coursecategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Ментор",
+      "content_type": 10,
+      "codename": "add_mentor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Ментор",
+      "content_type": 10,
+      "codename": "change_mentor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Ментор",
+      "content_type": 10,
+      "codename": "delete_mentor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Ментор",
+      "content_type": 10,
+      "codename": "view_mentor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Курс",
+      "content_type": 11,
+      "codename": "add_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Курс",
+      "content_type": 11,
+      "codename": "change_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Курс",
+      "content_type": 11,
+      "codename": "delete_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Курс",
+      "content_type": 11,
+      "codename": "view_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add Результат обучения",
+      "content_type": 12,
+      "codename": "add_courseoutcome"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change Результат обучения",
+      "content_type": 12,
+      "codename": "change_courseoutcome"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete Результат обучения",
+      "content_type": 12,
+      "codename": "delete_courseoutcome"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view Результат обучения",
+      "content_type": 12,
+      "codename": "view_courseoutcome"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add Регистрация на курс",
+      "content_type": 13,
+      "codename": "add_courseregistration"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change Регистрация на курс",
+      "content_type": 13,
+      "codename": "change_courseregistration"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete Регистрация на курс",
+      "content_type": 13,
+      "codename": "delete_courseregistration"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view Регистрация на курс",
+      "content_type": 13,
+      "codename": "view_courseregistration"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add Отзыв",
+      "content_type": 14,
+      "codename": "add_testimonial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change Отзыв",
+      "content_type": 14,
+      "codename": "change_testimonial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete Отзыв",
+      "content_type": 14,
+      "codename": "delete_testimonial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view Отзыв",
+      "content_type": 14,
+      "codename": "view_testimonial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add Компания курса",
+      "content_type": 15,
+      "codename": "add_coursecompany"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change Компания курса",
+      "content_type": 15,
+      "codename": "change_coursecompany"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete Компания курса",
+      "content_type": 15,
+      "codename": "delete_coursecompany"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view Компания курса",
+      "content_type": 15,
+      "codename": "view_coursecompany"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add Ментор курса",
+      "content_type": 16,
+      "codename": "add_coursementor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change Ментор курса",
+      "content_type": 16,
+      "codename": "change_coursementor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete Ментор курса",
+      "content_type": 16,
+      "codename": "delete_coursementor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view Ментор курса",
+      "content_type": 16,
+      "codename": "view_coursementor"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "courses",
+      "model": "company"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "courses",
+      "model": "contactrequest"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "courses",
+      "model": "coursecategory"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "courses",
+      "model": "mentor"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "courses",
+      "model": "course"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "courses",
+      "model": "courseoutcome"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "courses",
+      "model": "courseregistration"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "courses",
+      "model": "testimonial"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "courses",
+      "model": "coursecompany"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "courses",
+      "model": "coursementor"
+    }
+  },
+  {
+    "model": "courses.coursecategory",
+    "pk": 1,
+    "fields": {
+      "guid": "544214af-724c-44da-beae-686cd101e70a",
+      "created_time": "2025-05-05T15:50:59.962Z",
+      "updated_time": "2025-05-05T15:50:59.962Z",
+      "name": "Академия",
+      "name_uz": null,
+      "name_ru": "Академия",
+      "slug": "academy"
+    }
+  },
+  {
+    "model": "courses.coursecategory",
+    "pk": 2,
+    "fields": {
+      "guid": "993b5b20-e46e-4acb-9a0c-e0971bf2570c",
+      "created_time": "2025-05-05T15:50:59.972Z",
+      "updated_time": "2025-05-05T15:50:59.972Z",
+      "name": "Корпоративное",
+      "name_uz": null,
+      "name_ru": "Корпоративное",
+      "slug": "corporate"
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "guid": "bb01f5f8-7828-4e7a-9622-6f015b13ad22",
+      "created_time": "2025-05-05T15:50:59.978Z",
+      "updated_time": "2025-05-05T15:50:59.978Z",
+      "title": "Python Django Backend Developer",
+      "title_uz": null,
+      "title_ru": "Python Django Backend Developer",
+      "slug": "python-django",
+      "description": "Погрузитесь в мир Python и Django! Изучите основы языка Python и фреймворка Django для создания мощных веб-приложений.",
+      "description_uz": null,
+      "description_ru": "Погрузитесь в мир Python и Django! Изучите основы языка Python и фреймворка Django для создания мощных веб-приложений.",
+      "icon": "",
+      "icon_type": "python",
+      "level": "beginner",
+      "level_uz": "beginner",
+      "level_ru": "beginner",
+      "duration": "8-12 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "8-12 месяцев",
+      "featured": false,
+      "is_new": true,
+      "category": 1,
+      "what_will_learn": "Изучите Python с нуля, освойте Django фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите Python с нуля, освойте Django фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
+      "video_hours": 65,
+      "coding_exercises": 42,
+      "articles": 35,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+      "guid": "12ee90e4-e877-43c1-aa56-7e7ee3d9a092",
+      "created_time": "2025-05-05T15:51:00.003Z",
+      "updated_time": "2025-05-05T15:51:00.003Z",
+      "title": "PHP (Laravel) Backend Developer",
+      "title_uz": null,
+      "title_ru": "PHP (Laravel) Backend Developer",
+      "slug": "php-laravel",
+      "description": "Станьте профессиональным PHP разработчиком! Изучите основы PHP и фреймворк Laravel для создания современных веб-приложений.",
+      "description_uz": null,
+      "description_ru": "Станьте профессиональным PHP разработчиком! Изучите основы PHP и фреймворк Laravel для создания современных веб-приложений.",
+      "icon": "",
+      "icon_type": "php",
+      "level": "beginner",
+      "level_uz": "beginner",
+      "level_ru": "beginner",
+      "duration": "8-12 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "8-12 месяцев",
+      "featured": false,
+      "is_new": false,
+      "category": 1,
+      "what_will_learn": "Изучите PHP с нуля, освойте Laravel фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите PHP с нуля, освойте Laravel фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
+      "video_hours": 70,
+      "coding_exercises": 45,
+      "articles": 30,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+      "guid": "dd2ade9b-1d7d-4a99-b3f2-b2f7120bd8f0",
+      "created_time": "2025-05-05T15:51:00.028Z",
+      "updated_time": "2025-05-05T15:51:00.028Z",
+      "title": "Node.js Backend Developer",
+      "title_uz": null,
+      "title_ru": "Node.js Backend Developer",
+      "slug": "nodejs",
+      "description": "Изучите Node.js и станьте востребованным backend разработчиком! Создавайте масштабируемые и высокопроизводительные приложения.",
+      "description_uz": null,
+      "description_ru": "Изучите Node.js и станьте востребованным backend разработчиком! Создавайте масштабируемые и высокопроизводительные приложения.",
+      "icon": "",
+      "icon_type": "node",
+      "level": "beginner",
+      "level_uz": "beginner",
+      "level_ru": "beginner",
+      "duration": "8-12 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "8-12 месяцев",
+      "featured": false,
+      "is_new": true,
+      "category": 1,
+      "what_will_learn": "Изучите JavaScript и Node.js, освойте Express.js, научитесь работать с MongoDB, создавать RESTful API и многое другое.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите JavaScript и Node.js, освойте Express.js, научитесь работать с MongoDB, создавать RESTful API и многое другое.",
+      "video_hours": 68,
+      "coding_exercises": 40,
+      "articles": 32,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 4,
+    "fields": {
+      "guid": "c2a8b069-6a58-4536-973e-04f10325ddfb",
+      "created_time": "2025-05-05T15:51:00.052Z",
+      "updated_time": "2025-05-05T15:51:00.052Z",
+      "title": "C# .Net Backend Developer",
+      "title_uz": null,
+      "title_ru": "C# .Net Backend Developer",
+      "slug": "csharp-dotnet",
+      "description": "Освойте C# и .NET для создания мощных корпоративных пр��ложений! Изучите основы языка C# и платформы .NET.",
+      "description_uz": null,
+      "description_ru": "Освойте C# и .NET для создания мощных корпоративных пр��ложений! Изучите основы языка C# и платформы .NET.",
+      "icon": "",
+      "icon_type": "csharp",
+      "level": "beginner",
+      "level_uz": "beginner",
+      "level_ru": "beginner",
+      "duration": "8-12 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "8-12 месяцев",
+      "featured": true,
+      "is_new": false,
+      "category": 1,
+      "what_will_learn": "Изучите C# с нуля, освойте .NET Core, научитесь работать с SQL Server, создавать веб-приложения с ASP.NET и многое другое.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите C# с нуля, освойте .NET Core, научитесь работать с SQL Server, создавать веб-приложения с ASP.NET и многое другое.",
+      "video_hours": 75,
+      "coding_exercises": 50,
+      "articles": 40,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 5,
+    "fields": {
+      "guid": "52617700-7fb8-4227-a523-0c1f8b771043",
+      "created_time": "2025-05-05T15:51:00.078Z",
+      "updated_time": "2025-05-05T15:51:00.078Z",
+      "title": "React.js Frontend Developer",
+      "title_uz": null,
+      "title_ru": "React.js Frontend Developer",
+      "slug": "react",
+      "description": "Погрузитесь и изучите React.js с нуля! Изучите React, Hooks, Redux, React Router, Next.js, лучшие практики и многое другое!",
+      "description_uz": null,
+      "description_ru": "Погрузитесь и изучите React.js с нуля! Изучите React, Hooks, Redux, React Router, Next.js, лучшие практики и многое другое!",
+      "icon": "",
+      "icon_type": "react",
+      "level": "beginner",
+      "level_uz": "beginner",
+      "level_ru": "beginner",
+      "duration": "8-12 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "8-12 месяцев",
+      "featured": false,
+      "is_new": false,
+      "category": 1,
+      "what_will_learn": "Изучите React с нуля, освойте Hooks, Redux, React Router, научитесь создавать современные пользовательские интерфейсы и многое другое.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите React с нуля, освойте Hooks, Redux, React Router, научитесь создавать современные пользовательские интерфейсы и многое другое.",
+      "video_hours": 71,
+      "coding_exercises": 37,
+      "articles": 47,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 6,
+    "fields": {
+      "guid": "c448c672-48ef-4924-adab-14d3e3e500f9",
+      "created_time": "2025-05-05T15:51:00.103Z",
+      "updated_time": "2025-05-05T15:51:00.103Z",
+      "title": "3D Max & Interior Design",
+      "title_uz": null,
+      "title_ru": "3D Max & Interior Design",
+      "slug": "3d-max",
+      "description": "Станьте профессиональным 3D дизайнером! Изучите 3D Max и создавайте потрясающие интерьеры и визуализации.",
+      "description_uz": null,
+      "description_ru": "Станьте профессиональным 3D дизайнером! Изучите 3D Max и создавайте потрясающие интерьеры и визуализации.",
+      "icon": "",
+      "icon_type": "3d",
+      "level": "beginner",
+      "level_uz": "beginner",
+      "level_ru": "beginner",
+      "duration": "8-12 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "8-12 месяцев",
+      "featured": false,
+      "is_new": false,
+      "category": 1,
+      "what_will_learn": "Изучите 3D Max с нуля, освойте моделирование, текстурирование, освещение, рендеринг и многое другое.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите 3D Max с нуля, освойте моделирование, текстурирование, освещение, рендеринг и многое другое.",
+      "video_hours": 80,
+      "coding_exercises": 0,
+      "articles": 25,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 7,
+    "fields": {
+      "guid": "2c6890f4-f62c-4769-af53-758accf3959c",
+      "created_time": "2025-05-05T15:51:00.128Z",
+      "updated_time": "2025-05-05T15:51:00.128Z",
+      "title": "Корпоративный Python для аналитиков",
+      "title_uz": null,
+      "title_ru": "Корпоративный Python для аналитиков",
+      "slug": "corporate-python-analytics",
+      "description": "Специализированный курс Python для корпоративных аналитиков. Научитесь обрабатывать и визуализировать данные.",
+      "description_uz": null,
+      "description_ru": "Специализированный курс Python для корпоративных аналитиков. Научитесь обрабатывать и визуализировать данные.",
+      "icon": "",
+      "icon_type": "python",
+      "level": "intermediate",
+      "level_uz": "beginner",
+      "level_ru": "intermediate",
+      "duration": "3-4 месяца",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "3-4 месяца",
+      "featured": true,
+      "is_new": true,
+      "category": 2,
+      "what_will_learn": "Освойте Python для анализа данных, научитесь работать с pandas, numpy, matplotlib, seaborn и другими библиотеками.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Освойте Python для анализа данных, научитесь работать с pandas, numpy, matplotlib, seaborn и другими библиотеками.",
+      "video_hours": 40,
+      "coding_exercises": 30,
+      "articles": 15,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 8,
+    "fields": {
+      "guid": "171711bd-c976-45da-9690-79f93f3b101d",
+      "created_time": "2025-05-05T15:51:00.154Z",
+      "updated_time": "2025-05-05T15:51:00.154Z",
+      "title": "Корпоративная кибербезопасность",
+      "title_uz": null,
+      "title_ru": "Корпоративная кибербезопасность",
+      "slug": "corporate-cybersecurity",
+      "description": "Комплексный курс по кибербезопасности для корпоративных клиентов. Защитите свою компанию от современных угроз.",
+      "description_uz": null,
+      "description_ru": "Комплексный курс по кибербезопасности для корпоративных клиентов. Защитите свою компанию от современных угроз.",
+      "icon": "",
+      "icon_type": "security",
+      "level": "advanced",
+      "level_uz": "beginner",
+      "level_ru": "advanced",
+      "duration": "4-6 месяцев",
+      "duration_uz": "8-12 месяцев",
+      "duration_ru": "4-6 месяцев",
+      "featured": false,
+      "is_new": true,
+      "category": 2,
+      "what_will_learn": "Изучите основы кибербезопасности, методы защиты от атак, управление рисками и соответствие нормативным требованиям.",
+      "what_will_learn_uz": null,
+      "what_will_learn_ru": "Изучите основы кибербезопасности, методы защиты от атак, управление рисками и соответствие нормативным требованиям.",
+      "video_hours": 55,
+      "coding_exercises": 20,
+      "articles": 45,
+      "has_certificate": true
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 1,
+    "fields": {
+      "guid": "b5a4e3e7-6ac5-4411-9d23-694bce4e6fe3",
+      "created_time": "2025-05-05T15:50:59.981Z",
+      "updated_time": "2025-05-05T15:50:59.981Z",
+      "course": 1,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 2,
+    "fields": {
+      "guid": "66c92a7c-091b-41cd-8c6f-d37c08801332",
+      "created_time": "2025-05-05T15:50:59.984Z",
+      "updated_time": "2025-05-05T15:50:59.984Z",
+      "course": 1,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 3,
+    "fields": {
+      "guid": "b9a9675b-bec7-4866-b453-ef687bb6a113",
+      "created_time": "2025-05-05T15:50:59.987Z",
+      "updated_time": "2025-05-05T15:50:59.987Z",
+      "course": 1,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 4,
+    "fields": {
+      "guid": "8cd9660a-a1dc-4a35-8fa4-aa87677986fd",
+      "created_time": "2025-05-05T15:50:59.989Z",
+      "updated_time": "2025-05-05T15:50:59.989Z",
+      "course": 1,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 5,
+    "fields": {
+      "guid": "20e10d6a-9263-4900-83c7-83010c23b998",
+      "created_time": "2025-05-05T15:50:59.992Z",
+      "updated_time": "2025-05-05T15:50:59.992Z",
+      "course": 1,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 6,
+    "fields": {
+      "guid": "ab420ad5-439e-4edb-b5e3-8a75593fb3b2",
+      "created_time": "2025-05-05T15:50:59.994Z",
+      "updated_time": "2025-05-05T15:50:59.994Z",
+      "course": 1,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 7,
+    "fields": {
+      "guid": "ef23a04d-60eb-4e95-8bfe-9b10547d99d1",
+      "created_time": "2025-05-05T15:50:59.996Z",
+      "updated_time": "2025-05-05T15:50:59.997Z",
+      "course": 1,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 8,
+    "fields": {
+      "guid": "9b79f76a-ae26-42b0-a6c9-07c722b6d61e",
+      "created_time": "2025-05-05T15:50:59.999Z",
+      "updated_time": "2025-05-05T15:50:59.999Z",
+      "course": 1,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 9,
+    "fields": {
+      "guid": "fdf9660c-7149-4cec-b599-cf221dc94d0b",
+      "created_time": "2025-05-05T15:51:00.006Z",
+      "updated_time": "2025-05-05T15:51:00.006Z",
+      "course": 2,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 10,
+    "fields": {
+      "guid": "866f82ae-527c-40a4-84fb-a86f33cfcf72",
+      "created_time": "2025-05-05T15:51:00.008Z",
+      "updated_time": "2025-05-05T15:51:00.008Z",
+      "course": 2,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 11,
+    "fields": {
+      "guid": "704c1d01-28b9-4b10-8423-858e78bd25e2",
+      "created_time": "2025-05-05T15:51:00.011Z",
+      "updated_time": "2025-05-05T15:51:00.011Z",
+      "course": 2,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 12,
+    "fields": {
+      "guid": "00d8388b-61c3-4cbd-b44f-0a2984ca42d6",
+      "created_time": "2025-05-05T15:51:00.014Z",
+      "updated_time": "2025-05-05T15:51:00.014Z",
+      "course": 2,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 13,
+    "fields": {
+      "guid": "6bd5c994-65d5-42fa-ae5e-9deffe451ea2",
+      "created_time": "2025-05-05T15:51:00.016Z",
+      "updated_time": "2025-05-05T15:51:00.016Z",
+      "course": 2,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 14,
+    "fields": {
+      "guid": "9914fd68-45d3-42c4-9594-5c632650a13d",
+      "created_time": "2025-05-05T15:51:00.019Z",
+      "updated_time": "2025-05-05T15:51:00.019Z",
+      "course": 2,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 15,
+    "fields": {
+      "guid": "37b0fcec-08c0-4d7d-93e4-772e73ac82b3",
+      "created_time": "2025-05-05T15:51:00.021Z",
+      "updated_time": "2025-05-05T15:51:00.021Z",
+      "course": 2,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 16,
+    "fields": {
+      "guid": "b03ce6b9-3fc6-4742-b0fa-31c4a9b1714a",
+      "created_time": "2025-05-05T15:51:00.023Z",
+      "updated_time": "2025-05-05T15:51:00.023Z",
+      "course": 2,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 17,
+    "fields": {
+      "guid": "c792ee41-abd3-4859-aa41-3878b946bef0",
+      "created_time": "2025-05-05T15:51:00.031Z",
+      "updated_time": "2025-05-05T15:51:00.031Z",
+      "course": 3,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 18,
+    "fields": {
+      "guid": "39e95678-94fd-4503-bc6e-1090d4b08f19",
+      "created_time": "2025-05-05T15:51:00.033Z",
+      "updated_time": "2025-05-05T15:51:00.033Z",
+      "course": 3,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 19,
+    "fields": {
+      "guid": "bda050e9-7a21-4604-9b08-92df8869e418",
+      "created_time": "2025-05-05T15:51:00.036Z",
+      "updated_time": "2025-05-05T15:51:00.036Z",
+      "course": 3,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 20,
+    "fields": {
+      "guid": "326cd6e3-f90f-49ff-8aff-258bc7f8509c",
+      "created_time": "2025-05-05T15:51:00.038Z",
+      "updated_time": "2025-05-05T15:51:00.038Z",
+      "course": 3,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 21,
+    "fields": {
+      "guid": "50c3b76a-2a4a-4796-b06d-0db9601e4ccf",
+      "created_time": "2025-05-05T15:51:00.041Z",
+      "updated_time": "2025-05-05T15:51:00.041Z",
+      "course": 3,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 22,
+    "fields": {
+      "guid": "f5254df7-c2d0-4c95-8955-2ac382fb47f6",
+      "created_time": "2025-05-05T15:51:00.043Z",
+      "updated_time": "2025-05-05T15:51:00.044Z",
+      "course": 3,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 23,
+    "fields": {
+      "guid": "98226e93-50dc-4a03-b74c-8e78cf826158",
+      "created_time": "2025-05-05T15:51:00.046Z",
+      "updated_time": "2025-05-05T15:51:00.046Z",
+      "course": 3,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 24,
+    "fields": {
+      "guid": "86407f22-6d21-4fe5-8e90-1da75d50eaeb",
+      "created_time": "2025-05-05T15:51:00.048Z",
+      "updated_time": "2025-05-05T15:51:00.048Z",
+      "course": 3,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 25,
+    "fields": {
+      "guid": "b61426b3-86c6-4c68-b68c-bb91a27a465b",
+      "created_time": "2025-05-05T15:51:00.056Z",
+      "updated_time": "2025-05-05T15:51:00.056Z",
+      "course": 4,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 26,
+    "fields": {
+      "guid": "2370d092-26cd-4d0c-ae77-ccb3725bc13b",
+      "created_time": "2025-05-05T15:51:00.058Z",
+      "updated_time": "2025-05-05T15:51:00.058Z",
+      "course": 4,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 27,
+    "fields": {
+      "guid": "f481991a-0e28-4a65-8ec4-dee27aa03372",
+      "created_time": "2025-05-05T15:51:00.061Z",
+      "updated_time": "2025-05-05T15:51:00.061Z",
+      "course": 4,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 28,
+    "fields": {
+      "guid": "deeb67d6-531b-4fd5-a12d-37101173dacf",
+      "created_time": "2025-05-05T15:51:00.064Z",
+      "updated_time": "2025-05-05T15:51:00.064Z",
+      "course": 4,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 29,
+    "fields": {
+      "guid": "5f3971f7-a450-4cb2-a53b-5508d37c3662",
+      "created_time": "2025-05-05T15:51:00.066Z",
+      "updated_time": "2025-05-05T15:51:00.066Z",
+      "course": 4,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 30,
+    "fields": {
+      "guid": "6ef600ca-8cb0-4baa-9607-d7229cab424a",
+      "created_time": "2025-05-05T15:51:00.069Z",
+      "updated_time": "2025-05-05T15:51:00.069Z",
+      "course": 4,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 31,
+    "fields": {
+      "guid": "13598ff4-94ba-470f-b02e-0f72991a9f2d",
+      "created_time": "2025-05-05T15:51:00.071Z",
+      "updated_time": "2025-05-05T15:51:00.071Z",
+      "course": 4,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 32,
+    "fields": {
+      "guid": "9bea2f52-f75a-49be-87fd-49d36467310b",
+      "created_time": "2025-05-05T15:51:00.074Z",
+      "updated_time": "2025-05-05T15:51:00.074Z",
+      "course": 4,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 33,
+    "fields": {
+      "guid": "a93904f7-d6f9-4d55-aa1d-f0305dd5a8ba",
+      "created_time": "2025-05-05T15:51:00.081Z",
+      "updated_time": "2025-05-05T15:51:00.081Z",
+      "course": 5,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 34,
+    "fields": {
+      "guid": "5959de89-afad-4503-b05b-f1d53174a045",
+      "created_time": "2025-05-05T15:51:00.084Z",
+      "updated_time": "2025-05-05T15:51:00.084Z",
+      "course": 5,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 35,
+    "fields": {
+      "guid": "84697214-0081-4f13-b2b9-772e211d2d85",
+      "created_time": "2025-05-05T15:51:00.086Z",
+      "updated_time": "2025-05-05T15:51:00.086Z",
+      "course": 5,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 36,
+    "fields": {
+      "guid": "410ebc65-6d2e-475d-8e0a-72f922287ba3",
+      "created_time": "2025-05-05T15:51:00.089Z",
+      "updated_time": "2025-05-05T15:51:00.089Z",
+      "course": 5,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 37,
+    "fields": {
+      "guid": "df3caad9-4dfd-40ac-9467-e26c7863eb29",
+      "created_time": "2025-05-05T15:51:00.091Z",
+      "updated_time": "2025-05-05T15:51:00.091Z",
+      "course": 5,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 38,
+    "fields": {
+      "guid": "c176eb27-1e14-403e-bbbd-e5531c54b608",
+      "created_time": "2025-05-05T15:51:00.094Z",
+      "updated_time": "2025-05-05T15:51:00.094Z",
+      "course": 5,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 39,
+    "fields": {
+      "guid": "c91030c1-de0b-49b1-8bb2-cbede4fc7cc1",
+      "created_time": "2025-05-05T15:51:00.097Z",
+      "updated_time": "2025-05-05T15:51:00.097Z",
+      "course": 5,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 40,
+    "fields": {
+      "guid": "fb287643-3931-4853-805f-650445161362",
+      "created_time": "2025-05-05T15:51:00.100Z",
+      "updated_time": "2025-05-05T15:51:00.100Z",
+      "course": 5,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 41,
+    "fields": {
+      "guid": "b50b3bf4-b813-4887-bb60-308023e8dd8b",
+      "created_time": "2025-05-05T15:51:00.106Z",
+      "updated_time": "2025-05-05T15:51:00.106Z",
+      "course": 6,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 42,
+    "fields": {
+      "guid": "0959aca4-5a41-4519-a1e4-bcc353354d58",
+      "created_time": "2025-05-05T15:51:00.109Z",
+      "updated_time": "2025-05-05T15:51:00.109Z",
+      "course": 6,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 43,
+    "fields": {
+      "guid": "4482cfe8-ea70-4548-a636-71d413dca163",
+      "created_time": "2025-05-05T15:51:00.111Z",
+      "updated_time": "2025-05-05T15:51:00.112Z",
+      "course": 6,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 44,
+    "fields": {
+      "guid": "fdba75ec-aad7-4d51-82e8-bf1fd10abff0",
+      "created_time": "2025-05-05T15:51:00.114Z",
+      "updated_time": "2025-05-05T15:51:00.114Z",
+      "course": 6,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 45,
+    "fields": {
+      "guid": "8e4a1232-5dd6-48fa-b605-734754f13373",
+      "created_time": "2025-05-05T15:51:00.117Z",
+      "updated_time": "2025-05-05T15:51:00.117Z",
+      "course": 6,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 46,
+    "fields": {
+      "guid": "21043b0c-946a-4bc8-a3f5-87f88636f87c",
+      "created_time": "2025-05-05T15:51:00.119Z",
+      "updated_time": "2025-05-05T15:51:00.119Z",
+      "course": 6,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 47,
+    "fields": {
+      "guid": "4444708a-7fc9-4202-ace1-2c2c0108a3d5",
+      "created_time": "2025-05-05T15:51:00.122Z",
+      "updated_time": "2025-05-05T15:51:00.122Z",
+      "course": 6,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 48,
+    "fields": {
+      "guid": "8b5bcc18-10cc-4c4e-9880-6e0eaaa5de84",
+      "created_time": "2025-05-05T15:51:00.125Z",
+      "updated_time": "2025-05-05T15:51:00.125Z",
+      "course": 6,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 49,
+    "fields": {
+      "guid": "99e5e218-d288-4eeb-8cd9-50e69e7e9adb",
+      "created_time": "2025-05-05T15:51:00.132Z",
+      "updated_time": "2025-05-05T15:51:00.132Z",
+      "course": 7,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 50,
+    "fields": {
+      "guid": "0b6f372e-9b6b-488b-b33d-5e907df13a80",
+      "created_time": "2025-05-05T15:51:00.135Z",
+      "updated_time": "2025-05-05T15:51:00.135Z",
+      "course": 7,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 51,
+    "fields": {
+      "guid": "381c832c-4f86-4f05-9c10-0816c94ac7ab",
+      "created_time": "2025-05-05T15:51:00.137Z",
+      "updated_time": "2025-05-05T15:51:00.137Z",
+      "course": 7,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 52,
+    "fields": {
+      "guid": "6c664dba-bb73-499a-abae-9e6b39a55889",
+      "created_time": "2025-05-05T15:51:00.140Z",
+      "updated_time": "2025-05-05T15:51:00.140Z",
+      "course": 7,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 53,
+    "fields": {
+      "guid": "8e68df0b-2e08-4224-84c3-bf2bd56aac6d",
+      "created_time": "2025-05-05T15:51:00.142Z",
+      "updated_time": "2025-05-05T15:51:00.143Z",
+      "course": 7,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 54,
+    "fields": {
+      "guid": "43bf0f33-26f2-4780-a760-4ffd664e57ed",
+      "created_time": "2025-05-05T15:51:00.145Z",
+      "updated_time": "2025-05-05T15:51:00.145Z",
+      "course": 7,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 55,
+    "fields": {
+      "guid": "41e16e3b-4fb4-4f47-9279-e268dfa91cd1",
+      "created_time": "2025-05-05T15:51:00.148Z",
+      "updated_time": "2025-05-05T15:51:00.148Z",
+      "course": 7,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 56,
+    "fields": {
+      "guid": "8d06abb4-35e1-4a6c-8c75-08080ded160d",
+      "created_time": "2025-05-05T15:51:00.150Z",
+      "updated_time": "2025-05-05T15:51:00.150Z",
+      "course": 7,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 57,
+    "fields": {
+      "guid": "84653632-cd0e-47c6-a347-d961c324a08d",
+      "created_time": "2025-05-05T15:51:00.157Z",
+      "updated_time": "2025-05-05T15:51:00.157Z",
+      "course": 8,
+      "text": "Изучите основы языка программирования с нуля",
+      "text_uz": null,
+      "text_ru": "Изучите основы языка программирования с нуля",
+      "order": 0
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 58,
+    "fields": {
+      "guid": "daad11c8-09c5-4785-8edd-841bf2212355",
+      "created_time": "2025-05-05T15:51:00.159Z",
+      "updated_time": "2025-05-05T15:51:00.159Z",
+      "course": 8,
+      "text": "Создавайте полнофункциональные веб-приложения",
+      "text_uz": null,
+      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 59,
+    "fields": {
+      "guid": "5ecf4595-e142-47a1-8b11-3694b0209a37",
+      "created_time": "2025-05-05T15:51:00.162Z",
+      "updated_time": "2025-05-05T15:51:00.162Z",
+      "course": 8,
+      "text": "Работайте с базами данных и API",
+      "text_uz": null,
+      "text_ru": "Работайте с базами данных и API",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 60,
+    "fields": {
+      "guid": "20164d8b-822f-439b-bfa4-4265ada628dc",
+      "created_time": "2025-05-05T15:51:00.165Z",
+      "updated_time": "2025-05-05T15:51:00.165Z",
+      "course": 8,
+      "text": "Освойте современные инструменты разработки",
+      "text_uz": null,
+      "text_ru": "Освойте современные инструменты разработки",
+      "order": 3
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 61,
+    "fields": {
+      "guid": "4727697b-c240-4f7e-a351-14b0faf4783b",
+      "created_time": "2025-05-05T15:51:00.167Z",
+      "updated_time": "2025-05-05T15:51:00.167Z",
+      "course": 8,
+      "text": "Научитесь писать чистый и поддерживаемый код",
+      "text_uz": null,
+      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "order": 4
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 62,
+    "fields": {
+      "guid": "05d2b0be-dfb7-44ae-a393-69c0cac1dd13",
+      "created_time": "2025-05-05T15:51:00.170Z",
+      "updated_time": "2025-05-05T15:51:00.170Z",
+      "course": 8,
+      "text": "Создайте портфолио проектов для трудоустройства",
+      "text_uz": null,
+      "text_ru": "Создайте портфолио проектов для трудоустройства",
+      "order": 5
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 63,
+    "fields": {
+      "guid": "dc131e00-ae81-44a6-95ae-52c0d50ca22f",
+      "created_time": "2025-05-05T15:51:00.172Z",
+      "updated_time": "2025-05-05T15:51:00.172Z",
+      "course": 8,
+      "text": "Получите сертификат об окончании курса",
+      "text_uz": null,
+      "text_ru": "Получите сертификат об окончании курса",
+      "order": 6
+    }
+  },
+  {
+    "model": "courses.courseoutcome",
+    "pk": 64,
+    "fields": {
+      "guid": "7665e89d-5ea8-4873-bd69-dc8426a77cd7",
+      "created_time": "2025-05-05T15:51:00.175Z",
+      "updated_time": "2025-05-05T15:51:00.175Z",
+      "course": 8,
+      "text": "Подготовьтесь к собеседованиям и начните карьеру",
+      "text_uz": null,
+      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
+      "order": 7
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 1,
+    "fields": {
+      "guid": "959e3910-7dbd-4034-8088-faf7c884cd61",
+      "created_time": "2025-05-05T15:51:00.225Z",
+      "updated_time": "2025-05-05T15:51:00.225Z",
+      "name": "Google",
+      "name_uz": null,
+      "name_ru": "Google",
+      "logo": "companies/google.png",
+      "color": "#4285F4"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 2,
+    "fields": {
+      "guid": "2043d91c-9864-4799-af44-fe38f311bba2",
+      "created_time": "2025-05-05T15:51:00.228Z",
+      "updated_time": "2025-05-05T15:51:00.228Z",
+      "name": "YouTube",
+      "name_uz": null,
+      "name_ru": "YouTube",
+      "logo": "companies/youtube.png",
+      "color": "#FF0000"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 3,
+    "fields": {
+      "guid": "4e192776-d876-4f4d-8669-dfb0d4b03f1c",
+      "created_time": "2025-05-05T15:51:00.231Z",
+      "updated_time": "2025-05-05T15:51:00.231Z",
+      "name": "Amazon",
+      "name_uz": null,
+      "name_ru": "Amazon",
+      "logo": "companies/amazon.png",
+      "color": "#FF9900"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 4,
+    "fields": {
+      "guid": "892d9fa5-2674-4bd5-a8cb-da78294b12ed",
+      "created_time": "2025-05-05T15:51:00.234Z",
+      "updated_time": "2025-05-05T15:51:00.235Z",
+      "name": "Netflix",
+      "name_uz": null,
+      "name_ru": "Netflix",
+      "logo": "companies/netflix.png",
+      "color": "#E50914"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 5,
+    "fields": {
+      "guid": "80b26cca-11f9-4eaa-b2b3-cb18f777170b",
+      "created_time": "2025-05-05T15:51:00.238Z",
+      "updated_time": "2025-05-05T15:51:00.238Z",
+      "name": "Slack",
+      "name_uz": null,
+      "name_ru": "Slack",
+      "logo": "companies/slack.png",
+      "color": "#4A154B"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 6,
+    "fields": {
+      "guid": "bee11362-bb4f-44c4-bb86-d83a8143e3ae",
+      "created_time": "2025-05-05T15:51:00.241Z",
+      "updated_time": "2025-05-05T15:51:00.241Z",
+      "name": "Lenovo",
+      "name_uz": null,
+      "name_ru": "Lenovo",
+      "logo": "companies/lenovo.png",
+      "color": "#E2231A"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 7,
+    "fields": {
+      "guid": "43fdcf9d-008c-4d36-98ee-538323591265",
+      "created_time": "2025-05-05T15:51:00.245Z",
+      "updated_time": "2025-05-05T15:51:00.245Z",
+      "name": "Apple",
+      "name_uz": null,
+      "name_ru": "Apple",
+      "logo": "companies/apple.png",
+      "color": "#999999"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 8,
+    "fields": {
+      "guid": "d9882929-ac5d-4180-8309-e323bde92ce6",
+      "created_time": "2025-05-05T15:51:00.248Z",
+      "updated_time": "2025-05-05T15:51:00.248Z",
+      "name": "Microsoft",
+      "name_uz": null,
+      "name_ru": "Microsoft",
+      "logo": "companies/microsoft.png",
+      "color": "#00A4EF"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 9,
+    "fields": {
+      "guid": "8d2a844a-ab18-452d-981e-2484fe36c708",
+      "created_time": "2025-05-05T15:51:00.252Z",
+      "updated_time": "2025-05-05T15:51:00.252Z",
+      "name": "Uber",
+      "name_uz": null,
+      "name_ru": "Uber",
+      "logo": "companies/uber.png",
+      "color": "#000000"
+    }
+  },
+  {
+    "model": "courses.company",
+    "pk": 10,
+    "fields": {
+      "guid": "febc1d74-5e87-4587-980e-be62ecd750f3",
+      "created_time": "2025-05-05T15:51:00.255Z",
+      "updated_time": "2025-05-05T15:51:00.255Z",
+      "name": "Airbnb",
+      "name_uz": null,
+      "name_ru": "Airbnb",
+      "logo": "companies/airbnb.png",
+      "color": "#FF5A5F"
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 1,
+    "fields": {
+      "guid": "a6f37156-2a67-4506-bfe2-d6776448ed6b",
+      "created_time": "2025-05-05T15:51:00.258Z",
+      "updated_time": "2025-05-05T15:51:00.258Z",
+      "course": 1,
+      "company": 5
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 2,
+    "fields": {
+      "guid": "e76e758e-318e-46b3-9e7b-c644a30ecc2c",
+      "created_time": "2025-05-05T15:51:00.261Z",
+      "updated_time": "2025-05-05T15:51:00.261Z",
+      "course": 1,
+      "company": 4
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 3,
+    "fields": {
+      "guid": "dfac0f24-496d-41cb-8f0b-2ccba503fdaf",
+      "created_time": "2025-05-05T15:51:00.263Z",
+      "updated_time": "2025-05-05T15:51:00.263Z",
+      "course": 1,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 4,
+    "fields": {
+      "guid": "7d209a2a-78d6-4950-99d7-2279e9d46548",
+      "created_time": "2025-05-05T15:51:00.265Z",
+      "updated_time": "2025-05-05T15:51:00.265Z",
+      "course": 2,
+      "company": 7
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 5,
+    "fields": {
+      "guid": "70528f16-50db-44b8-8605-48d1e3e88f5d",
+      "created_time": "2025-05-05T15:51:00.268Z",
+      "updated_time": "2025-05-05T15:51:00.268Z",
+      "course": 2,
+      "company": 2
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 6,
+    "fields": {
+      "guid": "80a75760-1f82-4838-80bd-1f762df02119",
+      "created_time": "2025-05-05T15:51:00.270Z",
+      "updated_time": "2025-05-05T15:51:00.270Z",
+      "course": 2,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 7,
+    "fields": {
+      "guid": "6e537095-fd4f-4ec4-8f22-aad8b5359ef7",
+      "created_time": "2025-05-05T15:51:00.272Z",
+      "updated_time": "2025-05-05T15:51:00.273Z",
+      "course": 2,
+      "company": 9
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 8,
+    "fields": {
+      "guid": "bfa44fed-84a7-47ec-bdf1-3ec4819c5bbb",
+      "created_time": "2025-05-05T15:51:00.275Z",
+      "updated_time": "2025-05-05T15:51:00.275Z",
+      "course": 2,
+      "company": 8
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 9,
+    "fields": {
+      "guid": "11f5c8b9-f162-43e6-950e-a09db7678425",
+      "created_time": "2025-05-05T15:51:00.277Z",
+      "updated_time": "2025-05-05T15:51:00.277Z",
+      "course": 3,
+      "company": 10
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 10,
+    "fields": {
+      "guid": "062f0431-962e-491c-a842-0c1219f68798",
+      "created_time": "2025-05-05T15:51:00.279Z",
+      "updated_time": "2025-05-05T15:51:00.279Z",
+      "course": 3,
+      "company": 9
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 11,
+    "fields": {
+      "guid": "1320cfa6-8482-4f66-b3d2-463267de7295",
+      "created_time": "2025-05-05T15:51:00.282Z",
+      "updated_time": "2025-05-05T15:51:00.282Z",
+      "course": 3,
+      "company": 8
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 12,
+    "fields": {
+      "guid": "d7fd9dee-4a28-4099-a5c2-20ec2c450fbc",
+      "created_time": "2025-05-05T15:51:00.284Z",
+      "updated_time": "2025-05-05T15:51:00.284Z",
+      "course": 3,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 13,
+    "fields": {
+      "guid": "b55aa6a6-4936-40ee-a3ae-62ca03304e25",
+      "created_time": "2025-05-05T15:51:00.286Z",
+      "updated_time": "2025-05-05T15:51:00.286Z",
+      "course": 3,
+      "company": 2
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 14,
+    "fields": {
+      "guid": "7b0eac69-90a6-419f-b2e5-e69445dbb59c",
+      "created_time": "2025-05-05T15:51:00.289Z",
+      "updated_time": "2025-05-05T15:51:00.289Z",
+      "course": 4,
+      "company": 4
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 15,
+    "fields": {
+      "guid": "dfc20444-d8da-4a3e-b574-97442019fa13",
+      "created_time": "2025-05-05T15:51:00.291Z",
+      "updated_time": "2025-05-05T15:51:00.291Z",
+      "course": 4,
+      "company": 2
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 16,
+    "fields": {
+      "guid": "42604d72-df36-410e-817c-1ad79a50c66e",
+      "created_time": "2025-05-05T15:51:00.293Z",
+      "updated_time": "2025-05-05T15:51:00.294Z",
+      "course": 4,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 17,
+    "fields": {
+      "guid": "be45ec4d-3700-4f99-a80d-ba66e5b46ce8",
+      "created_time": "2025-05-05T15:51:00.296Z",
+      "updated_time": "2025-05-05T15:51:00.296Z",
+      "course": 4,
+      "company": 10
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 18,
+    "fields": {
+      "guid": "26f39582-18ac-4b40-a61a-6dd008666b52",
+      "created_time": "2025-05-05T15:51:00.298Z",
+      "updated_time": "2025-05-05T15:51:00.298Z",
+      "course": 5,
+      "company": 1
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 19,
+    "fields": {
+      "guid": "d30497c5-31f5-4adc-be65-32e2be7e8425",
+      "created_time": "2025-05-05T15:51:00.301Z",
+      "updated_time": "2025-05-05T15:51:00.301Z",
+      "course": 5,
+      "company": 9
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 20,
+    "fields": {
+      "guid": "88502715-e907-4304-92d3-a7fc8126b05b",
+      "created_time": "2025-05-05T15:51:00.304Z",
+      "updated_time": "2025-05-05T15:51:00.304Z",
+      "course": 5,
+      "company": 5
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 21,
+    "fields": {
+      "guid": "2c70aad6-7e69-40e0-ba22-d63cb9ab9b7d",
+      "created_time": "2025-05-05T15:51:00.307Z",
+      "updated_time": "2025-05-05T15:51:00.307Z",
+      "course": 5,
+      "company": 7
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 22,
+    "fields": {
+      "guid": "52856ed6-17a1-4f8b-9306-9a244bc21a8e",
+      "created_time": "2025-05-05T15:51:00.309Z",
+      "updated_time": "2025-05-05T15:51:00.309Z",
+      "course": 5,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 23,
+    "fields": {
+      "guid": "77a39228-5b79-4c89-8d07-852b4a0d2f29",
+      "created_time": "2025-05-05T15:51:00.312Z",
+      "updated_time": "2025-05-05T15:51:00.312Z",
+      "course": 6,
+      "company": 9
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 24,
+    "fields": {
+      "guid": "0d5b0928-43d5-412b-956b-622466ba1bf6",
+      "created_time": "2025-05-05T15:51:00.314Z",
+      "updated_time": "2025-05-05T15:51:00.314Z",
+      "course": 6,
+      "company": 1
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 25,
+    "fields": {
+      "guid": "5fedbf88-7464-48ba-b750-4aee212c00ce",
+      "created_time": "2025-05-05T15:51:00.316Z",
+      "updated_time": "2025-05-05T15:51:00.316Z",
+      "course": 6,
+      "company": 6
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 26,
+    "fields": {
+      "guid": "bb692a7b-94f1-4d28-9bc1-dc733f17c13c",
+      "created_time": "2025-05-05T15:51:00.319Z",
+      "updated_time": "2025-05-05T15:51:00.319Z",
+      "course": 6,
+      "company": 7
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 27,
+    "fields": {
+      "guid": "7a671b6d-1c5b-444c-a865-c53dffcbbf0d",
+      "created_time": "2025-05-05T15:51:00.321Z",
+      "updated_time": "2025-05-05T15:51:00.321Z",
+      "course": 7,
+      "company": 7
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 28,
+    "fields": {
+      "guid": "ef5d9e55-038d-4041-82f6-8595bac5ddf9",
+      "created_time": "2025-05-05T15:51:00.324Z",
+      "updated_time": "2025-05-05T15:51:00.324Z",
+      "course": 7,
+      "company": 4
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 29,
+    "fields": {
+      "guid": "bf9f858c-a131-4214-9c6c-b62eee253df0",
+      "created_time": "2025-05-05T15:51:00.326Z",
+      "updated_time": "2025-05-05T15:51:00.326Z",
+      "course": 7,
+      "company": 9
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 30,
+    "fields": {
+      "guid": "9a4c63c3-5e59-44ce-ac3a-0d53d5a1bc65",
+      "created_time": "2025-05-05T15:51:00.329Z",
+      "updated_time": "2025-05-05T15:51:00.329Z",
+      "course": 7,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 31,
+    "fields": {
+      "guid": "b20406fa-d1e4-4ad4-a98c-83c60b8c1165",
+      "created_time": "2025-05-05T15:51:00.331Z",
+      "updated_time": "2025-05-05T15:51:00.331Z",
+      "course": 8,
+      "company": 1
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 32,
+    "fields": {
+      "guid": "3d5b978e-e162-4502-b13e-12077945c12a",
+      "created_time": "2025-05-05T15:51:00.333Z",
+      "updated_time": "2025-05-05T15:51:00.333Z",
+      "course": 8,
+      "company": 9
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 33,
+    "fields": {
+      "guid": "7884a4e5-ad26-4721-aaf0-952946db5ecf",
+      "created_time": "2025-05-05T15:51:00.336Z",
+      "updated_time": "2025-05-05T15:51:00.336Z",
+      "course": 8,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 34,
+    "fields": {
+      "guid": "816c334f-9817-4e3f-9cf3-24c4f0458471",
+      "created_time": "2025-05-05T15:51:00.338Z",
+      "updated_time": "2025-05-05T15:51:00.338Z",
+      "course": 8,
+      "company": 2
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 35,
+    "fields": {
+      "guid": "56e54a2b-db0d-4b61-becd-9017a4bcece7",
+      "created_time": "2025-05-05T15:51:00.340Z",
+      "updated_time": "2025-05-05T15:51:00.340Z",
+      "course": 8,
+      "company": 10
+    }
+  },
+  {
+    "model": "courses.mentor",
+    "pk": 1,
+    "fields": {
+      "guid": "47ce55a4-669f-482d-88c7-b86a46d625e8",
+      "created_time": "2025-05-05T15:51:00.179Z",
+      "updated_time": "2025-05-05T15:51:00.179Z",
+      "name": "Шукуров Жасур",
+      "name_uz": null,
+      "name_ru": "Шукуров Жасур",
+      "position": "PHP (Laravel) Backend Developer",
+      "position_uz": null,
+      "position_ru": "PHP (Laravel) Backend Developer",
+      "bio": "Опытный разработчик с более чем 5-летним стажем работы в веб-разработке. Специализируется на PHP и Laravel.",
+      "bio_uz": null,
+      "bio_ru": "Опытный разработчик с более чем 5-летним стажем работы в веб-разработке. Специализируется на PHP и Laravel.",
+      "photo": "mentors/jasur.jpg"
+    }
+  },
+  {
+    "model": "courses.mentor",
+    "pk": 2,
+    "fields": {
+      "guid": "6400b1cf-ccf1-49e3-b996-ae539ae6a71b",
+      "created_time": "2025-05-05T15:51:00.183Z",
+      "updated_time": "2025-05-05T15:51:00.183Z",
+      "name": "Шомуродов Сарвар",
+      "name_uz": null,
+      "name_ru": "Шомуродов Сарвар",
+      "position": "PHP (Laravel) Backend Developer",
+      "position_uz": null,
+      "position_ru": "PHP (Laravel) Backend Developer",
+      "bio": "Профессиональный разработчик с опытом создания высоконагруженных веб-приложений. Эксперт в PHP и Laravel.",
+      "bio_uz": null,
+      "bio_ru": "Профессиональный разработчик с опытом создания высоконагруженных веб-приложений. Эксперт в PHP и Laravel.",
+      "photo": "mentors/sarvar.jpg"
+    }
+  },
+  {
+    "model": "courses.mentor",
+    "pk": 3,
+    "fields": {
+      "guid": "4bdab238-b851-4815-8832-709c7f87e023",
+      "created_time": "2025-05-05T15:51:00.187Z",
+      "updated_time": "2025-05-05T15:51:00.187Z",
+      "name": "Алимов Бобур",
+      "name_uz": null,
+      "name_ru": "Алимов Бобур",
+      "position": "Python Django Developer",
+      "position_uz": null,
+      "position_ru": "Python Django Developer",
+      "bio": "Опытный Python разработчик с глубоким знанием Django и Flask. Работал над множеством проектов различной сложности.",
+      "bio_uz": null,
+      "bio_ru": "Опытный Python разработчик с глубоким знанием Django и Flask. Работал над множеством проектов различной сложности.",
+      "photo": "mentors/bobur.jpg"
+    }
+  },
+  {
+    "model": "courses.mentor",
+    "pk": 4,
+    "fields": {
+      "guid": "06126036-d080-4406-a05f-bec264088193",
+      "created_time": "2025-05-05T15:51:00.191Z",
+      "updated_time": "2025-05-05T15:51:00.191Z",
+      "name": "Каримова Нилуфар",
+      "name_uz": null,
+      "name_ru": "Каримова Нилуфар",
+      "position": "React.js Frontend Developer",
+      "position_uz": null,
+      "position_ru": "React.js Frontend Developer",
+      "bio": "Frontend разработчик с опытом создания современных пользовательских интерфейсов. Эксперт в React.js и Redux.",
+      "bio_uz": null,
+      "bio_ru": "Frontend разработчик с опытом создания современных пользовательских интерфейсов. Эксперт в React.js и Redux.",
+      "photo": "mentors/nilufar.jpg"
+    }
+  },
+  {
+    "model": "courses.mentor",
+    "pk": 5,
+    "fields": {
+      "guid": "f4cb5cf3-2b43-49af-81be-d9e4e890b5ce",
+      "created_time": "2025-05-05T15:51:00.195Z",
+      "updated_time": "2025-05-05T15:51:00.195Z",
+      "name": "Рахимов Тимур",
+      "name_uz": null,
+      "name_ru": "Рахимов Тимур",
+      "position": "Node.js Backend Developer",
+      "position_uz": null,
+      "position_ru": "Node.js Backend Developer",
+      "bio": "Fullstack разработчик с фокусом на Node.js и Express. Имеет опыт работы с MongoDB, PostgreSQL и Redis.",
+      "bio_uz": null,
+      "bio_ru": "Fullstack разработчик с фокусом на Node.js и Express. Имеет опыт работы с MongoDB, PostgreSQL и Redis.",
+      "photo": "mentors/timur.jpg"
+    }
+  },
+  {
+    "model": "courses.mentor",
+    "pk": 6,
+    "fields": {
+      "guid": "d9776de6-bca7-4bee-b7ce-b107d6ac4e65",
+      "created_time": "2025-05-05T15:51:00.199Z",
+      "updated_time": "2025-05-05T15:51:00.199Z",
+      "name": "Исмаилова Диёра",
+      "name_uz": null,
+      "name_ru": "Исмаилова Диёра",
+      "position": "3D Max & Interior Designer",
+      "position_uz": null,
+      "position_ru": "3D Max & Interior Designer",
+      "bio": "Профессиональный дизайнер интерьеров с опытом работы более 7 лет. Эксперт в 3D Max и V-Ray.",
+      "bio_uz": null,
+      "bio_ru": "Профессиональный дизайнер интерьеров с опытом работы более 7 лет. Эксперт в 3D Max и V-Ray.",
+      "photo": "mentors/diyora.jpg"
+    }
+  },
+  {
+    "model": "courses.coursementor",
+    "pk": 1,
+    "fields": {
+      "guid": "517a9106-159e-45ec-b9b1-d7109f6973ad",
+      "created_time": "2025-05-05T15:51:00.204Z",
+      "updated_time": "2025-05-05T15:51:00.204Z",
+      "course": 2,
+      "mentor": 1
+    }
+  },
+  {
+    "model": "courses.coursementor",
+    "pk": 2,
+    "fields": {
+      "guid": "073972ac-0217-44b8-b69b-4f39faffbc7e",
+      "created_time": "2025-05-05T15:51:00.206Z",
+      "updated_time": "2025-05-05T15:51:00.206Z",
+      "course": 2,
+      "mentor": 2
+    }
+  },
+  {
+    "model": "courses.coursementor",
+    "pk": 3,
+    "fields": {
+      "guid": "c1b6fb9e-0d80-4ea3-909f-73f797e07b6e",
+      "created_time": "2025-05-05T15:51:00.210Z",
+      "updated_time": "2025-05-05T15:51:00.210Z",
+      "course": 1,
+      "mentor": 3
+    }
+  },
+  {
+    "model": "courses.coursementor",
+    "pk": 4,
+    "fields": {
+      "guid": "94d38363-9ce7-4475-9f15-ce1e72c5fafb",
+      "created_time": "2025-05-05T15:51:00.214Z",
+      "updated_time": "2025-05-05T15:51:00.214Z",
+      "course": 5,
+      "mentor": 4
+    }
+  },
+  {
+    "model": "courses.coursementor",
+    "pk": 5,
+    "fields": {
+      "guid": "a0796ff1-a4d0-41aa-a312-76c1201b35c2",
+      "created_time": "2025-05-05T15:51:00.217Z",
+      "updated_time": "2025-05-05T15:51:00.217Z",
+      "course": 3,
+      "mentor": 5
+    }
+  },
+  {
+    "model": "courses.coursementor",
+    "pk": 6,
+    "fields": {
+      "guid": "abe6ea88-d451-43f4-864a-bd8c02106cf0",
+      "created_time": "2025-05-05T15:51:00.221Z",
+      "updated_time": "2025-05-05T15:51:00.221Z",
+      "course": 6,
+      "mentor": 6
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 1,
+    "fields": {
+      "guid": "2e4db273-eca9-45e3-94e5-824e6933a6c4",
+      "created_time": "2025-05-05T15:51:00.343Z",
+      "updated_time": "2025-05-05T15:51:00.344Z",
+      "name": "Алексей Смирнов",
+      "name_uz": null,
+      "name_ru": "Алексей Смирнов",
+      "position": "Системный администратор",
+      "position_uz": null,
+      "position_ru": "Системный администратор",
+      "company": 1,
+      "avatar": "testimonials/default.jpg",
+      "text": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
+      "text_uz": null,
+      "text_ru": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
+      "course": 1
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 2,
+    "fields": {
+      "guid": "dfd90794-b431-46c1-839e-1d5fd720c337",
+      "created_time": "2025-05-05T15:51:00.346Z",
+      "updated_time": "2025-05-05T15:51:00.347Z",
+      "name": "Джейкоб Джонс",
+      "name_uz": null,
+      "name_ru": "Джейкоб Джонс",
+      "position": "Системный администратор",
+      "position_uz": null,
+      "position_ru": "Системный администратор",
+      "company": 3,
+      "avatar": "testimonials/default.jpg",
+      "text": "Курс очень интенсивный, но результат того стоит. За несколько месяцев я освоил технологии, которые сейчас востребованы на рынке труда.",
+      "text_uz": null,
+      "text_ru": "Курс очень интенсивный, но результат того стоит. За несколько месяцев я освоил технологии, которые сейчас востребованы на рынке труда.",
+      "course": 1
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 3,
+    "fields": {
+      "guid": "f8496aea-d2c6-4297-94d6-9d17c90ca3da",
+      "created_time": "2025-05-05T15:51:00.349Z",
+      "updated_time": "2025-05-05T15:51:00.349Z",
+      "name": "Аннет Блэк",
+      "name_uz": null,
+      "name_ru": "Аннет Блэк",
+      "position": "DevOps инженер",
+      "position_uz": null,
+      "position_ru": "DevOps инженер",
+      "company": 5,
+      "avatar": "testimonials/default.jpg",
+      "text": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
+      "text_uz": null,
+      "text_ru": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
+      "course": 1
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 4,
+    "fields": {
+      "guid": "d9d2068a-0a00-4fcd-a911-5963e577398c",
+      "created_time": "2025-05-05T15:51:00.352Z",
+      "updated_time": "2025-05-05T15:51:00.352Z",
+      "name": "Михаил Волков",
+      "name_uz": null,
+      "name_ru": "Михаил Волков",
+      "position": "Data аналитик",
+      "position_uz": null,
+      "position_ru": "Data аналитик",
+      "company": 3,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "text_uz": null,
+      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "course": 2
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 5,
+    "fields": {
+      "guid": "d98607ab-e2ea-44a8-92f4-e9e623d6f8c8",
+      "created_time": "2025-05-05T15:51:00.355Z",
+      "updated_time": "2025-05-05T15:51:00.355Z",
+      "name": "Эстер Ховард",
+      "name_uz": null,
+      "name_ru": "Эстер Ховард",
+      "position": "Fullstack разработчик",
+      "position_uz": null,
+      "position_ru": "Fullstack разработчик",
+      "company": 1,
+      "avatar": "testimonials/default.jpg",
+      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "text_uz": null,
+      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "course": 2
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 6,
+    "fields": {
+      "guid": "eeadeb23-cfe5-457c-9f34-c8105c9a5ec1",
+      "created_time": "2025-05-05T15:51:00.358Z",
+      "updated_time": "2025-05-05T15:51:00.358Z",
+      "name": "Дмитрий Петров",
+      "name_uz": null,
+      "name_ru": "Дмитрий Петров",
+      "position": "Проектный менеджер",
+      "position_uz": null,
+      "position_ru": "Проектный менеджер",
+      "company": 2,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "text_uz": null,
+      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "course": 3
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 7,
+    "fields": {
+      "guid": "ed4e030c-36d8-4b9c-b75f-d10fcadd8cd5",
+      "created_time": "2025-05-05T15:51:00.361Z",
+      "updated_time": "2025-05-05T15:51:00.361Z",
+      "name": "Гай Хокинс",
+      "name_uz": null,
+      "name_ru": "Гай Хокинс",
+      "position": "Системный администратор",
+      "position_uz": null,
+      "position_ru": "Системный администратор",
+      "company": 5,
+      "avatar": "testimonials/default.jpg",
+      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "text_uz": null,
+      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "course": 3
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 8,
+    "fields": {
+      "guid": "355f9cfe-b2c0-42ec-b87d-11c8ed87d432",
+      "created_time": "2025-05-05T15:51:00.364Z",
+      "updated_time": "2025-05-05T15:51:00.364Z",
+      "name": "Аннет Блэк",
+      "name_uz": null,
+      "name_ru": "Аннет Блэк",
+      "position": "DevOps инженер",
+      "position_uz": null,
+      "position_ru": "DevOps инженер",
+      "company": 2,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "text_uz": null,
+      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "course": 3
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 9,
+    "fields": {
+      "guid": "1e21a3ed-e089-4e48-af8f-695f11459b14",
+      "created_time": "2025-05-05T15:51:00.367Z",
+      "updated_time": "2025-05-05T15:51:00.367Z",
+      "name": "Джейн Купер",
+      "name_uz": null,
+      "name_ru": "Джейн Купер",
+      "position": "Проектный менеджер",
+      "position_uz": null,
+      "position_ru": "Проектный менеджер",
+      "company": 1,
+      "avatar": "testimonials/default.jpg",
+      "text": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
+      "text_uz": null,
+      "text_ru": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
+      "course": 4
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 10,
+    "fields": {
+      "guid": "52218d43-7dec-49a3-b608-e38e87d86195",
+      "created_time": "2025-05-05T15:51:00.370Z",
+      "updated_time": "2025-05-05T15:51:00.370Z",
+      "name": "Лесли Александр",
+      "name_uz": null,
+      "name_ru": "Лесли Александр",
+      "position": "DevOps инженер",
+      "position_uz": null,
+      "position_ru": "DevOps инженер",
+      "company": 7,
+      "avatar": "testimonials/default.jpg",
+      "text": "Менторы курса - настоящие профессионалы своего дела. Они делятся не только теоретическими знаниями, но и практическим опытом работы в индустрии.",
+      "text_uz": null,
+      "text_ru": "Менторы курса - настоящие профессионалы своего дела. Они делятся не только теоретическими знаниями, но и практическим опытом работы в индустрии.",
+      "course": 4
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 11,
+    "fields": {
+      "guid": "f7109661-1af5-48da-87d4-b2fc71b5131a",
+      "created_time": "2025-05-05T15:51:00.373Z",
+      "updated_time": "2025-05-05T15:51:00.373Z",
+      "name": "Лесли Александр",
+      "name_uz": null,
+      "name_ru": "Лесли Александр",
+      "position": "Product менеджер",
+      "position_uz": null,
+      "position_ru": "Product менеджер",
+      "company": 8,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "text_uz": null,
+      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "course": 4
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 12,
+    "fields": {
+      "guid": "c51f4c19-ab59-4ad9-bfd7-5d8f313bcd14",
+      "created_time": "2025-05-05T15:51:00.376Z",
+      "updated_time": "2025-05-05T15:51:00.376Z",
+      "name": "Гай Хокинс",
+      "name_uz": null,
+      "name_ru": "Гай Хокинс",
+      "position": "Fullstack разработчик",
+      "position_uz": null,
+      "position_ru": "Fullstack разработчик",
+      "company": 9,
+      "avatar": "testimonials/default.jpg",
+      "text": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
+      "text_uz": null,
+      "text_ru": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
+      "course": 5
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 13,
+    "fields": {
+      "guid": "22a83ec9-dbc0-488f-a352-ad9bab0c7dac",
+      "created_time": "2025-05-05T15:51:00.379Z",
+      "updated_time": "2025-05-05T15:51:00.379Z",
+      "name": "Екатерина Иванова",
+      "name_uz": null,
+      "name_ru": "Екатерина Иванова",
+      "position": "Product менеджер",
+      "position_uz": null,
+      "position_ru": "Product менеджер",
+      "company": 1,
+      "avatar": "testimonials/default.jpg",
+      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "text_uz": null,
+      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "course": 5
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 14,
+    "fields": {
+      "guid": "5573edbd-5488-48e3-8711-e33f2852902d",
+      "created_time": "2025-05-05T15:51:00.381Z",
+      "updated_time": "2025-05-05T15:51:00.381Z",
+      "name": "Джейн Купер",
+      "name_uz": null,
+      "name_ru": "Джейн Купер",
+      "position": "Backend разработчик",
+      "position_uz": null,
+      "position_ru": "Backend разработчик",
+      "company": 5,
+      "avatar": "testimonials/default.jpg",
+      "text": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
+      "text_uz": null,
+      "text_ru": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
+      "course": 5
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 15,
+    "fields": {
+      "guid": "169503ee-0961-4c1f-9988-d98bde70e5c3",
+      "created_time": "2025-05-05T15:51:00.384Z",
+      "updated_time": "2025-05-05T15:51:00.384Z",
+      "name": "Джейкоб Джонс",
+      "name_uz": null,
+      "name_ru": "Джейкоб Джонс",
+      "position": "UI/UX Дизайнер",
+      "position_uz": null,
+      "position_ru": "UI/UX Дизайнер",
+      "company": 3,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "text_uz": null,
+      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "course": 5
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 16,
+    "fields": {
+      "guid": "20ca0a12-7cd7-457b-863e-f4b7222e7c92",
+      "created_time": "2025-05-05T15:51:00.387Z",
+      "updated_time": "2025-05-05T15:51:00.387Z",
+      "name": "Эстер Ховард",
+      "name_uz": null,
+      "name_ru": "Эстер Ховард",
+      "position": "Backend разработчик",
+      "position_uz": null,
+      "position_ru": "Backend разработчик",
+      "company": 2,
+      "avatar": "testimonials/default.jpg",
+      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "text_uz": null,
+      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
+      "course": 6
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 17,
+    "fields": {
+      "guid": "39add3f3-4d10-449e-844c-d0ad63712908",
+      "created_time": "2025-05-05T15:51:00.390Z",
+      "updated_time": "2025-05-05T15:51:00.391Z",
+      "name": "Эстер Ховард",
+      "name_uz": null,
+      "name_ru": "Эстер Ховард",
+      "position": "Fullstack разработчик",
+      "position_uz": null,
+      "position_ru": "Fullstack разработчик",
+      "company": 1,
+      "avatar": "testimonials/default.jpg",
+      "text": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
+      "text_uz": null,
+      "text_ru": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
+      "course": 6
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 18,
+    "fields": {
+      "guid": "00eb17a6-78b2-41bc-8f54-d087d1bb020f",
+      "created_time": "2025-05-05T15:51:00.393Z",
+      "updated_time": "2025-05-05T15:51:00.393Z",
+      "name": "Дмитрий Петров",
+      "name_uz": null,
+      "name_ru": "Дмитрий Петров",
+      "position": "Data аналитик",
+      "position_uz": null,
+      "position_ru": "Data аналитик",
+      "company": 4,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "text_uz": null,
+      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
+      "course": 6
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 19,
+    "fields": {
+      "guid": "8a2046d5-3160-4422-a855-0b451646179c",
+      "created_time": "2025-05-05T15:51:00.396Z",
+      "updated_time": "2025-05-05T15:51:00.396Z",
+      "name": "Алексей Смирнов",
+      "name_uz": null,
+      "name_ru": "Алексей Смирнов",
+      "position": "QA инженер",
+      "position_uz": null,
+      "position_ru": "QA инженер",
+      "company": 6,
+      "avatar": "testimonials/default.jpg",
+      "text": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
+      "text_uz": null,
+      "text_ru": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
+      "course": 6
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 20,
+    "fields": {
+      "guid": "88b657aa-609a-4af6-9e94-f2edef09fa3b",
+      "created_time": "2025-05-05T15:51:00.399Z",
+      "updated_time": "2025-05-05T15:51:00.399Z",
+      "name": "Алексей Смирнов",
+      "name_uz": null,
+      "name_ru": "Алексей Смирнов",
+      "position": "Backend разработчик",
+      "position_uz": null,
+      "position_ru": "Backend разработчик",
+      "company": 8,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "text_uz": null,
+      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "course": 7
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 21,
+    "fields": {
+      "guid": "7f3c603b-5181-402d-927a-798b5eeffea1",
+      "created_time": "2025-05-05T15:51:00.402Z",
+      "updated_time": "2025-05-05T15:51:00.402Z",
+      "name": "Джейн Купер",
+      "name_uz": null,
+      "name_ru": "Джейн Купер",
+      "position": "Product менеджер",
+      "position_uz": null,
+      "position_ru": "Product менеджер",
+      "company": 3,
+      "avatar": "testimonials/default.jpg",
+      "text": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
+      "text_uz": null,
+      "text_ru": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
+      "course": 7
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 22,
+    "fields": {
+      "guid": "2e9678ff-3b3f-4ff3-8427-e8c3ac6118de",
+      "created_time": "2025-05-05T15:51:00.405Z",
+      "updated_time": "2025-05-05T15:51:00.405Z",
+      "name": "Дмитрий Петров",
+      "name_uz": null,
+      "name_ru": "Дмитрий Петров",
+      "position": "Data аналитик",
+      "position_uz": null,
+      "position_ru": "Data аналитик",
+      "company": 6,
+      "avatar": "testimonials/default.jpg",
+      "text": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
+      "text_uz": null,
+      "text_ru": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
+      "course": 7
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 23,
+    "fields": {
+      "guid": "b8b8d589-8eee-426f-8567-4b9fc5025ade",
+      "created_time": "2025-05-05T15:51:00.408Z",
+      "updated_time": "2025-05-05T15:51:00.408Z",
+      "name": "Аннет Блэк",
+      "name_uz": null,
+      "name_ru": "Аннет Блэк",
+      "position": "Frontend разработчик",
+      "position_uz": null,
+      "position_ru": "Frontend разработчик",
+      "company": 3,
+      "avatar": "testimonials/default.jpg",
+      "text": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
+      "text_uz": null,
+      "text_ru": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
+      "course": 8
+    }
+  },
+  {
+    "model": "courses.testimonial",
+    "pk": 24,
+    "fields": {
+      "guid": "ac3abd6a-da94-4f83-94f7-bd2693d2d9d4",
+      "created_time": "2025-05-05T15:51:00.410Z",
+      "updated_time": "2025-05-05T15:51:00.410Z",
+      "name": "Гай Хокинс",
+      "name_uz": null,
+      "name_ru": "Гай Хокинс",
+      "position": "Backend разработчик",
+      "position_uz": null,
+      "position_ru": "Backend разработчик",
+      "company": 8,
+      "avatar": "testimonials/default.jpg",
+      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "text_uz": null,
+      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
+      "course": 8
+    }
+  }
+]
