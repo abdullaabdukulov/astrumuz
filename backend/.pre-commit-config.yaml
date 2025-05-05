@@ -24,7 +24,8 @@ repos:
     hooks:
       - id: migrations-check
         name: Check for uncreated migrations
-        entry: ./manage.py makemigrations --check --dry-run
+        entry: >
+          bash -c 'if find apps -type f -name models.py | grep .; then backend/manage.py makemigrations --check --dry-run; else echo "No models.py found, skipping migration check."; fi'
         language: system
-        files: 'models\.py$'
+        pass_filenames: false
         stages: [pre-commit]
