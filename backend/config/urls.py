@@ -39,6 +39,10 @@ schema_view = get_schema_view(
 
 urlpatterns = [path("default-admin-panel/", admin.site.urls)]
 
+urlpatterns += [
+    path("api/", include(("courses.urls", "courses"), "courses")),
+]
+
 if django_settings_module == "development":
     urlpatterns += [
         path("__debug__/", include("debug_toolbar.urls")),
