@@ -1,11 +1,11 @@
+from courses.models import ContactRequest, Course, CourseRegistration
 from rest_framework import serializers
-from courses.models import CourseRegistration, ContactRequest, Course
 
 
 class CourseRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = CourseRegistration
-        fields = ['id', 'course', 'name', 'phone', 'email', 'message']
+        fields = ["id", "course", "name", "phone", "email", "message"]
 
     def validate_course(self, value):
         try:
@@ -18,4 +18,4 @@ class CourseRegistrationSerializer(serializers.ModelSerializer):
 class ContactRequestSerializer(serializers.ModelSerializer):
     class Meta:
         model = ContactRequest
-        fields = ['id', 'name', 'phone', 'email', 'message']
+        fields = ["id", "name", "phone", "email", "message"]

@@ -47,7 +47,8 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
 
     def get_queryset(self):
         """
-        Оптимизированный queryset с предварительной загрузкой связанных объектов
+        Оптимизированный queryset с предварительной
+        загрузкой связанных объектов
         для предотвращения проблемы N+1 запросов
         """
         queryset = Course.objects.select_related("category")
@@ -88,9 +89,10 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
 
         return queryset
 
-    def retrieve(self, request, *args, **kwargs):
+    def retrieve(self, request, *args, **kwargs): # noqa
         """
-        Переопределяем метод retrieve для предварительной загрузки связанных курсов
+        Переопределяем метод retrieve для
+        предварительной загрузки связанных курсов
         """
         instance = self.get_object()
 
