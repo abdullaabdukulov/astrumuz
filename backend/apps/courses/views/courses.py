@@ -1,3 +1,4 @@
+from common.utils.custom_response_decorator import custom_response
 from courses.models import Course, CourseCategory, CourseCompany, CourseMentor
 from courses.serializers import (
     CourseCategorySerializer,
@@ -10,9 +11,11 @@ from django.db.models import Prefetch
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.views import APIView
 
 
-class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet):
+@custom_response
+class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet, APIView):
     """API endpoint for course categories"""
 
     queryset = CourseCategory.objects.all()
@@ -20,7 +23,8 @@ class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet):
     lookup_field = "slug"
 
 
-class CourseViewSet(viewsets.ReadOnlyModelViewSet):
+@custom_response
+class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
     """API endpoint for courses"""
 
     lookup_field = "slug"

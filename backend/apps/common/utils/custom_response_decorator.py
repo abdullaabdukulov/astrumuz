@@ -1,12 +1,11 @@
 from rest_framework.views import APIView
 
 """
-response structure
-
+Response structure:
 {
-    status_code : 200,
-    errors {},
-    data {}
+    success: true/false,
+    errors: [],
+    data: {}
 }
 """
 
