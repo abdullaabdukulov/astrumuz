@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-05 20:39+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: apps/common/exceptions.py:6
+msgid "Not found."
+msgstr ""
+
+#: apps/courses/models/companies.py:11 apps/courses/models/courses.py:10
+#: apps/courses/models/courses.py:30
+msgid "Название"
+msgstr ""
+
+#: apps/courses/models/companies.py:12
+msgid "Логотип"
+msgstr ""
+
+#: apps/courses/models/companies.py:14
+msgid "Цвет"
+msgstr ""
+
+#: apps/courses/models/companies.py:18 apps/courses/models/companies.py:38
+#: apps/courses/models/testimonials.py:18
+msgid "Компания"
+msgstr ""
+
+#: apps/courses/models/companies.py:19
+msgid "Компании"
+msgstr ""
+
+#: apps/courses/models/companies.py:32 apps/courses/models/courses.py:67
+#: apps/courses/models/courses.py:87 apps/courses/models/mentors.py:31
+#: apps/courses/models/registrations.py:15
+#: apps/courses/models/testimonials.py:26
+msgid "Курс"
+msgstr ""
+
+#: apps/courses/models/companies.py:42
+msgid "Компания курса"
+msgstr ""
+
+#: apps/courses/models/companies.py:43
+msgid "Компании курсов"
+msgstr ""
+
+#: apps/courses/models/courses.py:11 apps/courses/models/courses.py:31
+msgid "Slug"
+msgstr ""
+
+#: apps/courses/models/courses.py:14
+msgid "Категория курса"
+msgstr ""
+
+#: apps/courses/models/courses.py:15
+msgid "Категории курсов"
+msgstr ""
+
+#: apps/courses/models/courses.py:25
+msgid "Новички"
+msgstr ""
+
+#: apps/courses/models/courses.py:26
+msgid "Средний"
+msgstr ""
+
+#: apps/courses/models/courses.py:27
+msgid "Продвинутый"
+msgstr ""
+
+#: apps/courses/models/courses.py:32
+msgid "Описание"
+msgstr ""
+
+#: apps/courses/models/courses.py:34
+msgid "Иконка"
+msgstr ""
+
+#: apps/courses/models/courses.py:37
+msgid "Тип иконки"
+msgstr ""
+
+#: apps/courses/models/courses.py:43
+msgid "Уровень"
+msgstr ""
+
+#: apps/courses/models/courses.py:46
+msgid "Продолжительность"
+msgstr ""
+
+#: apps/courses/models/courses.py:48
+msgid "Рекомендуемый"
+msgstr ""
+
+#: apps/courses/models/courses.py:49
+msgid "Новый курс"
+msgstr ""
+
+#: apps/courses/models/courses.py:54
+msgid "Категория"
+msgstr ""
+
+#: apps/courses/models/courses.py:58
+msgid "Чему вы научитесь"
+msgstr ""
+
+#: apps/courses/models/courses.py:59
+msgid "Часы видео"
+msgstr ""
+
+#: apps/courses/models/courses.py:61
+msgid "Упражнения по кодированию"
+msgstr ""
+
+#: apps/courses/models/courses.py:63
+msgid "Статьи"
+msgstr ""
+
+#: apps/courses/models/courses.py:64
+msgid "Сертификат"
+msgstr ""
+
+#: apps/courses/models/courses.py:68
+msgid "Курсы"
+msgstr ""
+
+#: apps/courses/models/courses.py:89
+msgid "Текст"
+msgstr ""
+
+#: apps/courses/models/courses.py:90
+msgid "Порядок"
+msgstr ""
+
+#: apps/courses/models/courses.py:93
+msgid "Результат обучения"
+msgstr ""
+
+#: apps/courses/models/courses.py:94
+msgid "Результаты обучения"
+msgstr ""
+
+#: apps/courses/models/mentors.py:11 apps/courses/models/registrations.py:17
+#: apps/courses/models/registrations.py:34
+#: apps/courses/models/testimonials.py:12
+msgid "Имя"
+msgstr ""
+
+#: apps/courses/models/mentors.py:12 apps/courses/models/testimonials.py:13
+msgid "Должность"
+msgstr ""
+
+#: apps/courses/models/mentors.py:13
+msgid "Биография"
+msgstr ""
+
+#: apps/courses/models/mentors.py:14
+msgid "Фото"
+msgstr ""
+
+#: apps/courses/models/mentors.py:17 apps/courses/models/mentors.py:37
+msgid "Ментор"
+msgstr ""
+
+#: apps/courses/models/mentors.py:18
+msgid "Менторы"
+msgstr ""
+
+#: apps/courses/models/mentors.py:41
+msgid "Ментор курса"
+msgstr ""
+
+#: apps/courses/models/mentors.py:42
+msgid "Менторы курсов"
+msgstr ""
+
+#: apps/courses/models/registrations.py:18
+#: apps/courses/models/registrations.py:35
+msgid "Телефон"
+msgstr ""
+
+#: apps/courses/models/registrations.py:19
+#: apps/courses/models/registrations.py:36
+msgid "Email"
+msgstr ""
+
+#: apps/courses/models/registrations.py:20
+#: apps/courses/models/registrations.py:37
+msgid "Сообщение"
+msgstr ""
+
+#: apps/courses/models/registrations.py:23
+msgid "Регистрация на курс"
+msgstr ""
+
+#: apps/courses/models/registrations.py:24
+msgid "Регистрации на курсы"
+msgstr ""
+
+#: apps/courses/models/registrations.py:40
+msgid "Заявка на контакт"
+msgstr ""
+
+#: apps/courses/models/registrations.py:41
+msgid "Заявки на контакт"
+msgstr ""
+
+#: apps/courses/models/testimonials.py:20
+msgid "Аватар"
+msgstr ""
+
+#: apps/courses/models/testimonials.py:21
+msgid "Текст отзыва"
+msgstr ""
+
+#: apps/courses/models/testimonials.py:32
+msgid "Отзыв"
+msgstr ""
+
+#: apps/courses/models/testimonials.py:33
+msgid "Отзывы"
+msgstr ""
+
+#: config/settings/base.py:114
+msgid "Uzbek"
+msgstr ""
+
+#: config/settings/base.py:115
+msgid "Russian"
+msgstr ""
+
+#: config/settings/base.py:116
+msgid "English"
+msgstr ""

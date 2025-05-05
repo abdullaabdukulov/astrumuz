@@ -1,4 +1,5 @@
 from django.contrib import admin
+from modeltranslation.admin import TranslationAdmin
 
 from .models import (
     Company,
@@ -15,9 +16,19 @@ from .models import (
 
 
 @admin.register(CourseCategory)
-class CourseCategoryAdmin(admin.ModelAdmin):
+class CourseCategoryAdmin(TranslationAdmin):
     list_display = ("name", "slug")
-    prepopulated_fields = {"slug": ("name",)}
+    prepopulated_fields = {"slug": ("name_ru",)}
+
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
 
 
 class CourseOutcomeInline(admin.TabularInline):
@@ -36,7 +47,7 @@ class CourseCompanyInline(admin.TabularInline):
 
 
 @admin.register(Course)
-class CourseAdmin(admin.ModelAdmin):
+class CourseAdmin(TranslationAdmin):
     list_display = (
         "title",
         "slug",
@@ -49,7 +60,7 @@ class CourseAdmin(admin.ModelAdmin):
     )
     list_filter = ("level", "category", "featured", "is_new")
     search_fields = ("title", "description")
-    prepopulated_fields = {"slug": ("title",)}
+    prepopulated_fields = {"slug": ("title_ru",)}
     inlines = [CourseOutcomeInline, CourseMentorInline, CourseCompanyInline]
     fieldsets = (
         (
@@ -84,37 +95,119 @@ class CourseAdmin(admin.ModelAdmin):
         ),
     )
 
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
+
+@admin.register(CourseOutcome)
+class CourseOutcomeAdmin(TranslationAdmin):
+    list_display = ("course", "text", "order")
+    list_filter = ("course",)
+    search_fields = ("text",)
+
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
 
 @admin.register(Mentor)
-class MentorAdmin(admin.ModelAdmin):
+class MentorAdmin(TranslationAdmin):
     list_display = ("name", "position")
     search_fields = ("name", "position")
 
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
 
 @admin.register(Company)
-class CompanyAdmin(admin.ModelAdmin):
+class CompanyAdmin(TranslationAdmin):
     list_display = ("name", "color")
     search_fields = ("name",)
 
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
 
 @admin.register(Testimonial)
-class TestimonialAdmin(admin.ModelAdmin):
+class TestimonialAdmin(TranslationAdmin):
     list_display = ("name", "position", "company", "course")
     list_filter = ("company", "course")
     search_fields = ("name", "text")
 
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
 
 @admin.register(CourseRegistration)
-class CourseRegistrationAdmin(admin.ModelAdmin):
+class CourseRegistrationAdmin(TranslationAdmin):
     list_display = ("name", "phone", "email", "course", "created_time")
     list_filter = ("course", "created_time")
     search_fields = ("name", "phone", "email")
     readonly_fields = ("created_time",)
 
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
 
 @admin.register(ContactRequest)
-class ContactRequestAdmin(admin.ModelAdmin):
+class ContactRequestAdmin(TranslationAdmin):
     list_display = ("name", "phone", "email", "created_time")
     list_filter = ("created_time",)
     search_fields = ("name", "phone", "email", "message")
     readonly_fields = ("created_time",)
+
+    class Media:
+        js = (
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+            "modeltranslation/js/tabbed_translation_fields.js",
+        )
+        css = {
+            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
+        }
+
+
+# Register the remaining models
+admin.site.register(CourseMentor)
+admin.site.register(CourseCompany)

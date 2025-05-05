@@ -1,3 +1,4 @@
+from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
@@ -37,11 +38,15 @@ schema_view = get_schema_view(
     generator_class=BothHttpAndHttpsSchemaGenerator,
 )
 
-urlpatterns = [path("default-admin-panel/", admin.site.urls)]
-
-urlpatterns += [
-    path("api/", include(("courses.urls", "courses"), "courses")),
+urlpatterns = [
+    path("default-admin-panel/", admin.site.urls),
+    path("i18n/", include("django.conf.urls.i18n")),
 ]
+
+urlpatterns += i18n_patterns(
+    path("api/", include("courses.urls")),
+    prefix_default_language=False,  # Don't include default language in URL
+)
 
 if django_settings_module == "development":
     urlpatterns += [
