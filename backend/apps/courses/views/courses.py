@@ -1,5 +1,15 @@
+from common.pagination import CoursePagination
 from common.utils.custom_response_decorator import custom_response
 from courses.models import Course, CourseCategory, CourseCompany, CourseMentor
+from courses.openapi_schema import (
+    course_category_list_schema,
+    course_category_retrieve_schema,
+    course_list_schema_decorator,
+    course_mentors_schema,
+    course_related_schema,
+    course_retrieve_schema,
+    course_testimonials_schema,
+)
 from courses.serializers import (
     CourseCategorySerializer,
     CourseDetailSerializer,
@@ -20,7 +30,16 @@ class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet, APIView):
 
     queryset = CourseCategory.objects.all()
     serializer_class = CourseCategorySerializer
+    pagination_class = CoursePagination
     lookup_field = "slug"
+
+    @course_category_list_schema
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    @course_category_retrieve_schema
+    def retrieve(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
 
 
 @custom_response
@@ -77,6 +96,11 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
 
         return queryset
 
+    @course_list_schema_decorator
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    @course_retrieve_schema
     def retrieve(self, request, *args, **kwargs):
         """
         Override retrieve method to prefetch related courses
@@ -97,6 +121,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
         serializer = self.get_serializer(instance, context=context)
         return Response(serializer.data)
 
+    @course_testimonials_schema
     @action(detail=True, methods=["get"])
     def testimonials(self, request, slug=None):
         """
@@ -108,6 +133,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
         serializer = TestimonialSerializer(testimonials, many=True)
         return Response(serializer.data)
 
+    @course_mentors_schema
     @action(detail=True, methods=["get"])
     def mentors(self, request, slug=None):
         """
@@ -120,6 +146,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
         serializer = MentorSerializer(mentors, many=True)
         return Response(serializer.data)
 
+    @course_related_schema
     @action(detail=True, methods=["get"])
     def related(self, request, slug=None):
         """

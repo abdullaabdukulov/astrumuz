@@ -24,14 +24,12 @@ class BothHttpAndHttpsSchemaGenerator(OpenAPISchemaGenerator):
 
 schema_view = get_schema_view(
     openapi.Info(
-        "astrumuz",
-        "v1.0",
-        'Project name: "astrumuz"',
-        contact=openapi.Contact(
-            name="astrum.uz",
-            url="https://astrum.uz",
-        ),
-        license=openapi.License(name="BSD License"),
+        title="Astrum Academy API",
+        default_version="v1",
+        description="API for Astrum IT Academy website",
+        terms_of_service="https://www.astrum.uz/terms/",
+        contact=openapi.Contact(email="info@astrum.uz"),
+        license=openapi.License(name="MIT License"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
