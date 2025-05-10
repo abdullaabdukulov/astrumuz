@@ -1,5 +1,6 @@
 from common.pagination import CoursePagination
 from common.utils.custom_response_decorator import custom_response
+from courses.mixins import SafeExtraActionViewSetMixin
 from courses.models import Course, CourseCategory, CourseCompany, CourseMentor
 from courses.openapi_schema import (
     course_category_list_schema,
@@ -43,7 +44,9 @@ class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet, APIView):
 
 
 @custom_response
-class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
+class CourseViewSet(
+    SafeExtraActionViewSetMixin, viewsets.ReadOnlyModelViewSet
+):
     """API endpoint for courses"""
 
     lookup_field = "slug"
@@ -123,7 +126,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
 
     @course_testimonials_schema
     @action(detail=True, methods=["get"])
-    def testimonials(self, request, slug=None):
+    def testimonials(self, request, *args, **kwargs):
         """
         Get testimonials for a specific course with optimized queries
         """
@@ -135,7 +138,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
 
     @course_mentors_schema
     @action(detail=True, methods=["get"])
-    def mentors(self, request, slug=None):
+    def mentors(self, request, *args, **kwargs):
         """
         Get mentors for a specific course with optimized queries
         """
@@ -148,7 +151,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet, APIView):
 
     @course_related_schema
     @action(detail=True, methods=["get"])
-    def related(self, request, slug=None):
+    def related(self, request, *args, **kwargs):
         """
         Get related courses with optimized queries
         """

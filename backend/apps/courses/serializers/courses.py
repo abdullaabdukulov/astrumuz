@@ -35,6 +35,9 @@ class CourseListSerializer(serializers.ModelSerializer):
             "category",
             "category_name",
         ]
+        extra_kwargs = {
+            "url": {"view_name": "course-detail", "lookup_field": "slug"}
+        }
 
 
 class CourseDetailSerializer(serializers.ModelSerializer):
