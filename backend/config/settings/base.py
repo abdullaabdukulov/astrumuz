@@ -117,7 +117,7 @@ LANGUAGES = (
 )
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = "uz"
-MODELTRANSLATION_LANGUAGES = ("uz", "ru")
+MODELTRANSLATION_LANGUAGES = ("uz", "ru", "en")
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, "locale"),
