@@ -1,5 +1,9 @@
 from django.contrib import admin
-from modeltranslation.admin import TranslationAdmin
+from modeltranslation.admin import (
+    TranslationAdmin,
+    TranslationStackedInline,
+    TranslationTabularInline,
+)
 
 from .models import (
     Company,
@@ -31,12 +35,12 @@ class CourseCategoryAdmin(TranslationAdmin):
         }
 
 
-class CourseOutcomeInline(admin.StackedInline):
+class CourseOutcomeInline(TranslationStackedInline):
     model = CourseOutcome
     extra = 1
 
 
-class CourseMentorInline(admin.StackedInline):
+class CourseMentorInline(TranslationTabularInline):
     model = CourseMentor
     extra = 1
 
