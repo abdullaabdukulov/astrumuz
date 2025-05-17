@@ -12,13 +12,6 @@ class Bitrix24Integration:
     Returns data in a format compatible with custom_response decorator.
     """
 
-    request_kwargs = {
-        "proxies": {
-            "http": settings.PROXY_SERVER,
-            "https": settings.PROXY_SERVER,
-        }
-    }
-
     @classmethod
     def format_error(
         cls, field: str, message: str, code: str = "ERROR"
@@ -72,9 +65,7 @@ class Bitrix24Integration:
             }
 
             response = requests.post(
-                settings.CONTACT_API_URL,
-                json=contact_data,
-                **cls.request_kwargs,
+                settings.CONTACT_API_URL, json=contact_data
             )
             response_data = response.json()
 
@@ -155,9 +146,7 @@ class Bitrix24Integration:
                 }
             }
 
-            response = requests.post(
-                settings.DEAL_API_URL, json=deal_data, **cls.request_kwargs
-            )
+            response = requests.post(settings.DEAL_API_URL, json=deal_data)
             response_data = response.json()
 
             if "result" in response_data and response_data["result"] > 0:
