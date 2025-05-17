@@ -31,17 +31,17 @@ class CourseCategoryAdmin(TranslationAdmin):
         }
 
 
-class CourseOutcomeInline(admin.TabularInline):
+class CourseOutcomeInline(admin.StackedInline):
     model = CourseOutcome
-    extra = 3
+    extra = 1
 
 
-class CourseMentorInline(admin.TabularInline):
+class CourseMentorInline(admin.StackedInline):
     model = CourseMentor
     extra = 1
 
 
-class CourseCompanyInline(admin.TabularInline):
+class CourseCompanyInline(admin.StackedInline):
     model = CourseCompany
     extra = 1
 
