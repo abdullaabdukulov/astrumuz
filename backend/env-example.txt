@@ -5,6 +5,8 @@ SECRET_KEY=your-secret-key-here
 
 DEAL_API_URL=
 CONTACT_API_URL=
+BITRIX24_DOMAIN=
+BITRIX24_USE_PROXY=
 
 # Allowed hosts (vergul bilan ajrating)
 ALLOWED_HOSTS=localhost,127.0.0.1
