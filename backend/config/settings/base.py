@@ -145,3 +145,4 @@ REST_FRAMEWORK = {
 
 CONTACT_API_URL = os.environ.get("CONTACT_API_URL")
 DEAL_API_URL = os.environ.get("DEAL_API_URL")
+PROXY_SERVER = os.environ.get("PROXY_SERVER")
