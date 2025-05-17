@@ -3,104 +3,43 @@ from typing import Any, Dict
 
 import requests
 from django.conf import settings
-from requests.exceptions import RequestException
 
 
 class Bitrix24Integration:
     """
-    Class for handling Bitrix24 CRM integration with direct connection.
+    Class for handling Bitrix24 CRM integration.
+    Provides methods to create contacts and deals in Bitrix24 CRM.
+    Returns data in a format compatible with custom_response decorator.
     """
 
     @classmethod
     def format_error(
         cls, field: str, message: str, code: str = "ERROR"
     ) -> Dict[str, str]:
-        """Format an error in the structure expected by custom_response"""
+        """
+        Format an error in the structure expected by custom_response
+
+        Args:
+            field: The field with the error
+            message: Error message
+            code: Error code
+
+        Returns:
+            dict: Formatted error
+        """
         return {"field": field, "message": message, "code": code}
 
     @classmethod
-    def make_direct_request(
-        cls, url: str, data: Dict[str, Any]
-    ) -> Dict[str, Any]:
+    def create_contact(cls, registration) -> Dict[str, Any]:
         """
-        Make a direct request to Bitrix24 API bypassing any proxy
+        Create a contact in Bitrix24 based on course registration data
 
         Args:
-            url: API endpoint URL
-            data: Request data
+            registration: CourseRegistration instance
 
         Returns:
             dict: Response with success flag, data and errors
         """
-        try:
-            # Create a new session that doesn't use any proxy
-            session = requests.Session()
-            session.trust_env = False  # Ignore environment variables for proxy
-
-            # Make the request with a timeout
-            response = session.post(url, json=data, timeout=30)
-
-            # Check for HTTP errors
-            response.raise_for_status()
-
-            # Parse response
-            response_data = response.json()
-
-            if "result" in response_data and response_data["result"] > 0:
-                return {
-                    "success": True,
-                    "data": {
-                        "id": response_data["result"],
-                        "time": response_data.get("time", {}),
-                    },
-                    "errors": [],
-                }
-            else:
-                error_msg = response_data.get(
-                    "error_description", "Unknown API error"
-                )
-                logging.error(f"Bitrix24 API error: {error_msg}")
-                return {
-                    "success": False,
-                    "data": {},
-                    "errors": [
-                        cls.format_error(
-                            "bitrix24", error_msg, "BITRIX24_API_ERROR"
-                        )
-                    ],
-                }
-
-        except RequestException as e:
-            logging.error(f"Request error to Bitrix24: {str(e)}")
-            return {
-                "success": False,
-                "data": {},
-                "errors": [
-                    cls.format_error(
-                        "bitrix24",
-                        f"Connection error: {str(e)}",
-                        "CONNECTION_ERROR",
-                    )
-                ],
-            }
-
-        except Exception as e:
-            logging.exception(f"Exception in Bitrix24 API request: {str(e)}")
-            return {
-                "success": False,
-                "data": {},
-                "errors": [
-                    cls.format_error(
-                        "bitrix24",
-                        f"Exception: {str(e)}",
-                        "BITRIX24_EXCEPTION",
-                    )
-                ],
-            }
-
-    @classmethod
-    def create_contact(cls, registration) -> Dict[str, Any]:
-        """Create a contact in Bitrix24 based on course registration data"""
         try:
             contact_data = {
                 "fields": {
@@ -125,15 +64,36 @@ class Bitrix24Integration:
                 }
             }
 
-            # Use direct request method
-            result = cls.make_direct_request(
-                settings.CONTACT_API_URL, contact_data
+            response = requests.post(
+                settings.CONTACT_API_URL, json=contact_data
             )
+            response_data = response.json()
 
-            if result["success"]:
-                result["data"]["contact_id"] = result["data"].pop("id")
-
-            return result
+            if "result" in response_data and response_data["result"] > 0:
+                return {
+                    "success": True,
+                    "data": {
+                        "contact_id": response_data["result"],
+                        "time": response_data.get("time", {}),
+                    },
+                    "errors": [],
+                }
+            else:
+                error_msg = response_data.get(
+                    "error_description", "Unknown error creating contact"
+                )
+                logging.exception(
+                    f"Bitrix24 contact creation failed: {error_msg}"
+                )
+                return {
+                    "success": False,
+                    "data": {},
+                    "errors": [
+                        cls.format_error(
+                            "bitrix24", error_msg, "BITRIX24_CONTACT_ERROR"
+                        )
+                    ],
+                }
 
         except Exception as e:
             logging.exception(f"Exception creating Bitrix24 contact: {str(e)}")
@@ -151,7 +111,16 @@ class Bitrix24Integration:
 
     @classmethod
     def create_deal(cls, registration, contact_id: int) -> Dict[str, Any]:
-        """Create a deal in Bitrix24 based on course registration data and contact ID"""
+        """
+        Create a deal in Bitrix24 based on course registration data and contact ID
+
+        Args:
+            registration: CourseRegistration instance
+            contact_id: ID of the contact in Bitrix24
+
+        Returns:
+            dict: Response with success flag, data and errors
+        """
         try:
             course = registration.course
 
@@ -159,7 +128,7 @@ class Bitrix24Integration:
                 "fields": {
                     "TITLE": f"{registration.last_name} {registration.first_name} - {course.title}",
                     "CONTACT_ID": contact_id,
-                    "CATEGORY_ID": course.bitrix_category_id,
+                    "CATEGORY_ID": course.bitrix_category_id,  # Using the course's Bitrix category ID
                     "COMMENTS": f"Registration from website. Course: {course.title}",
                     "UF_CRM_620E99B9D06E4": course.title,  # Направление обучения
                     "UF_CRM_676E46AB7683D": [
@@ -177,13 +146,34 @@ class Bitrix24Integration:
                 }
             }
 
-            # Use direct request method
-            result = cls.make_direct_request(settings.DEAL_API_URL, deal_data)
+            response = requests.post(settings.DEAL_API_URL, json=deal_data)
+            response_data = response.json()
 
-            if result["success"]:
-                result["data"]["deal_id"] = result["data"].pop("id")
-
-            return result
+            if "result" in response_data and response_data["result"] > 0:
+                return {
+                    "success": True,
+                    "data": {
+                        "deal_id": response_data["result"],
+                        "time": response_data.get("time", {}),
+                    },
+                    "errors": [],
+                }
+            else:
+                error_msg = response_data.get(
+                    "error_description", "Unknown error creating deal"
+                )
+                logging.exception(
+                    f"Bitrix24 deal creation failed: {error_msg}"
+                )
+                return {
+                    "success": False,
+                    "data": {},
+                    "errors": [
+                        cls.format_error(
+                            "bitrix24", error_msg, "BITRIX24_DEAL_ERROR"
+                        )
+                    ],
+                }
 
         except Exception as e:
             logging.exception(f"Exception creating Bitrix24 deal: {str(e)}")
@@ -201,7 +191,15 @@ class Bitrix24Integration:
 
     @classmethod
     def process_registration(cls, registration) -> Dict[str, Any]:
-        """Process a course registration by creating a contact and deal in Bitrix24"""
+        """
+        Process a course registration by creating a contact and deal in Bitrix24
+
+        Args:
+            registration: CourseRegistration instance
+
+        Returns:
+            dict: Result with success flag, data and errors
+        """
         contact_result = cls.create_contact(registration)
 
         if not contact_result["success"]:
