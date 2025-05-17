@@ -142,3 +142,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 REST_FRAMEWORK = {
     "EXCEPTION_HANDLER": "common.utils.custom_exception_handler.custom_exception_handler",  # noqa
 }
+
+CONTACT_API_URL = os.environ.get("CONTACT_API_URL")
+DEAL_API_URL = os.environ.get("DEAL_API_URL")

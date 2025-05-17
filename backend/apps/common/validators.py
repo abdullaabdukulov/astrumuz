@@ -1,8 +1,8 @@
 from django.core.validators import FileExtensionValidator, RegexValidator
 
 validate_telegram_username = RegexValidator(
-    regex=r"^@?[\w]{5,32}$",
-    message="Telegram username must be 5-32 characters long and can contain letters, numbers, and underscores, optionally starting with '@'",
+    regex=r"^@?[\w]+$",
+    message="Telegram username can contain letters, numbers, and underscores, optionally starting with '@'",
     code="WRONG_TELEGRAM_USERNAME",
 )
 

@@ -3,7 +3,7 @@ from .courses import CourseCategoryViewSet, CourseViewSet
 from .mentors import MentorViewSet
 from .registrations import (
     ContactRequestCreateView,
-    CourseRegistrationCreateView,
+    CourseRegistrationBitrixView,
 )
 from .testimonials import TestimonialViewSet
 
@@ -13,6 +13,6 @@ __all__ = [
     "MentorViewSet",
     "CompanyViewSet",
     "TestimonialViewSet",
-    "CourseRegistrationCreateView",
+    "CourseRegistrationBitrixView",
     "ContactRequestCreateView",
 ]

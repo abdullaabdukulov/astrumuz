@@ -19,7 +19,6 @@ class CourseRegistrationSerializer(serializers.ModelSerializer):
             "phone",
             "email",
             "telegram_username",
-            "message",
         ]
         extra_kwargs = {
             "telegram_username": {"required": False, "allow_blank": True},

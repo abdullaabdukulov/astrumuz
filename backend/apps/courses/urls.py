@@ -16,7 +16,7 @@ urlpatterns = [
     path("", include(router.urls)),
     path(
         "register/",
-        views.CourseRegistrationCreateView.as_view(),
+        views.CourseRegistrationBitrixView.as_view(),
         name="course-registration",
     ),
     path(

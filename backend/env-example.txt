@@ -3,6 +3,9 @@ DJANGO_SETTINGS_MODULE=config.settings.development
 DEBUG=True
 SECRET_KEY=your-secret-key-here
 
+DEAL_API_URL=
+CONTACT_API_URL=
+
 # Allowed hosts (vergul bilan ajrating)
 ALLOWED_HOSTS=localhost,127.0.0.1
 
