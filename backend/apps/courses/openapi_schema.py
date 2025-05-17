@@ -348,19 +348,40 @@ testimonial_detail_response = openapi.Schema(
     },
 )
 
-# Registration schemas
 course_registration_request = openapi.Schema(
     type=openapi.TYPE_OBJECT,
     properties={
         "course": openapi.Schema(type=openapi.TYPE_INTEGER),
-        "name": openapi.Schema(type=openapi.TYPE_STRING),
+        "last_name": openapi.Schema(type=openapi.TYPE_STRING),
+        "first_name": openapi.Schema(type=openapi.TYPE_STRING),
+        "middle_name": openapi.Schema(type=openapi.TYPE_STRING),
+        "birth_date": openapi.Schema(
+            type=openapi.TYPE_STRING, format=openapi.FORMAT_DATE
+        ),
+        "passport_series": openapi.Schema(type=openapi.TYPE_STRING),
+        "passport_number": openapi.Schema(type=openapi.TYPE_STRING),
+        "passport_image": openapi.Schema(
+            type=openapi.TYPE_STRING, format=openapi.FORMAT_BINARY
+        ),  # fayl uchun
+        "pinfl": openapi.Schema(type=openapi.TYPE_STRING),
         "phone": openapi.Schema(type=openapi.TYPE_STRING),
         "email": openapi.Schema(
             type=openapi.TYPE_STRING, format=openapi.FORMAT_EMAIL
         ),
+        "telegram_username": openapi.Schema(type=openapi.TYPE_STRING),
         "message": openapi.Schema(type=openapi.TYPE_STRING),
     },
-    required=["course", "name", "phone", "email"],
+    required=[
+        "course",
+        "last_name",
+        "first_name",
+        "birth_date",
+        "passport_series",
+        "passport_number",
+        "pinfl",
+        "phone",
+        "email",
+    ],
 )
 
 course_registration_response = openapi.Schema(

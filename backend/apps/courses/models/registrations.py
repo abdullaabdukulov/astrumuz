@@ -1,4 +1,12 @@
 from common.models import BaseModel
+from common.validators import (
+    image_common_extensions,
+    validate_passport_number,
+    validate_passport_series,
+    validate_phone,
+    validate_pinfl,
+    validate_telegram_username,
+)
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
@@ -23,19 +31,42 @@ class CourseRegistration(BaseModel):
     birth_date = models.DateField(_("Дата рождения"))
 
     # Passport
-    passport_series = models.CharField(_("Серия паспорта"), max_length=10)
-    passport_number = models.CharField(_("Номер паспорта"), max_length=20)
+    passport_series = models.CharField(
+        _("Серия паспорта"),
+        max_length=2,
+        validators=[validate_passport_series],
+    )
+    passport_number = models.CharField(
+        _("Номер паспорта"),
+        max_length=7,
+        validators=[validate_passport_number],
+    )
     passport_image = models.ImageField(
-        _("Скан паспорта"), upload_to="passport_scans/", blank=True, null=True
+        _("Скан паспорта"),
+        upload_to="passport_scans/",
+        blank=True,
+        null=True,
+        validators=[image_common_extensions],
     )
 
-    pinfl = models.CharField(_("ЖШШИР (PINFL)"), max_length=14)
+    pinfl = models.CharField(
+        _("ЖШШИР (PINFL)"),
+        max_length=14,
+        validators=[validate_pinfl],
+    )
 
     # Contact info
-    phone = models.CharField(_("Телефон"), max_length=20)
+    phone = models.CharField(
+        _("Телефон"),
+        max_length=20,
+        validators=[validate_phone],
+    )
     email = models.EmailField(_("Email"))
     telegram_username = models.CharField(
-        _("Telegram username"), max_length=100, blank=True
+        _("Telegram username"),
+        max_length=100,
+        blank=True,
+        validators=[validate_telegram_username],
     )
 
     class Meta:

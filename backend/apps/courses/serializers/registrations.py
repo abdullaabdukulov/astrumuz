@@ -5,7 +5,25 @@ from rest_framework import serializers
 class CourseRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = CourseRegistration
-        fields = ["id", "course", "name", "phone", "email", "message"]
+        fields = [
+            "id",
+            "course",
+            "last_name",
+            "first_name",
+            "middle_name",
+            "birth_date",
+            "passport_series",
+            "passport_number",
+            "passport_image",
+            "pinfl",
+            "phone",
+            "email",
+            "telegram_username",
+            "message",
+        ]
+        extra_kwargs = {
+            "telegram_username": {"required": False, "allow_blank": True},
+        }
 
     def validate_course(self, value):
         try:
