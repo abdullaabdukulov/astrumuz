@@ -2,7 +2,6 @@ from django.contrib import admin
 from modeltranslation.admin import (
     TranslationAdmin,
     TranslationStackedInline,
-    TranslationTabularInline,
 )
 
 from .models import (
@@ -40,7 +39,7 @@ class CourseOutcomeInline(TranslationStackedInline):
     extra = 1
 
 
-class CourseMentorInline(TranslationTabularInline):
+class CourseMentorInline(admin.TabularInline):
     model = CourseMentor
     extra = 1
 
