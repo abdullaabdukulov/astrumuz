@@ -1,5 +1,2423 @@
 [
   {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-05-09T07:59:06.527Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Корпоративное",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-05-09T07:59:18.964Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Корпоративное",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-05-09T07:59:39.997Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Академия",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-05-09T07:59:53.805Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Академия",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-05-10T02:35:50.481Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-05-10T08:33:13.788Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-05-10T19:04:46.626Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2025-05-10T19:05:03.143Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2025-05-16T08:35:11.840Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "test - 2025-05-10",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2025-05-16T08:35:11.840Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Quon Best - 2025-05-10",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2025-05-16T08:35:11.841Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Colette Church - 2025-05-10",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2025-05-16T08:35:11.841Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Abdulla Abdukulov - 2025-05-10",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "68",
+      "object_repr": "Корпоративная кибербезопасность - Lenovo",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "67",
+      "object_repr": "Корпоративная кибербезопасность - Apple",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "66",
+      "object_repr": "Корпоративная кибербезопасность - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "65",
+      "object_repr": "Корпоративная кибербезопасность - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "64",
+      "object_repr": "Корпоративная кибербезопасность - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "63",
+      "object_repr": "Корпоративный Python для аналитиков - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "62",
+      "object_repr": "Корпоративный Python для аналитиков - Apple",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "61",
+      "object_repr": "Корпоративный Python для аналитиков - Lenovo",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.569Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "60",
+      "object_repr": "3D Max & Interior Design - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "59",
+      "object_repr": "3D Max & Interior Design - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "58",
+      "object_repr": "3D Max & Interior Design - Microsoft",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "57",
+      "object_repr": "3D Max & Interior Design - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "56",
+      "object_repr": "3D Max & Interior Design - YouTube",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "55",
+      "object_repr": "React.js Frontend Developer - Google",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "54",
+      "object_repr": "React.js Frontend Developer - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "53",
+      "object_repr": "React.js Frontend Developer - Microsoft",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "52",
+      "object_repr": "React.js Frontend Developer - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "51",
+      "object_repr": "C# .Net Backend Developer - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "50",
+      "object_repr": "C# .Net Backend Developer - Lenovo",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "49",
+      "object_repr": "C# .Net Backend Developer - YouTube",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.570Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "48",
+      "object_repr": "C# .Net Backend Developer - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.571Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "47",
+      "object_repr": "C# .Net Backend Developer - Apple",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.571Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "46",
+      "object_repr": "Node.js Backend Developer - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.571Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "45",
+      "object_repr": "Node.js Backend Developer - Lenovo",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.571Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "44",
+      "object_repr": "Node.js Backend Developer - Uber",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.571Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "43",
+      "object_repr": "Node.js Backend Developer - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.571Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "42",
+      "object_repr": "PHP (Laravel) Backend Developer - Apple",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.573Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "41",
+      "object_repr": "PHP (Laravel) Backend Developer - Google",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.574Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "40",
+      "object_repr": "PHP (Laravel) Backend Developer - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.574Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "39",
+      "object_repr": "PHP (Laravel) Backend Developer - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.574Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "38",
+      "object_repr": "Python Django Backend Developer - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.574Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "37",
+      "object_repr": "Python Django Backend Developer - Apple",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.575Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "36",
+      "object_repr": "Python Django Backend Developer - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2025-05-16T08:35:45.575Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "35",
+      "object_repr": "Python Django Backend Developer - Microsoft",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "57",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "49",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "41",
+      "object_repr": "3D Max & Interior Design - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "33",
+      "object_repr": "React.js Frontend Developer - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "25",
+      "object_repr": "C# .Net Backend Developer - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "17",
+      "object_repr": "Node.js Backend Developer - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "9",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Python Django Backend Developer - Outcome 0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "58",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "50",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.459Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "42",
+      "object_repr": "3D Max & Interior Design - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "34",
+      "object_repr": "React.js Frontend Developer - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "26",
+      "object_repr": "C# .Net Backend Developer - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "18",
+      "object_repr": "Node.js Backend Developer - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "10",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "Python Django Backend Developer - Outcome 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "59",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "51",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "43",
+      "object_repr": "3D Max & Interior Design - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "35",
+      "object_repr": "React.js Frontend Developer - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "27",
+      "object_repr": "C# .Net Backend Developer - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "19",
+      "object_repr": "Node.js Backend Developer - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "11",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.460Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "Python Django Backend Developer - Outcome 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "60",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "52",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "44",
+      "object_repr": "3D Max & Interior Design - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "36",
+      "object_repr": "React.js Frontend Developer - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "28",
+      "object_repr": "C# .Net Backend Developer - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "20",
+      "object_repr": "Node.js Backend Developer - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "12",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "Python Django Backend Developer - Outcome 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "61",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "53",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "45",
+      "object_repr": "3D Max & Interior Design - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.461Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "37",
+      "object_repr": "React.js Frontend Developer - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "29",
+      "object_repr": "C# .Net Backend Developer - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "21",
+      "object_repr": "Node.js Backend Developer - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "13",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "Python Django Backend Developer - Outcome 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "62",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "54",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "46",
+      "object_repr": "3D Max & Interior Design - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "38",
+      "object_repr": "React.js Frontend Developer - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "30",
+      "object_repr": "C# .Net Backend Developer - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "22",
+      "object_repr": "Node.js Backend Developer - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "14",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "6",
+      "object_repr": "Python Django Backend Developer - Outcome 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.462Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "63",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "55",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "47",
+      "object_repr": "3D Max & Interior Design - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "39",
+      "object_repr": "React.js Frontend Developer - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "31",
+      "object_repr": "C# .Net Backend Developer - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "23",
+      "object_repr": "Node.js Backend Developer - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "15",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Python Django Backend Developer - Outcome 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.463Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "64",
+      "object_repr": "Корпоративная кибербезопасность - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "56",
+      "object_repr": "Корпоративный Python для аналитиков - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "48",
+      "object_repr": "3D Max & Interior Design - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "40",
+      "object_repr": "React.js Frontend Developer - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "32",
+      "object_repr": "C# .Net Backend Developer - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "24",
+      "object_repr": "Node.js Backend Developer - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "16",
+      "object_repr": "PHP (Laravel) Backend Developer - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2025-05-16T08:36:16.464Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "Python Django Backend Developer - Outcome 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2025-05-16T08:36:30.930Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "Abdulla Abdukulov - Корпоративная кибербезопасность",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2025-05-16T08:36:30.930Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "test - Корпоративная кибербезопасность",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2025-05-16T08:36:30.930Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Abdulla Abdukulov - Корпоративная кибербезопасность",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.386Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "52",
+      "object_repr": "Гай Хокинс - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.386Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "51",
+      "object_repr": "Аннет Блэк - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.386Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "50",
+      "object_repr": "Эстер Ховард - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "49",
+      "object_repr": "Эстер Ховард - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "48",
+      "object_repr": "Гай Хокинс - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "47",
+      "object_repr": "Алексей Смирнов - YouTube",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "46",
+      "object_repr": "Камерон Уильямсон - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "45",
+      "object_repr": "Лесли Александр - Google",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "44",
+      "object_repr": "Екатерина Иванова - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "43",
+      "object_repr": "Эстер Ховард - Microsoft",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "42",
+      "object_repr": "Камерон Уильямсон - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "41",
+      "object_repr": "Джейкоб Джонс - Uber",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "40",
+      "object_repr": "Джейкоб Джонс - Apple",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "39",
+      "object_repr": "Лесли Александр - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "38",
+      "object_repr": "Екатерина Иванова - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "37",
+      "object_repr": "Екатерина Иванова - Microsoft",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "36",
+      "object_repr": "Дженни Уилсон - Google",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "35",
+      "object_repr": "Дженни Уилсон - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "34",
+      "object_repr": "Гай Хокинс - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.387Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "33",
+      "object_repr": "Алексей Смирнов - YouTube",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "32",
+      "object_repr": "Камерон Уильямсон - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "31",
+      "object_repr": "Камерон Уильямсон - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "30",
+      "object_repr": "Аннет Блэк - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "29",
+      "object_repr": "Лесли Александр - Amazon",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "28",
+      "object_repr": "Дженни Уилсон - Uber",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "27",
+      "object_repr": "Джейкоб Джонс - Slack",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "26",
+      "object_repr": "Гай Хокинс - Airbnb",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+      "action_time": "2025-05-16T08:36:48.388Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "25",
+      "object_repr": "Аннет Блэк - Netflix",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+      "action_time": "2025-05-16T08:37:00.241Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "12",
+      "object_repr": "3D Max & Interior Design - Исмаилова Диёра",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+      "action_time": "2025-05-16T08:37:00.241Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "11",
+      "object_repr": "Node.js Backend Developer - Рахимов Тимур",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+      "action_time": "2025-05-16T08:37:00.241Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "10",
+      "object_repr": "React.js Frontend Developer - Каримова Нилуфар",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+      "action_time": "2025-05-16T08:37:00.241Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "9",
+      "object_repr": "Python Django Backend Developer - Алимов Бобур",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+      "action_time": "2025-05-16T08:37:00.241Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "PHP (Laravel) Backend Developer - Шомуродов Сарвар",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+      "action_time": "2025-05-16T08:37:00.241Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "PHP (Laravel) Backend Developer - Шукуров Жасур",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+      "action_time": "2025-05-16T08:37:10.943Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "Исмаилова Диёра",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+      "action_time": "2025-05-16T08:37:10.943Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "Рахимов Тимур",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+      "action_time": "2025-05-16T08:37:10.943Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Каримова Нилуфар",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+      "action_time": "2025-05-16T08:37:10.943Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Алимов Бобур",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+      "action_time": "2025-05-16T08:37:10.943Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Шомуродов Сарвар",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+      "action_time": "2025-05-16T08:37:10.943Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Шукуров Жасур",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "Корпоративная кибербезопасность",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "Корпоративный Python для аналитиков",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "3D Max & Interior Design",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "React.js Frontend Developer",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "C# .Net Backend Developer",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Node.js Backend Developer",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "PHP (Laravel) Backend Developer",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+      "action_time": "2025-05-16T08:37:23.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Python Django Backend Developer",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+      "action_time": "2025-05-16T08:54:55.550Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Корпоративное",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+      "action_time": "2025-05-16T08:55:04.289Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Академия",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+      "action_time": "2025-05-16T09:17:16.150Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+      "action_time": "2025-05-16T09:18:09.811Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u044c [ru]\", \"\\u041f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u044c [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+      "action_time": "2025-05-16T09:32:22.410Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u044c [uz]\", \"\\u041f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u044c [ru]\", \"\\u041f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u044c [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+      "action_time": "2025-05-16T09:39:04.279Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+      "action_time": "2025-05-16T09:46:22.926Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0427\\u0435\\u043c\\u0443 \\u0432\\u044b \\u043d\\u0430\\u0443\\u0447\\u0438\\u0442\\u0435\\u0441\\u044c [uz]\", \"\\u0427\\u0430\\u0441\\u044b \\u0432\\u0438\\u0434\\u0435\\u043e\", \"\\u0423\\u043f\\u0440\\u0430\\u0436\\u043d\\u0435\\u043d\\u0438\\u044f \\u043f\\u043e \\u043a\\u043e\\u0434\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u0438\\u044e\", \"\\u0421\\u0442\\u0430\\u0442\\u044c\\u0438\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+      "action_time": "2025-05-16T09:47:36.163Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0427\\u0435\\u043c\\u0443 \\u0432\\u044b \\u043d\\u0430\\u0443\\u0447\\u0438\\u0442\\u0435\\u0441\\u044c [uz]\", \"\\u0427\\u0435\\u043c\\u0443 \\u0432\\u044b \\u043d\\u0430\\u0443\\u0447\\u0438\\u0442\\u0435\\u0441\\u044c [ru]\", \"\\u0427\\u0435\\u043c\\u0443 \\u0432\\u044b \\u043d\\u0430\\u0443\\u0447\\u0438\\u0442\\u0435\\u0441\\u044c [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+      "action_time": "2025-05-17T03:19:15.682Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442 \\u043e\\u0431\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Outcome 0\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+      "action_time": "2025-05-17T03:21:11.535Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442 \\u043e\\u0431\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Outcome 2\"}}, {\"added\": {\"name\": \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442 \\u043e\\u0431\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Outcome 3\"}}, {\"added\": {\"name\": \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442 \\u043e\\u0431\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Outcome 4\"}}, {\"changed\": {\"name\": \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442 \\u043e\\u0431\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Outcome 1\", \"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+      "action_time": "2025-05-17T03:43:14.710Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "Азизбек Исроилов",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+      "action_time": "2025-05-17T03:43:16.114Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "Азизбек Исроилов",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+      "action_time": "2025-05-17T03:43:48.364Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"\\u041c\\u0435\\u043d\\u0442\\u043e\\u0440 \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - \\u0410\\u0437\\u0438\\u0437\\u0431\\u0435\\u043a \\u0418\\u0441\\u0440\\u043e\\u0438\\u043b\\u043e\\u0432\"}}, {\"added\": {\"name\": \"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u044f \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Google\"}}, {\"added\": {\"name\": \"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u044f \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - YouTube\"}}, {\"added\": {\"name\": \"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u044f \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Amazon\"}}, {\"added\": {\"name\": \"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u044f \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Netflix\"}}, {\"added\": {\"name\": \"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u044f \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Microsoft\"}}, {\"added\": {\"name\": \"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u044f \\u043a\\u0443\\u0440\\u0441\\u0430\", \"object\": \"\\u041a\\u0443\\u0440\\u0441 PHP - Apple\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+      "action_time": "2025-05-17T03:44:46.798Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Google",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+      "action_time": "2025-05-17T03:45:58.479Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Microsoft",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+      "action_time": "2025-05-17T03:46:47.173Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Microsoft",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\", \"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+      "action_time": "2025-05-17T03:47:02.153Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Apple",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\", \"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+      "action_time": "2025-05-17T03:47:10.755Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Google",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\", \"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 180,
+    "fields": {
+      "action_time": "2025-05-17T03:47:51.226Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "YouTube",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\", \"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\", \"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 181,
+    "fields": {
+      "action_time": "2025-05-17T03:48:28.703Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Apple",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 182,
+    "fields": {
+      "action_time": "2025-05-17T03:49:29.073Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Netflix",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\", \"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\", \"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 183,
+    "fields": {
+      "action_time": "2025-05-17T03:50:06.384Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Amazon",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [uz]\", \"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 [en]\", \"\\u041b\\u043e\\u0433\\u043e\\u0442\\u0438\\u043f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 184,
+    "fields": {
+      "action_time": "2025-05-17T04:09:59.539Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "aziz",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 185,
+    "fields": {
+      "action_time": "2025-05-17T04:10:28.633Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "aziz",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 186,
+    "fields": {
+      "action_time": "2025-05-17T06:43:23.518Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Курс PHP",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Bitrix \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f ID\"]}}]"
+    }
+  },
+  {
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -576,6 +2994,42 @@
     }
   },
   {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$txMJIfHy0xwYTu1FamE7rY$u+tHMc5/g+SvvHDNz73E+PCMzKoblbSIFj42j4W+Zaw=",
+      "last_login": "2025-05-12T07:50:34.194Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-05-05T16:15:16.381Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$RtFw72Fe7tCla0cGhzru0l$lklyWlEvbuC1pEBg8UMQ9GgyzMvMDIdm4X0C0O8Cc5A=",
+      "last_login": "2025-05-17T04:10:50.919Z",
+      "is_superuser": true,
+      "username": "aziz",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-05-17T04:09:58Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -704,15 +3158,40 @@
     }
   },
   {
+    "model": "sessions.session",
+    "pk": "eoxkg2h9y6egb89nr47wkf9irwfctgko",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAoUMCle89AhplBqoYmpV0Z765NutDtf-_9l0iwrTVtnZc0kTgLLU6_WwZ8cNsB3aHdZolzW5cpy12RB-3yOhM_L4f7d1Ch1289MBsXLbMnNDhoCrYUDEh5BMyW1IiqkDZUnHPem6JzAAYdIQajVBTvDxSDOMQ:1uByc2:EmhcQiK_NadLDMx4i2N3fQuPN_2D-s15qlCu4ZJRVXM",
+      "expire_date": "2025-05-19T16:24:14.759Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "g483ag6eiyi1puuydp8apz5p73r58g2a",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAoUMCle89AhplBqoYmpV0Z765NutDtf-_9l0iwrTVtnZc0kTgLLU6_WwZ8cNsB3aHdZolzW5cpy12RB-3yOhM_L4f7d1Ch1289MBsXLbMnNDhoCrYUDEh5BMyW1IiqkDZUnHPem6JzAAYdIQajVBTvDxSDOMQ:1uENvm:-c29N2ZZzMooifpN4TLq1vT2LmnZRtsFOj00A-Omq4Y",
+      "expire_date": "2025-05-26T07:50:34.217Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "w8p59vo407s24t08zd5vd3pe46rkv360",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAUBf-FtSECpdy6dO83NHAfUjWQlHZl_HdD0oVuz8yct5rjvuV5b7zOC6mLsur0u6WITy4d0COWe9VYy7YuSXdFH7TpWyV-XQ_37yDHlnttBcDzYNGlBC4Q8YhCSQTZgovGoZ8SBDBGiIVCHNzkPcEo1vszqs8XFTM43A:1uG8ss:2E_FpWCya7WUpxozE23VDjYRkd7ddI7UN_66ffzmWwE",
+      "expire_date": "2025-05-31T04:10:50.943Z"
+    }
+  },
+  {
     "model": "courses.coursecategory",
     "pk": 1,
     "fields": {
-      "guid": "544214af-724c-44da-beae-686cd101e70a",
-      "created_time": "2025-05-05T15:50:59.962Z",
-      "updated_time": "2025-05-05T15:50:59.962Z",
+      "guid": "a4523004-1415-44ad-989b-a31b2842f57c",
+      "created_time": "2025-05-05T16:15:12.945Z",
+      "updated_time": "2025-05-16T08:55:04.271Z",
       "name": "Академия",
-      "name_uz": null,
+      "name_uz": "Akademiya",
       "name_ru": "Академия",
+      "name_en": "Academy",
       "slug": "academy"
     }
   },
@@ -720,12 +3199,13 @@
     "model": "courses.coursecategory",
     "pk": 2,
     "fields": {
-      "guid": "993b5b20-e46e-4acb-9a0c-e0971bf2570c",
-      "created_time": "2025-05-05T15:50:59.972Z",
-      "updated_time": "2025-05-05T15:50:59.972Z",
+      "guid": "d641ad58-c3f8-4ebb-9a2d-1141eae7ba9f",
+      "created_time": "2025-05-05T16:15:12.970Z",
+      "updated_time": "2025-05-16T08:54:55.544Z",
       "name": "Корпоративное",
-      "name_uz": null,
+      "name_uz": "Korporativ",
       "name_ru": "Корпоративное",
+      "name_en": "Corporate",
       "slug": "corporate"
     }
   },
@@ -733,1181 +3213,114 @@
     "model": "courses.course",
     "pk": 1,
     "fields": {
-      "guid": "bb01f5f8-7828-4e7a-9622-6f015b13ad22",
-      "created_time": "2025-05-05T15:50:59.978Z",
-      "updated_time": "2025-05-05T15:50:59.978Z",
-      "title": "Python Django Backend Developer",
-      "title_uz": null,
-      "title_ru": "Python Django Backend Developer",
-      "slug": "python-django",
-      "description": "Погрузитесь в мир Python и Django! Изучите основы языка Python и фреймворка Django для создания мощных веб-приложений.",
-      "description_uz": null,
-      "description_ru": "Погрузитесь в мир Python и Django! Изучите основы языка Python и фреймворка Django для создания мощных веб-приложений.",
-      "icon": "",
-      "icon_type": "python",
-      "level": "beginner",
-      "level_uz": "beginner",
-      "level_ru": "beginner",
-      "duration": "8-12 месяцев",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "8-12 месяцев",
-      "featured": false,
-      "is_new": true,
-      "category": 1,
-      "what_will_learn": "Изучите Python с нуля, освойте Django фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите Python с нуля, освойте Django фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
-      "video_hours": 65,
-      "coding_exercises": 42,
-      "articles": 35,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 2,
-    "fields": {
-      "guid": "12ee90e4-e877-43c1-aa56-7e7ee3d9a092",
-      "created_time": "2025-05-05T15:51:00.003Z",
-      "updated_time": "2025-05-05T15:51:00.003Z",
-      "title": "PHP (Laravel) Backend Developer",
-      "title_uz": null,
-      "title_ru": "PHP (Laravel) Backend Developer",
-      "slug": "php-laravel",
-      "description": "Станьте профессиональным PHP разработчиком! Изучите основы PHP и фреймворк Laravel для создания современных веб-приложений.",
-      "description_uz": null,
-      "description_ru": "Станьте профессиональным PHP разработчиком! Изучите основы PHP и фреймворк Laravel для создания современных веб-приложений.",
-      "icon": "",
+      "guid": "72b5fce2-ca29-47a6-a340-d2df5e926312",
+      "created_time": "2025-05-16T09:17:16.110Z",
+      "updated_time": "2025-05-17T06:43:23.510Z",
+      "title": "Курс PHP",
+      "title_uz": "Php kursi",
+      "title_ru": "Курс PHP",
+      "title_en": "PHP Course",
+      "slug": "kurs-php",
+      "description": "Курс по изучению PHP для веб-разработки",
+      "description_uz": "Veb dasturlash uchun backend tilini o‘rganish kursi",
+      "description_ru": "Курс по изучению PHP для веб-разработки",
+      "description_en": "A course to learn backend development with PHP",
+      "icon": "courses/icons/PHP-logo.svg.png",
       "icon_type": "php",
       "level": "beginner",
-      "level_uz": "beginner",
+      "level_uz": "intermediate",
       "level_ru": "beginner",
+      "level_en": "beginner",
       "duration": "8-12 месяцев",
-      "duration_uz": "8-12 месяцев",
+      "duration_uz": "8-12 oy",
       "duration_ru": "8-12 месяцев",
-      "featured": false,
-      "is_new": false,
-      "category": 1,
-      "what_will_learn": "Изучите PHP с нуля, освойте Laravel фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите PHP с нуля, освойте Laravel фреймворк, научитесь работать с базами данных, создавать API и многое другое.",
-      "video_hours": 70,
-      "coding_exercises": 45,
-      "articles": 30,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 3,
-    "fields": {
-      "guid": "dd2ade9b-1d7d-4a99-b3f2-b2f7120bd8f0",
-      "created_time": "2025-05-05T15:51:00.028Z",
-      "updated_time": "2025-05-05T15:51:00.028Z",
-      "title": "Node.js Backend Developer",
-      "title_uz": null,
-      "title_ru": "Node.js Backend Developer",
-      "slug": "nodejs",
-      "description": "Изучите Node.js и станьте востребованным backend разработчиком! Создавайте масштабируемые и высокопроизводительные приложения.",
-      "description_uz": null,
-      "description_ru": "Изучите Node.js и станьте востребованным backend разработчиком! Создавайте масштабируемые и высокопроизводительные приложения.",
-      "icon": "",
-      "icon_type": "node",
-      "level": "beginner",
-      "level_uz": "beginner",
-      "level_ru": "beginner",
-      "duration": "8-12 месяцев",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "8-12 месяцев",
-      "featured": false,
+      "duration_en": "8-12 month",
+      "featured": true,
       "is_new": true,
       "category": 1,
-      "what_will_learn": "Изучите JavaScript и Node.js, освойте Express.js, научитесь работать с MongoDB, создавать RESTful API и многое другое.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите JavaScript и Node.js, освойте Express.js, научитесь работать с MongoDB, создавать RESTful API и многое другое.",
-      "video_hours": 68,
-      "coding_exercises": 40,
-      "articles": 32,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 4,
-    "fields": {
-      "guid": "c2a8b069-6a58-4536-973e-04f10325ddfb",
-      "created_time": "2025-05-05T15:51:00.052Z",
-      "updated_time": "2025-05-05T15:51:00.052Z",
-      "title": "C# .Net Backend Developer",
-      "title_uz": null,
-      "title_ru": "C# .Net Backend Developer",
-      "slug": "csharp-dotnet",
-      "description": "Освойте C# и .NET для создания мощных корпоративных пр��ложений! Изучите основы языка C# и платформы .NET.",
-      "description_uz": null,
-      "description_ru": "Освойте C# и .NET для создания мощных корпоративных пр��ложений! Изучите основы языка C# и платформы .NET.",
-      "icon": "",
-      "icon_type": "csharp",
-      "level": "beginner",
-      "level_uz": "beginner",
-      "level_ru": "beginner",
-      "duration": "8-12 месяцев",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "8-12 месяцев",
-      "featured": true,
-      "is_new": false,
-      "category": 1,
-      "what_will_learn": "Изучите C# с нуля, освойте .NET Core, научитесь работать с SQL Server, создавать веб-приложения с ASP.NET и многое другое.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите C# с нуля, освойте .NET Core, научитесь работать с SQL Server, создавать веб-приложения с ASP.NET и многое другое.",
-      "video_hours": 75,
-      "coding_exercises": 50,
-      "articles": 40,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 5,
-    "fields": {
-      "guid": "52617700-7fb8-4227-a523-0c1f8b771043",
-      "created_time": "2025-05-05T15:51:00.078Z",
-      "updated_time": "2025-05-05T15:51:00.078Z",
-      "title": "React.js Frontend Developer",
-      "title_uz": null,
-      "title_ru": "React.js Frontend Developer",
-      "slug": "react",
-      "description": "Погрузитесь и изучите React.js с нуля! Изучите React, Hooks, Redux, React Router, Next.js, лучшие практики и многое другое!",
-      "description_uz": null,
-      "description_ru": "Погрузитесь и изучите React.js с нуля! Изучите React, Hooks, Redux, React Router, Next.js, лучшие практики и многое другое!",
-      "icon": "",
-      "icon_type": "react",
-      "level": "beginner",
-      "level_uz": "beginner",
-      "level_ru": "beginner",
-      "duration": "8-12 месяцев",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "8-12 месяцев",
-      "featured": false,
-      "is_new": false,
-      "category": 1,
-      "what_will_learn": "Изучите React с нуля, освойте Hooks, Redux, React Router, научитесь создавать современные пользовательские интерфейсы и многое другое.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите React с нуля, освойте Hooks, Redux, React Router, научитесь создавать современные пользовательские интерфейсы и многое другое.",
-      "video_hours": 71,
-      "coding_exercises": 37,
-      "articles": 47,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 6,
-    "fields": {
-      "guid": "c448c672-48ef-4924-adab-14d3e3e500f9",
-      "created_time": "2025-05-05T15:51:00.103Z",
-      "updated_time": "2025-05-05T15:51:00.103Z",
-      "title": "3D Max & Interior Design",
-      "title_uz": null,
-      "title_ru": "3D Max & Interior Design",
-      "slug": "3d-max",
-      "description": "Станьте профессиональным 3D дизайнером! Изучите 3D Max и создавайте потрясающие интерьеры и визуализации.",
-      "description_uz": null,
-      "description_ru": "Станьте профессиональным 3D дизайнером! Изучите 3D Max и создавайте потрясающие интерьеры и визуализации.",
-      "icon": "",
-      "icon_type": "3d",
-      "level": "beginner",
-      "level_uz": "beginner",
-      "level_ru": "beginner",
-      "duration": "8-12 месяцев",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "8-12 месяцев",
-      "featured": false,
-      "is_new": false,
-      "category": 1,
-      "what_will_learn": "Изучите 3D Max с нуля, освойте моделирование, текстурирование, освещение, рендеринг и многое другое.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите 3D Max с нуля, освойте моделирование, текстурирование, освещение, рендеринг и многое другое.",
+      "bitrix_category_id": 32,
+      "what_will_learn": "Писать скрипты на языке PHP — от простых до динамически генерируемых страниц.\r\n\r\nИспользовать формы и обрабатывать данные с помощью GET и POST запросов.\r\n\r\nРаботать с базами данных (MySQL): подключение, создание таблиц, выполнение CRUD-операций.\r\n\r\nСоздавать простые веб-приложения: блог, регистрация, авторизация.\r\n\r\nРаботать с сессиями, куки и управлением состоянием пользователя.\r\n\r\nПонимать основы безопасности веб-приложений: защита от SQL-инъекций, XSS.\r\n\r\nИспользовать ООП (объектно-ориентированное программирование) в PHP.\r\n\r\nСоздавать полноценный backend для сайта без фреймворков.\r\n\r\nПолучите базовое представление о Laravel — современном PHP-фреймворке.\r\n\r\nРазрабатывать и разворачивать PHP-проекты на локальном сервере (XAMPP, WAMP, MAMP).",
+      "what_will_learn_uz": "PHP tilida dasturlar yozishni — oddiydan dinamik sahifalargacha.\r\n\r\nHTML formalar bilan ishlash va GET/POST so‘rovlarini qayta ishlash.\r\n\r\nMa’lumotlar bazasi (MySQL) bilan ishlash: ulanish, jadval yaratish, CRUD amallar.\r\n\r\nSodda web-ilovalar yaratish: blog, ro‘yxatdan o‘tish, tizimga kirish.\r\n\r\nSession va cookie’lar bilan ishlash, foydalanuvchi holatini boshqarish.\r\n\r\nVeb xavfsizlik asoslari: SQL injection, XSS va ulardan himoyalanish.\r\n\r\nPHP’da obyektga yo‘naltirilgan dasturlash (OOP) asoslari.\r\n\r\nFrameworklarsiz to‘liq backend yaratish ko‘nikmasi.\r\n\r\nLaravel bilan tanishish — zamonaviy PHP framework.\r\n\r\nPHP loyihalarini lokal serverda (XAMPP, WAMP) ishlab chiqish va ishga tushurish.",
+      "what_will_learn_ru": "Писать скрипты на языке PHP — от простых до динамически генерируемых страниц.\r\n\r\nИспользовать формы и обрабатывать данные с помощью GET и POST запросов.\r\n\r\nРаботать с базами данных (MySQL): подключение, создание таблиц, выполнение CRUD-операций.\r\n\r\nСоздавать простые веб-приложения: блог, регистрация, авторизация.\r\n\r\nРаботать с сессиями, куки и управлением состоянием пользователя.\r\n\r\nПонимать основы безопасности веб-приложений: защита от SQL-инъекций, XSS.\r\n\r\nИспользовать ООП (объектно-ориентированное программирование) в PHP.\r\n\r\nСоздавать полноценный backend для сайта без фреймворков.\r\n\r\nПолучите базовое представление о Laravel — современном PHP-фреймворке.\r\n\r\nРазрабатывать и разворачивать PHP-проекты на локальном сервере (XAMPP, WAMP, MAMP).",
+      "what_will_learn_en": "Write programs in PHP — from simple scripts to dynamic pages.\r\n\r\nWork with HTML forms and handle GET/POST requests.\r\n\r\nUse databases (MySQL): connect, create tables, perform CRUD operations.\r\n\r\nBuild simple web applications: blog, registration, login system.\r\n\r\nWork with sessions and cookies to manage user state.\r\n\r\nUnderstand web security basics: prevent SQL injections, XSS attacks.\r\n\r\nApply object-oriented programming (OOP) principles in PHP.\r\n\r\nCreate full backend applications without using a framework.\r\n\r\nGet an introduction to Laravel — a modern PHP framework.\r\n\r\nDevelop and deploy PHP projects on local servers (XAMPP, WAMP, MAMP).",
       "video_hours": 80,
-      "coding_exercises": 0,
-      "articles": 25,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 7,
-    "fields": {
-      "guid": "2c6890f4-f62c-4769-af53-758accf3959c",
-      "created_time": "2025-05-05T15:51:00.128Z",
-      "updated_time": "2025-05-05T15:51:00.128Z",
-      "title": "Корпоративный Python для аналитиков",
-      "title_uz": null,
-      "title_ru": "Корпоративный Python для аналитиков",
-      "slug": "corporate-python-analytics",
-      "description": "Специализированный курс Python для корпоративных аналитиков. Научитесь обрабатывать и визуализировать данные.",
-      "description_uz": null,
-      "description_ru": "Специализированный курс Python для корпоративных аналитиков. Научитесь обрабатывать и визуализировать данные.",
-      "icon": "",
-      "icon_type": "python",
-      "level": "intermediate",
-      "level_uz": "beginner",
-      "level_ru": "intermediate",
-      "duration": "3-4 месяца",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "3-4 месяца",
-      "featured": true,
-      "is_new": true,
-      "category": 2,
-      "what_will_learn": "Освойте Python для анализа данных, научитесь работать с pandas, numpy, matplotlib, seaborn и другими библиотеками.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Освойте Python для анализа данных, научитесь работать с pandas, numpy, matplotlib, seaborn и другими библиотеками.",
-      "video_hours": 40,
-      "coding_exercises": 30,
-      "articles": 15,
-      "has_certificate": true
-    }
-  },
-  {
-    "model": "courses.course",
-    "pk": 8,
-    "fields": {
-      "guid": "171711bd-c976-45da-9690-79f93f3b101d",
-      "created_time": "2025-05-05T15:51:00.154Z",
-      "updated_time": "2025-05-05T15:51:00.154Z",
-      "title": "Корпоративная кибербезопасность",
-      "title_uz": null,
-      "title_ru": "Корпоративная кибербезопасность",
-      "slug": "corporate-cybersecurity",
-      "description": "Комплексный курс по кибербезопасности для корпоративных клиентов. Защитите свою компанию от современных угроз.",
-      "description_uz": null,
-      "description_ru": "Комплексный курс по кибербезопасности для корпоративных клиентов. Защитите свою компанию от современных угроз.",
-      "icon": "",
-      "icon_type": "security",
-      "level": "advanced",
-      "level_uz": "beginner",
-      "level_ru": "advanced",
-      "duration": "4-6 месяцев",
-      "duration_uz": "8-12 месяцев",
-      "duration_ru": "4-6 месяцев",
-      "featured": false,
-      "is_new": true,
-      "category": 2,
-      "what_will_learn": "Изучите основы кибербезопасности, методы защиты от атак, управление рисками и соответствие нормативным требованиям.",
-      "what_will_learn_uz": null,
-      "what_will_learn_ru": "Изучите основы кибербезопасности, методы защиты от атак, управление рисками и соответствие нормативным требованиям.",
-      "video_hours": 55,
-      "coding_exercises": 20,
-      "articles": 45,
+      "coding_exercises": 150,
+      "articles": 78,
       "has_certificate": true
     }
   },
   {
     "model": "courses.courseoutcome",
-    "pk": 1,
+    "pk": 65,
     "fields": {
-      "guid": "b5a4e3e7-6ac5-4411-9d23-694bce4e6fe3",
-      "created_time": "2025-05-05T15:50:59.981Z",
-      "updated_time": "2025-05-05T15:50:59.981Z",
+      "guid": "add5cf45-47d5-41a6-b73a-fb69d87c70c2",
+      "created_time": "2025-05-17T03:19:15.678Z",
+      "updated_time": "2025-05-17T03:21:11.532Z",
       "course": 1,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 2,
-    "fields": {
-      "guid": "66c92a7c-091b-41cd-8c6f-d37c08801332",
-      "created_time": "2025-05-05T15:50:59.984Z",
-      "updated_time": "2025-05-05T15:50:59.984Z",
-      "course": 1,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
+      "text": "Изучите основы языка программирования PHP.",
+      "text_uz": "PHP dasturlash tilining asoslarini o‘rganasiz.",
+      "text_ru": "Изучите основы языка программирования PHP.",
+      "text_en": "Learn the basics of the PHP programming language.",
       "order": 1
     }
   },
   {
     "model": "courses.courseoutcome",
-    "pk": 3,
+    "pk": 66,
     "fields": {
-      "guid": "b9a9675b-bec7-4866-b453-ef687bb6a113",
-      "created_time": "2025-05-05T15:50:59.987Z",
-      "updated_time": "2025-05-05T15:50:59.987Z",
+      "guid": "051302c6-0823-4e70-85ee-f52ead67486c",
+      "created_time": "2025-05-17T03:21:11.533Z",
+      "updated_time": "2025-05-17T03:21:11.533Z",
       "course": 1,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
+      "text": "Научитесь работать с базой данных MySQL.",
+      "text_uz": "PHP dasturlash tilining asoslarini o‘rganasiz.",
+      "text_ru": "Научитесь работать с базой данных MySQL.",
+      "text_en": "Understand how to work with a MySQL database.",
       "order": 2
     }
   },
   {
     "model": "courses.courseoutcome",
-    "pk": 4,
+    "pk": 67,
     "fields": {
-      "guid": "8cd9660a-a1dc-4a35-8fa4-aa87677986fd",
-      "created_time": "2025-05-05T15:50:59.989Z",
-      "updated_time": "2025-05-05T15:50:59.989Z",
+      "guid": "b2ae1ba1-ba06-4e4a-9763-9ef109427e81",
+      "created_time": "2025-05-17T03:21:11.534Z",
+      "updated_time": "2025-05-17T03:21:11.534Z",
       "course": 1,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
+      "text": "Сможете создавать динамические веб-страницы и реализовать CRUD.",
+      "text_uz": "Dinamik veb-sahifalar va CRUD tizimlari yaratishni o‘rganasiz.",
+      "text_ru": "Сможете создавать динамические веб-страницы и реализовать CRUD.",
+      "text_en": "Build dynamic web pages and implement CRUD functionality.",
       "order": 3
     }
   },
   {
     "model": "courses.courseoutcome",
-    "pk": 5,
+    "pk": 68,
     "fields": {
-      "guid": "20e10d6a-9263-4900-83c7-83010c23b998",
-      "created_time": "2025-05-05T15:50:59.992Z",
-      "updated_time": "2025-05-05T15:50:59.992Z",
+      "guid": "287370b7-2893-41b9-9ce8-1cad4f2e46c9",
+      "created_time": "2025-05-17T03:21:11.534Z",
+      "updated_time": "2025-05-17T03:21:11.534Z",
       "course": 1,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
+      "text": "Освоите работу с сессиями, куками и аутентификацией пользователя.",
+      "text_uz": "Session, cookie va foydalanuvchi autentifikatsiyasini boshqarasiz.",
+      "text_ru": "Освоите работу с сессиями, куками и аутентификацией пользователя.",
+      "text_en": "Manage sessions, cookies, and user authentication.",
       "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 6,
-    "fields": {
-      "guid": "ab420ad5-439e-4edb-b5e3-8a75593fb3b2",
-      "created_time": "2025-05-05T15:50:59.994Z",
-      "updated_time": "2025-05-05T15:50:59.994Z",
-      "course": 1,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 7,
-    "fields": {
-      "guid": "ef23a04d-60eb-4e95-8bfe-9b10547d99d1",
-      "created_time": "2025-05-05T15:50:59.996Z",
-      "updated_time": "2025-05-05T15:50:59.997Z",
-      "course": 1,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 8,
-    "fields": {
-      "guid": "9b79f76a-ae26-42b0-a6c9-07c722b6d61e",
-      "created_time": "2025-05-05T15:50:59.999Z",
-      "updated_time": "2025-05-05T15:50:59.999Z",
-      "course": 1,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 9,
-    "fields": {
-      "guid": "fdf9660c-7149-4cec-b599-cf221dc94d0b",
-      "created_time": "2025-05-05T15:51:00.006Z",
-      "updated_time": "2025-05-05T15:51:00.006Z",
-      "course": 2,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 10,
-    "fields": {
-      "guid": "866f82ae-527c-40a4-84fb-a86f33cfcf72",
-      "created_time": "2025-05-05T15:51:00.008Z",
-      "updated_time": "2025-05-05T15:51:00.008Z",
-      "course": 2,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 11,
-    "fields": {
-      "guid": "704c1d01-28b9-4b10-8423-858e78bd25e2",
-      "created_time": "2025-05-05T15:51:00.011Z",
-      "updated_time": "2025-05-05T15:51:00.011Z",
-      "course": 2,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 12,
-    "fields": {
-      "guid": "00d8388b-61c3-4cbd-b44f-0a2984ca42d6",
-      "created_time": "2025-05-05T15:51:00.014Z",
-      "updated_time": "2025-05-05T15:51:00.014Z",
-      "course": 2,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 13,
-    "fields": {
-      "guid": "6bd5c994-65d5-42fa-ae5e-9deffe451ea2",
-      "created_time": "2025-05-05T15:51:00.016Z",
-      "updated_time": "2025-05-05T15:51:00.016Z",
-      "course": 2,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 14,
-    "fields": {
-      "guid": "9914fd68-45d3-42c4-9594-5c632650a13d",
-      "created_time": "2025-05-05T15:51:00.019Z",
-      "updated_time": "2025-05-05T15:51:00.019Z",
-      "course": 2,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 15,
-    "fields": {
-      "guid": "37b0fcec-08c0-4d7d-93e4-772e73ac82b3",
-      "created_time": "2025-05-05T15:51:00.021Z",
-      "updated_time": "2025-05-05T15:51:00.021Z",
-      "course": 2,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 16,
-    "fields": {
-      "guid": "b03ce6b9-3fc6-4742-b0fa-31c4a9b1714a",
-      "created_time": "2025-05-05T15:51:00.023Z",
-      "updated_time": "2025-05-05T15:51:00.023Z",
-      "course": 2,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 17,
-    "fields": {
-      "guid": "c792ee41-abd3-4859-aa41-3878b946bef0",
-      "created_time": "2025-05-05T15:51:00.031Z",
-      "updated_time": "2025-05-05T15:51:00.031Z",
-      "course": 3,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 18,
-    "fields": {
-      "guid": "39e95678-94fd-4503-bc6e-1090d4b08f19",
-      "created_time": "2025-05-05T15:51:00.033Z",
-      "updated_time": "2025-05-05T15:51:00.033Z",
-      "course": 3,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 19,
-    "fields": {
-      "guid": "bda050e9-7a21-4604-9b08-92df8869e418",
-      "created_time": "2025-05-05T15:51:00.036Z",
-      "updated_time": "2025-05-05T15:51:00.036Z",
-      "course": 3,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 20,
-    "fields": {
-      "guid": "326cd6e3-f90f-49ff-8aff-258bc7f8509c",
-      "created_time": "2025-05-05T15:51:00.038Z",
-      "updated_time": "2025-05-05T15:51:00.038Z",
-      "course": 3,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 21,
-    "fields": {
-      "guid": "50c3b76a-2a4a-4796-b06d-0db9601e4ccf",
-      "created_time": "2025-05-05T15:51:00.041Z",
-      "updated_time": "2025-05-05T15:51:00.041Z",
-      "course": 3,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 22,
-    "fields": {
-      "guid": "f5254df7-c2d0-4c95-8955-2ac382fb47f6",
-      "created_time": "2025-05-05T15:51:00.043Z",
-      "updated_time": "2025-05-05T15:51:00.044Z",
-      "course": 3,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 23,
-    "fields": {
-      "guid": "98226e93-50dc-4a03-b74c-8e78cf826158",
-      "created_time": "2025-05-05T15:51:00.046Z",
-      "updated_time": "2025-05-05T15:51:00.046Z",
-      "course": 3,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 24,
-    "fields": {
-      "guid": "86407f22-6d21-4fe5-8e90-1da75d50eaeb",
-      "created_time": "2025-05-05T15:51:00.048Z",
-      "updated_time": "2025-05-05T15:51:00.048Z",
-      "course": 3,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 25,
-    "fields": {
-      "guid": "b61426b3-86c6-4c68-b68c-bb91a27a465b",
-      "created_time": "2025-05-05T15:51:00.056Z",
-      "updated_time": "2025-05-05T15:51:00.056Z",
-      "course": 4,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 26,
-    "fields": {
-      "guid": "2370d092-26cd-4d0c-ae77-ccb3725bc13b",
-      "created_time": "2025-05-05T15:51:00.058Z",
-      "updated_time": "2025-05-05T15:51:00.058Z",
-      "course": 4,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 27,
-    "fields": {
-      "guid": "f481991a-0e28-4a65-8ec4-dee27aa03372",
-      "created_time": "2025-05-05T15:51:00.061Z",
-      "updated_time": "2025-05-05T15:51:00.061Z",
-      "course": 4,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 28,
-    "fields": {
-      "guid": "deeb67d6-531b-4fd5-a12d-37101173dacf",
-      "created_time": "2025-05-05T15:51:00.064Z",
-      "updated_time": "2025-05-05T15:51:00.064Z",
-      "course": 4,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 29,
-    "fields": {
-      "guid": "5f3971f7-a450-4cb2-a53b-5508d37c3662",
-      "created_time": "2025-05-05T15:51:00.066Z",
-      "updated_time": "2025-05-05T15:51:00.066Z",
-      "course": 4,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 30,
-    "fields": {
-      "guid": "6ef600ca-8cb0-4baa-9607-d7229cab424a",
-      "created_time": "2025-05-05T15:51:00.069Z",
-      "updated_time": "2025-05-05T15:51:00.069Z",
-      "course": 4,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 31,
-    "fields": {
-      "guid": "13598ff4-94ba-470f-b02e-0f72991a9f2d",
-      "created_time": "2025-05-05T15:51:00.071Z",
-      "updated_time": "2025-05-05T15:51:00.071Z",
-      "course": 4,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 32,
-    "fields": {
-      "guid": "9bea2f52-f75a-49be-87fd-49d36467310b",
-      "created_time": "2025-05-05T15:51:00.074Z",
-      "updated_time": "2025-05-05T15:51:00.074Z",
-      "course": 4,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 33,
-    "fields": {
-      "guid": "a93904f7-d6f9-4d55-aa1d-f0305dd5a8ba",
-      "created_time": "2025-05-05T15:51:00.081Z",
-      "updated_time": "2025-05-05T15:51:00.081Z",
-      "course": 5,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 34,
-    "fields": {
-      "guid": "5959de89-afad-4503-b05b-f1d53174a045",
-      "created_time": "2025-05-05T15:51:00.084Z",
-      "updated_time": "2025-05-05T15:51:00.084Z",
-      "course": 5,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 35,
-    "fields": {
-      "guid": "84697214-0081-4f13-b2b9-772e211d2d85",
-      "created_time": "2025-05-05T15:51:00.086Z",
-      "updated_time": "2025-05-05T15:51:00.086Z",
-      "course": 5,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 36,
-    "fields": {
-      "guid": "410ebc65-6d2e-475d-8e0a-72f922287ba3",
-      "created_time": "2025-05-05T15:51:00.089Z",
-      "updated_time": "2025-05-05T15:51:00.089Z",
-      "course": 5,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 37,
-    "fields": {
-      "guid": "df3caad9-4dfd-40ac-9467-e26c7863eb29",
-      "created_time": "2025-05-05T15:51:00.091Z",
-      "updated_time": "2025-05-05T15:51:00.091Z",
-      "course": 5,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 38,
-    "fields": {
-      "guid": "c176eb27-1e14-403e-bbbd-e5531c54b608",
-      "created_time": "2025-05-05T15:51:00.094Z",
-      "updated_time": "2025-05-05T15:51:00.094Z",
-      "course": 5,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 39,
-    "fields": {
-      "guid": "c91030c1-de0b-49b1-8bb2-cbede4fc7cc1",
-      "created_time": "2025-05-05T15:51:00.097Z",
-      "updated_time": "2025-05-05T15:51:00.097Z",
-      "course": 5,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 40,
-    "fields": {
-      "guid": "fb287643-3931-4853-805f-650445161362",
-      "created_time": "2025-05-05T15:51:00.100Z",
-      "updated_time": "2025-05-05T15:51:00.100Z",
-      "course": 5,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 41,
-    "fields": {
-      "guid": "b50b3bf4-b813-4887-bb60-308023e8dd8b",
-      "created_time": "2025-05-05T15:51:00.106Z",
-      "updated_time": "2025-05-05T15:51:00.106Z",
-      "course": 6,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 42,
-    "fields": {
-      "guid": "0959aca4-5a41-4519-a1e4-bcc353354d58",
-      "created_time": "2025-05-05T15:51:00.109Z",
-      "updated_time": "2025-05-05T15:51:00.109Z",
-      "course": 6,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 43,
-    "fields": {
-      "guid": "4482cfe8-ea70-4548-a636-71d413dca163",
-      "created_time": "2025-05-05T15:51:00.111Z",
-      "updated_time": "2025-05-05T15:51:00.112Z",
-      "course": 6,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 44,
-    "fields": {
-      "guid": "fdba75ec-aad7-4d51-82e8-bf1fd10abff0",
-      "created_time": "2025-05-05T15:51:00.114Z",
-      "updated_time": "2025-05-05T15:51:00.114Z",
-      "course": 6,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 45,
-    "fields": {
-      "guid": "8e4a1232-5dd6-48fa-b605-734754f13373",
-      "created_time": "2025-05-05T15:51:00.117Z",
-      "updated_time": "2025-05-05T15:51:00.117Z",
-      "course": 6,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 46,
-    "fields": {
-      "guid": "21043b0c-946a-4bc8-a3f5-87f88636f87c",
-      "created_time": "2025-05-05T15:51:00.119Z",
-      "updated_time": "2025-05-05T15:51:00.119Z",
-      "course": 6,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 47,
-    "fields": {
-      "guid": "4444708a-7fc9-4202-ace1-2c2c0108a3d5",
-      "created_time": "2025-05-05T15:51:00.122Z",
-      "updated_time": "2025-05-05T15:51:00.122Z",
-      "course": 6,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 48,
-    "fields": {
-      "guid": "8b5bcc18-10cc-4c4e-9880-6e0eaaa5de84",
-      "created_time": "2025-05-05T15:51:00.125Z",
-      "updated_time": "2025-05-05T15:51:00.125Z",
-      "course": 6,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 49,
-    "fields": {
-      "guid": "99e5e218-d288-4eeb-8cd9-50e69e7e9adb",
-      "created_time": "2025-05-05T15:51:00.132Z",
-      "updated_time": "2025-05-05T15:51:00.132Z",
-      "course": 7,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 50,
-    "fields": {
-      "guid": "0b6f372e-9b6b-488b-b33d-5e907df13a80",
-      "created_time": "2025-05-05T15:51:00.135Z",
-      "updated_time": "2025-05-05T15:51:00.135Z",
-      "course": 7,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 51,
-    "fields": {
-      "guid": "381c832c-4f86-4f05-9c10-0816c94ac7ab",
-      "created_time": "2025-05-05T15:51:00.137Z",
-      "updated_time": "2025-05-05T15:51:00.137Z",
-      "course": 7,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 52,
-    "fields": {
-      "guid": "6c664dba-bb73-499a-abae-9e6b39a55889",
-      "created_time": "2025-05-05T15:51:00.140Z",
-      "updated_time": "2025-05-05T15:51:00.140Z",
-      "course": 7,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 53,
-    "fields": {
-      "guid": "8e68df0b-2e08-4224-84c3-bf2bd56aac6d",
-      "created_time": "2025-05-05T15:51:00.142Z",
-      "updated_time": "2025-05-05T15:51:00.143Z",
-      "course": 7,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 54,
-    "fields": {
-      "guid": "43bf0f33-26f2-4780-a760-4ffd664e57ed",
-      "created_time": "2025-05-05T15:51:00.145Z",
-      "updated_time": "2025-05-05T15:51:00.145Z",
-      "course": 7,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 55,
-    "fields": {
-      "guid": "41e16e3b-4fb4-4f47-9279-e268dfa91cd1",
-      "created_time": "2025-05-05T15:51:00.148Z",
-      "updated_time": "2025-05-05T15:51:00.148Z",
-      "course": 7,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 56,
-    "fields": {
-      "guid": "8d06abb4-35e1-4a6c-8c75-08080ded160d",
-      "created_time": "2025-05-05T15:51:00.150Z",
-      "updated_time": "2025-05-05T15:51:00.150Z",
-      "course": 7,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 57,
-    "fields": {
-      "guid": "84653632-cd0e-47c6-a347-d961c324a08d",
-      "created_time": "2025-05-05T15:51:00.157Z",
-      "updated_time": "2025-05-05T15:51:00.157Z",
-      "course": 8,
-      "text": "Изучите основы языка программирования с нуля",
-      "text_uz": null,
-      "text_ru": "Изучите основы языка программирования с нуля",
-      "order": 0
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 58,
-    "fields": {
-      "guid": "daad11c8-09c5-4785-8edd-841bf2212355",
-      "created_time": "2025-05-05T15:51:00.159Z",
-      "updated_time": "2025-05-05T15:51:00.159Z",
-      "course": 8,
-      "text": "Создавайте полнофункциональные веб-приложения",
-      "text_uz": null,
-      "text_ru": "Создавайте полнофункциональные веб-приложения",
-      "order": 1
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 59,
-    "fields": {
-      "guid": "5ecf4595-e142-47a1-8b11-3694b0209a37",
-      "created_time": "2025-05-05T15:51:00.162Z",
-      "updated_time": "2025-05-05T15:51:00.162Z",
-      "course": 8,
-      "text": "Работайте с базами данных и API",
-      "text_uz": null,
-      "text_ru": "Работайте с базами данных и API",
-      "order": 2
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 60,
-    "fields": {
-      "guid": "20164d8b-822f-439b-bfa4-4265ada628dc",
-      "created_time": "2025-05-05T15:51:00.165Z",
-      "updated_time": "2025-05-05T15:51:00.165Z",
-      "course": 8,
-      "text": "Освойте современные инструменты разработки",
-      "text_uz": null,
-      "text_ru": "Освойте современные инструменты разработки",
-      "order": 3
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 61,
-    "fields": {
-      "guid": "4727697b-c240-4f7e-a351-14b0faf4783b",
-      "created_time": "2025-05-05T15:51:00.167Z",
-      "updated_time": "2025-05-05T15:51:00.167Z",
-      "course": 8,
-      "text": "Научитесь писать чистый и поддерживаемый код",
-      "text_uz": null,
-      "text_ru": "Научитесь писать чистый и поддерживаемый код",
-      "order": 4
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 62,
-    "fields": {
-      "guid": "05d2b0be-dfb7-44ae-a393-69c0cac1dd13",
-      "created_time": "2025-05-05T15:51:00.170Z",
-      "updated_time": "2025-05-05T15:51:00.170Z",
-      "course": 8,
-      "text": "Создайте портфолио проектов для трудоустройства",
-      "text_uz": null,
-      "text_ru": "Создайте портфолио проектов для трудоустройства",
-      "order": 5
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 63,
-    "fields": {
-      "guid": "dc131e00-ae81-44a6-95ae-52c0d50ca22f",
-      "created_time": "2025-05-05T15:51:00.172Z",
-      "updated_time": "2025-05-05T15:51:00.172Z",
-      "course": 8,
-      "text": "Получите сертификат об окончании курса",
-      "text_uz": null,
-      "text_ru": "Получите сертификат об окончании курса",
-      "order": 6
-    }
-  },
-  {
-    "model": "courses.courseoutcome",
-    "pk": 64,
-    "fields": {
-      "guid": "7665e89d-5ea8-4873-bd69-dc8426a77cd7",
-      "created_time": "2025-05-05T15:51:00.175Z",
-      "updated_time": "2025-05-05T15:51:00.175Z",
-      "course": 8,
-      "text": "Подготовьтесь к собеседованиям и начните карьеру",
-      "text_uz": null,
-      "text_ru": "Подготовьтесь к собеседованиям и начните карьеру",
-      "order": 7
     }
   },
   {
     "model": "courses.company",
     "pk": 1,
     "fields": {
-      "guid": "959e3910-7dbd-4034-8088-faf7c884cd61",
-      "created_time": "2025-05-05T15:51:00.225Z",
-      "updated_time": "2025-05-05T15:51:00.225Z",
+      "guid": "98aed5f0-5f72-40c0-8a93-79ac689e059a",
+      "created_time": "2025-05-05T16:15:14.747Z",
+      "updated_time": "2025-05-17T03:47:10.750Z",
       "name": "Google",
-      "name_uz": null,
+      "name_uz": "Google",
       "name_ru": "Google",
-      "logo": "companies/google.png",
+      "name_en": "Google",
+      "logo": "companies/Google_2015_logo.svg.png",
       "color": "#4285F4"
     }
   },
@@ -1915,13 +3328,14 @@
     "model": "courses.company",
     "pk": 2,
     "fields": {
-      "guid": "2043d91c-9864-4799-af44-fe38f311bba2",
-      "created_time": "2025-05-05T15:51:00.228Z",
-      "updated_time": "2025-05-05T15:51:00.228Z",
+      "guid": "78a75eb9-18cf-47ca-a0cf-78d671cd37b1",
+      "created_time": "2025-05-05T16:15:14.771Z",
+      "updated_time": "2025-05-17T03:47:51.210Z",
       "name": "YouTube",
-      "name_uz": null,
+      "name_uz": "YouTube",
       "name_ru": "YouTube",
-      "logo": "companies/youtube.png",
+      "name_en": "YouTube",
+      "logo": "companies/Logo_of_YouTube_2015-2017.svg.png",
       "color": "#FF0000"
     }
   },
@@ -1929,13 +3343,14 @@
     "model": "courses.company",
     "pk": 3,
     "fields": {
-      "guid": "4e192776-d876-4f4d-8669-dfb0d4b03f1c",
-      "created_time": "2025-05-05T15:51:00.231Z",
-      "updated_time": "2025-05-05T15:51:00.231Z",
+      "guid": "a9338a36-8862-4ab7-b62a-696f7a4c1119",
+      "created_time": "2025-05-05T16:15:14.795Z",
+      "updated_time": "2025-05-17T03:50:06.365Z",
       "name": "Amazon",
-      "name_uz": null,
+      "name_uz": "Amazon",
       "name_ru": "Amazon",
-      "logo": "companies/amazon.png",
+      "name_en": "Amazon",
+      "logo": "companies/amazon-logo-on-transparent-background-free-vector.jpg",
       "color": "#FF9900"
     }
   },
@@ -1943,13 +3358,14 @@
     "model": "courses.company",
     "pk": 4,
     "fields": {
-      "guid": "892d9fa5-2674-4bd5-a8cb-da78294b12ed",
-      "created_time": "2025-05-05T15:51:00.234Z",
-      "updated_time": "2025-05-05T15:51:00.235Z",
+      "guid": "21ee2b36-b65d-4932-83d4-32136b7ce466",
+      "created_time": "2025-05-05T16:15:14.816Z",
+      "updated_time": "2025-05-17T03:49:29.052Z",
       "name": "Netflix",
-      "name_uz": null,
+      "name_uz": "Netflix",
       "name_ru": "Netflix",
-      "logo": "companies/netflix.png",
+      "name_en": "Netflix",
+      "logo": "companies/BrandAssets_Logos_01-Wordmark.jpg",
       "color": "#E50914"
     }
   },
@@ -1957,12 +3373,13 @@
     "model": "courses.company",
     "pk": 5,
     "fields": {
-      "guid": "80b26cca-11f9-4eaa-b2b3-cb18f777170b",
-      "created_time": "2025-05-05T15:51:00.238Z",
-      "updated_time": "2025-05-05T15:51:00.238Z",
+      "guid": "efb4b216-54d5-4583-b449-caf2a81fe680",
+      "created_time": "2025-05-05T16:15:14.838Z",
+      "updated_time": "2025-05-05T16:15:14.838Z",
       "name": "Slack",
       "name_uz": null,
       "name_ru": "Slack",
+      "name_en": null,
       "logo": "companies/slack.png",
       "color": "#4A154B"
     }
@@ -1971,12 +3388,13 @@
     "model": "courses.company",
     "pk": 6,
     "fields": {
-      "guid": "bee11362-bb4f-44c4-bb86-d83a8143e3ae",
-      "created_time": "2025-05-05T15:51:00.241Z",
-      "updated_time": "2025-05-05T15:51:00.241Z",
+      "guid": "6c2a6f02-0510-4016-b08a-62e7c76b4313",
+      "created_time": "2025-05-05T16:15:14.860Z",
+      "updated_time": "2025-05-05T16:15:14.860Z",
       "name": "Lenovo",
       "name_uz": null,
       "name_ru": "Lenovo",
+      "name_en": null,
       "logo": "companies/lenovo.png",
       "color": "#E2231A"
     }
@@ -1985,13 +3403,14 @@
     "model": "courses.company",
     "pk": 7,
     "fields": {
-      "guid": "43fdcf9d-008c-4d36-98ee-538323591265",
-      "created_time": "2025-05-05T15:51:00.245Z",
-      "updated_time": "2025-05-05T15:51:00.245Z",
+      "guid": "ad3c49f9-5a73-4c3c-a0b4-435540715589",
+      "created_time": "2025-05-05T16:15:14.881Z",
+      "updated_time": "2025-05-17T03:48:28.683Z",
       "name": "Apple",
-      "name_uz": null,
+      "name_uz": "Apple",
       "name_ru": "Apple",
-      "logo": "companies/apple.png",
+      "name_en": "Apple",
+      "logo": "companies/Apple-Logosu.png",
       "color": "#999999"
     }
   },
@@ -1999,13 +3418,14 @@
     "model": "courses.company",
     "pk": 8,
     "fields": {
-      "guid": "d9882929-ac5d-4180-8309-e323bde92ce6",
-      "created_time": "2025-05-05T15:51:00.248Z",
-      "updated_time": "2025-05-05T15:51:00.248Z",
+      "guid": "bb48f0d6-5fa3-4e3a-a62a-8c09ec3710c7",
+      "created_time": "2025-05-05T16:15:14.904Z",
+      "updated_time": "2025-05-17T03:46:47.169Z",
       "name": "Microsoft",
-      "name_uz": null,
+      "name_uz": "Microsoft",
       "name_ru": "Microsoft",
-      "logo": "companies/microsoft.png",
+      "name_en": "Microsoft",
+      "logo": "companies/microsoft-logo-png_seeklogo-168319.png",
       "color": "#00A4EF"
     }
   },
@@ -2013,12 +3433,13 @@
     "model": "courses.company",
     "pk": 9,
     "fields": {
-      "guid": "8d2a844a-ab18-452d-981e-2484fe36c708",
-      "created_time": "2025-05-05T15:51:00.252Z",
-      "updated_time": "2025-05-05T15:51:00.252Z",
+      "guid": "7b914461-c565-4746-906e-0ed86c036aef",
+      "created_time": "2025-05-05T16:15:14.927Z",
+      "updated_time": "2025-05-05T16:15:14.927Z",
       "name": "Uber",
       "name_uz": null,
       "name_ru": "Uber",
+      "name_en": null,
       "logo": "companies/uber.png",
       "color": "#000000"
     }
@@ -2027,1083 +3448,632 @@
     "model": "courses.company",
     "pk": 10,
     "fields": {
-      "guid": "febc1d74-5e87-4587-980e-be62ecd750f3",
-      "created_time": "2025-05-05T15:51:00.255Z",
-      "updated_time": "2025-05-05T15:51:00.255Z",
+      "guid": "458cb1c0-c640-4975-bfec-e47266b34d5c",
+      "created_time": "2025-05-05T16:15:14.950Z",
+      "updated_time": "2025-05-05T16:15:14.950Z",
       "name": "Airbnb",
       "name_uz": null,
       "name_ru": "Airbnb",
+      "name_en": null,
       "logo": "companies/airbnb.png",
       "color": "#FF5A5F"
     }
   },
   {
     "model": "courses.coursecompany",
-    "pk": 1,
+    "pk": 69,
     "fields": {
-      "guid": "a6f37156-2a67-4506-bfe2-d6776448ed6b",
-      "created_time": "2025-05-05T15:51:00.258Z",
-      "updated_time": "2025-05-05T15:51:00.258Z",
+      "guid": "6640cd8d-973a-4dd4-8485-23e27351c8a3",
+      "created_time": "2025-05-17T03:43:48.360Z",
+      "updated_time": "2025-05-17T03:43:48.360Z",
       "course": 1,
-      "company": 5
+      "company": 1
     }
   },
   {
     "model": "courses.coursecompany",
-    "pk": 2,
+    "pk": 70,
     "fields": {
-      "guid": "e76e758e-318e-46b3-9e7b-c644a30ecc2c",
-      "created_time": "2025-05-05T15:51:00.261Z",
-      "updated_time": "2025-05-05T15:51:00.261Z",
+      "guid": "def2ea56-3110-42f0-9799-42e4c20bf251",
+      "created_time": "2025-05-17T03:43:48.362Z",
+      "updated_time": "2025-05-17T03:43:48.362Z",
+      "course": 1,
+      "company": 2
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 71,
+    "fields": {
+      "guid": "59d5d824-ead9-41c2-aec6-00ffbf463863",
+      "created_time": "2025-05-17T03:43:48.362Z",
+      "updated_time": "2025-05-17T03:43:48.362Z",
+      "course": 1,
+      "company": 3
+    }
+  },
+  {
+    "model": "courses.coursecompany",
+    "pk": 72,
+    "fields": {
+      "guid": "ffa02a8a-e804-4292-bbcc-1841dbb1e1c5",
+      "created_time": "2025-05-17T03:43:48.362Z",
+      "updated_time": "2025-05-17T03:43:48.362Z",
       "course": 1,
       "company": 4
     }
   },
   {
     "model": "courses.coursecompany",
-    "pk": 3,
+    "pk": 73,
     "fields": {
-      "guid": "dfac0f24-496d-41cb-8f0b-2ccba503fdaf",
-      "created_time": "2025-05-05T15:51:00.263Z",
-      "updated_time": "2025-05-05T15:51:00.263Z",
+      "guid": "a95b5a1c-36c2-47a2-b4da-94e52ef1c8fd",
+      "created_time": "2025-05-17T03:43:48.363Z",
+      "updated_time": "2025-05-17T03:43:48.363Z",
       "course": 1,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 4,
-    "fields": {
-      "guid": "7d209a2a-78d6-4950-99d7-2279e9d46548",
-      "created_time": "2025-05-05T15:51:00.265Z",
-      "updated_time": "2025-05-05T15:51:00.265Z",
-      "course": 2,
-      "company": 7
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 5,
-    "fields": {
-      "guid": "70528f16-50db-44b8-8605-48d1e3e88f5d",
-      "created_time": "2025-05-05T15:51:00.268Z",
-      "updated_time": "2025-05-05T15:51:00.268Z",
-      "course": 2,
-      "company": 2
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 6,
-    "fields": {
-      "guid": "80a75760-1f82-4838-80bd-1f762df02119",
-      "created_time": "2025-05-05T15:51:00.270Z",
-      "updated_time": "2025-05-05T15:51:00.270Z",
-      "course": 2,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 7,
-    "fields": {
-      "guid": "6e537095-fd4f-4ec4-8f22-aad8b5359ef7",
-      "created_time": "2025-05-05T15:51:00.272Z",
-      "updated_time": "2025-05-05T15:51:00.273Z",
-      "course": 2,
-      "company": 9
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 8,
-    "fields": {
-      "guid": "bfa44fed-84a7-47ec-bdf1-3ec4819c5bbb",
-      "created_time": "2025-05-05T15:51:00.275Z",
-      "updated_time": "2025-05-05T15:51:00.275Z",
-      "course": 2,
       "company": 8
     }
   },
   {
     "model": "courses.coursecompany",
-    "pk": 9,
+    "pk": 74,
     "fields": {
-      "guid": "11f5c8b9-f162-43e6-950e-a09db7678425",
-      "created_time": "2025-05-05T15:51:00.277Z",
-      "updated_time": "2025-05-05T15:51:00.277Z",
-      "course": 3,
-      "company": 10
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 10,
-    "fields": {
-      "guid": "062f0431-962e-491c-a842-0c1219f68798",
-      "created_time": "2025-05-05T15:51:00.279Z",
-      "updated_time": "2025-05-05T15:51:00.279Z",
-      "course": 3,
-      "company": 9
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 11,
-    "fields": {
-      "guid": "1320cfa6-8482-4f66-b3d2-463267de7295",
-      "created_time": "2025-05-05T15:51:00.282Z",
-      "updated_time": "2025-05-05T15:51:00.282Z",
-      "course": 3,
-      "company": 8
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 12,
-    "fields": {
-      "guid": "d7fd9dee-4a28-4099-a5c2-20ec2c450fbc",
-      "created_time": "2025-05-05T15:51:00.284Z",
-      "updated_time": "2025-05-05T15:51:00.284Z",
-      "course": 3,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 13,
-    "fields": {
-      "guid": "b55aa6a6-4936-40ee-a3ae-62ca03304e25",
-      "created_time": "2025-05-05T15:51:00.286Z",
-      "updated_time": "2025-05-05T15:51:00.286Z",
-      "course": 3,
-      "company": 2
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 14,
-    "fields": {
-      "guid": "7b0eac69-90a6-419f-b2e5-e69445dbb59c",
-      "created_time": "2025-05-05T15:51:00.289Z",
-      "updated_time": "2025-05-05T15:51:00.289Z",
-      "course": 4,
-      "company": 4
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 15,
-    "fields": {
-      "guid": "dfc20444-d8da-4a3e-b574-97442019fa13",
-      "created_time": "2025-05-05T15:51:00.291Z",
-      "updated_time": "2025-05-05T15:51:00.291Z",
-      "course": 4,
-      "company": 2
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 16,
-    "fields": {
-      "guid": "42604d72-df36-410e-817c-1ad79a50c66e",
-      "created_time": "2025-05-05T15:51:00.293Z",
-      "updated_time": "2025-05-05T15:51:00.294Z",
-      "course": 4,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 17,
-    "fields": {
-      "guid": "be45ec4d-3700-4f99-a80d-ba66e5b46ce8",
-      "created_time": "2025-05-05T15:51:00.296Z",
-      "updated_time": "2025-05-05T15:51:00.296Z",
-      "course": 4,
-      "company": 10
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 18,
-    "fields": {
-      "guid": "26f39582-18ac-4b40-a61a-6dd008666b52",
-      "created_time": "2025-05-05T15:51:00.298Z",
-      "updated_time": "2025-05-05T15:51:00.298Z",
-      "course": 5,
-      "company": 1
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 19,
-    "fields": {
-      "guid": "d30497c5-31f5-4adc-be65-32e2be7e8425",
-      "created_time": "2025-05-05T15:51:00.301Z",
-      "updated_time": "2025-05-05T15:51:00.301Z",
-      "course": 5,
-      "company": 9
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 20,
-    "fields": {
-      "guid": "88502715-e907-4304-92d3-a7fc8126b05b",
-      "created_time": "2025-05-05T15:51:00.304Z",
-      "updated_time": "2025-05-05T15:51:00.304Z",
-      "course": 5,
-      "company": 5
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 21,
-    "fields": {
-      "guid": "2c70aad6-7e69-40e0-ba22-d63cb9ab9b7d",
-      "created_time": "2025-05-05T15:51:00.307Z",
-      "updated_time": "2025-05-05T15:51:00.307Z",
-      "course": 5,
-      "company": 7
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 22,
-    "fields": {
-      "guid": "52856ed6-17a1-4f8b-9306-9a244bc21a8e",
-      "created_time": "2025-05-05T15:51:00.309Z",
-      "updated_time": "2025-05-05T15:51:00.309Z",
-      "course": 5,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 23,
-    "fields": {
-      "guid": "77a39228-5b79-4c89-8d07-852b4a0d2f29",
-      "created_time": "2025-05-05T15:51:00.312Z",
-      "updated_time": "2025-05-05T15:51:00.312Z",
-      "course": 6,
-      "company": 9
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 24,
-    "fields": {
-      "guid": "0d5b0928-43d5-412b-956b-622466ba1bf6",
-      "created_time": "2025-05-05T15:51:00.314Z",
-      "updated_time": "2025-05-05T15:51:00.314Z",
-      "course": 6,
-      "company": 1
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 25,
-    "fields": {
-      "guid": "5fedbf88-7464-48ba-b750-4aee212c00ce",
-      "created_time": "2025-05-05T15:51:00.316Z",
-      "updated_time": "2025-05-05T15:51:00.316Z",
-      "course": 6,
-      "company": 6
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 26,
-    "fields": {
-      "guid": "bb692a7b-94f1-4d28-9bc1-dc733f17c13c",
-      "created_time": "2025-05-05T15:51:00.319Z",
-      "updated_time": "2025-05-05T15:51:00.319Z",
-      "course": 6,
-      "company": 7
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 27,
-    "fields": {
-      "guid": "7a671b6d-1c5b-444c-a865-c53dffcbbf0d",
-      "created_time": "2025-05-05T15:51:00.321Z",
-      "updated_time": "2025-05-05T15:51:00.321Z",
-      "course": 7,
-      "company": 7
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 28,
-    "fields": {
-      "guid": "ef5d9e55-038d-4041-82f6-8595bac5ddf9",
-      "created_time": "2025-05-05T15:51:00.324Z",
-      "updated_time": "2025-05-05T15:51:00.324Z",
-      "course": 7,
-      "company": 4
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 29,
-    "fields": {
-      "guid": "bf9f858c-a131-4214-9c6c-b62eee253df0",
-      "created_time": "2025-05-05T15:51:00.326Z",
-      "updated_time": "2025-05-05T15:51:00.326Z",
-      "course": 7,
-      "company": 9
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 30,
-    "fields": {
-      "guid": "9a4c63c3-5e59-44ce-ac3a-0d53d5a1bc65",
-      "created_time": "2025-05-05T15:51:00.329Z",
-      "updated_time": "2025-05-05T15:51:00.329Z",
-      "course": 7,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 31,
-    "fields": {
-      "guid": "b20406fa-d1e4-4ad4-a98c-83c60b8c1165",
-      "created_time": "2025-05-05T15:51:00.331Z",
-      "updated_time": "2025-05-05T15:51:00.331Z",
-      "course": 8,
-      "company": 1
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 32,
-    "fields": {
-      "guid": "3d5b978e-e162-4502-b13e-12077945c12a",
-      "created_time": "2025-05-05T15:51:00.333Z",
-      "updated_time": "2025-05-05T15:51:00.333Z",
-      "course": 8,
-      "company": 9
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 33,
-    "fields": {
-      "guid": "7884a4e5-ad26-4721-aaf0-952946db5ecf",
-      "created_time": "2025-05-05T15:51:00.336Z",
-      "updated_time": "2025-05-05T15:51:00.336Z",
-      "course": 8,
-      "company": 3
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 34,
-    "fields": {
-      "guid": "816c334f-9817-4e3f-9cf3-24c4f0458471",
-      "created_time": "2025-05-05T15:51:00.338Z",
-      "updated_time": "2025-05-05T15:51:00.338Z",
-      "course": 8,
-      "company": 2
-    }
-  },
-  {
-    "model": "courses.coursecompany",
-    "pk": 35,
-    "fields": {
-      "guid": "56e54a2b-db0d-4b61-becd-9017a4bcece7",
-      "created_time": "2025-05-05T15:51:00.340Z",
-      "updated_time": "2025-05-05T15:51:00.340Z",
-      "course": 8,
-      "company": 10
-    }
-  },
-  {
-    "model": "courses.mentor",
-    "pk": 1,
-    "fields": {
-      "guid": "47ce55a4-669f-482d-88c7-b86a46d625e8",
-      "created_time": "2025-05-05T15:51:00.179Z",
-      "updated_time": "2025-05-05T15:51:00.179Z",
-      "name": "Шукуров Жасур",
-      "name_uz": null,
-      "name_ru": "Шукуров Жасур",
-      "position": "PHP (Laravel) Backend Developer",
-      "position_uz": null,
-      "position_ru": "PHP (Laravel) Backend Developer",
-      "bio": "Опытный разработчик с более чем 5-летним стажем работы в веб-разработке. Специализируется на PHP и Laravel.",
-      "bio_uz": null,
-      "bio_ru": "Опытный разработчик с более чем 5-летним стажем работы в веб-разработке. Специализируется на PHP и Laravel.",
-      "photo": "mentors/jasur.jpg"
-    }
-  },
-  {
-    "model": "courses.mentor",
-    "pk": 2,
-    "fields": {
-      "guid": "6400b1cf-ccf1-49e3-b996-ae539ae6a71b",
-      "created_time": "2025-05-05T15:51:00.183Z",
-      "updated_time": "2025-05-05T15:51:00.183Z",
-      "name": "Шомуродов Сарвар",
-      "name_uz": null,
-      "name_ru": "Шомуродов Сарвар",
-      "position": "PHP (Laravel) Backend Developer",
-      "position_uz": null,
-      "position_ru": "PHP (Laravel) Backend Developer",
-      "bio": "Профессиональный разработчик с опытом создания высоконагруженных веб-приложений. Эксперт в PHP и Laravel.",
-      "bio_uz": null,
-      "bio_ru": "Профессиональный разработчик с опытом создания высоконагруженных веб-приложений. Эксперт в PHP и Laravel.",
-      "photo": "mentors/sarvar.jpg"
-    }
-  },
-  {
-    "model": "courses.mentor",
-    "pk": 3,
-    "fields": {
-      "guid": "4bdab238-b851-4815-8832-709c7f87e023",
-      "created_time": "2025-05-05T15:51:00.187Z",
-      "updated_time": "2025-05-05T15:51:00.187Z",
-      "name": "Алимов Бобур",
-      "name_uz": null,
-      "name_ru": "Алимов Бобур",
-      "position": "Python Django Developer",
-      "position_uz": null,
-      "position_ru": "Python Django Developer",
-      "bio": "Опытный Python разработчик с глубоким знанием Django и Flask. Работал над множеством проектов различной сложности.",
-      "bio_uz": null,
-      "bio_ru": "Опытный Python разработчик с глубоким знанием Django и Flask. Работал над множеством проектов различной сложности.",
-      "photo": "mentors/bobur.jpg"
-    }
-  },
-  {
-    "model": "courses.mentor",
-    "pk": 4,
-    "fields": {
-      "guid": "06126036-d080-4406-a05f-bec264088193",
-      "created_time": "2025-05-05T15:51:00.191Z",
-      "updated_time": "2025-05-05T15:51:00.191Z",
-      "name": "Каримова Нилуфар",
-      "name_uz": null,
-      "name_ru": "Каримова Нилуфар",
-      "position": "React.js Frontend Developer",
-      "position_uz": null,
-      "position_ru": "React.js Frontend Developer",
-      "bio": "Frontend разработчик с опытом создания современных пользовательских интерфейсов. Эксперт в React.js и Redux.",
-      "bio_uz": null,
-      "bio_ru": "Frontend разработчик с опытом создания современных пользовательских интерфейсов. Эксперт в React.js и Redux.",
-      "photo": "mentors/nilufar.jpg"
-    }
-  },
-  {
-    "model": "courses.mentor",
-    "pk": 5,
-    "fields": {
-      "guid": "f4cb5cf3-2b43-49af-81be-d9e4e890b5ce",
-      "created_time": "2025-05-05T15:51:00.195Z",
-      "updated_time": "2025-05-05T15:51:00.195Z",
-      "name": "Рахимов Тимур",
-      "name_uz": null,
-      "name_ru": "Рахимов Тимур",
-      "position": "Node.js Backend Developer",
-      "position_uz": null,
-      "position_ru": "Node.js Backend Developer",
-      "bio": "Fullstack разработчик с фокусом на Node.js и Express. Имеет опыт работы с MongoDB, PostgreSQL и Redis.",
-      "bio_uz": null,
-      "bio_ru": "Fullstack разработчик с фокусом на Node.js и Express. Имеет опыт работы с MongoDB, PostgreSQL и Redis.",
-      "photo": "mentors/timur.jpg"
-    }
-  },
-  {
-    "model": "courses.mentor",
-    "pk": 6,
-    "fields": {
-      "guid": "d9776de6-bca7-4bee-b7ce-b107d6ac4e65",
-      "created_time": "2025-05-05T15:51:00.199Z",
-      "updated_time": "2025-05-05T15:51:00.199Z",
-      "name": "Исмаилова Диёра",
-      "name_uz": null,
-      "name_ru": "Исмаилова Диёра",
-      "position": "3D Max & Interior Designer",
-      "position_uz": null,
-      "position_ru": "3D Max & Interior Designer",
-      "bio": "Профессиональный дизайнер интерьеров с опытом работы более 7 лет. Эксперт в 3D Max и V-Ray.",
-      "bio_uz": null,
-      "bio_ru": "Профессиональный дизайнер интерьеров с опытом работы более 7 лет. Эксперт в 3D Max и V-Ray.",
-      "photo": "mentors/diyora.jpg"
-    }
-  },
-  {
-    "model": "courses.coursementor",
-    "pk": 1,
-    "fields": {
-      "guid": "517a9106-159e-45ec-b9b1-d7109f6973ad",
-      "created_time": "2025-05-05T15:51:00.204Z",
-      "updated_time": "2025-05-05T15:51:00.204Z",
-      "course": 2,
-      "mentor": 1
-    }
-  },
-  {
-    "model": "courses.coursementor",
-    "pk": 2,
-    "fields": {
-      "guid": "073972ac-0217-44b8-b69b-4f39faffbc7e",
-      "created_time": "2025-05-05T15:51:00.206Z",
-      "updated_time": "2025-05-05T15:51:00.206Z",
-      "course": 2,
-      "mentor": 2
-    }
-  },
-  {
-    "model": "courses.coursementor",
-    "pk": 3,
-    "fields": {
-      "guid": "c1b6fb9e-0d80-4ea3-909f-73f797e07b6e",
-      "created_time": "2025-05-05T15:51:00.210Z",
-      "updated_time": "2025-05-05T15:51:00.210Z",
+      "guid": "fc2476a4-6533-4dd0-a74c-460e5e4c8a84",
+      "created_time": "2025-05-17T03:43:48.363Z",
+      "updated_time": "2025-05-17T03:43:48.363Z",
       "course": 1,
-      "mentor": 3
+      "company": 7
     }
   },
   {
-    "model": "courses.coursementor",
-    "pk": 4,
-    "fields": {
-      "guid": "94d38363-9ce7-4475-9f15-ce1e72c5fafb",
-      "created_time": "2025-05-05T15:51:00.214Z",
-      "updated_time": "2025-05-05T15:51:00.214Z",
-      "course": 5,
-      "mentor": 4
-    }
-  },
-  {
-    "model": "courses.coursementor",
-    "pk": 5,
-    "fields": {
-      "guid": "a0796ff1-a4d0-41aa-a312-76c1201b35c2",
-      "created_time": "2025-05-05T15:51:00.217Z",
-      "updated_time": "2025-05-05T15:51:00.217Z",
-      "course": 3,
-      "mentor": 5
-    }
-  },
-  {
-    "model": "courses.coursementor",
-    "pk": 6,
-    "fields": {
-      "guid": "abe6ea88-d451-43f4-864a-bd8c02106cf0",
-      "created_time": "2025-05-05T15:51:00.221Z",
-      "updated_time": "2025-05-05T15:51:00.221Z",
-      "course": 6,
-      "mentor": 6
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 1,
-    "fields": {
-      "guid": "2e4db273-eca9-45e3-94e5-824e6933a6c4",
-      "created_time": "2025-05-05T15:51:00.343Z",
-      "updated_time": "2025-05-05T15:51:00.344Z",
-      "name": "Алексей Смирнов",
-      "name_uz": null,
-      "name_ru": "Алексей Смирнов",
-      "position": "Системный администратор",
-      "position_uz": null,
-      "position_ru": "Системный администратор",
-      "company": 1,
-      "avatar": "testimonials/default.jpg",
-      "text": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
-      "text_uz": null,
-      "text_ru": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
-      "course": 1
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 2,
-    "fields": {
-      "guid": "dfd90794-b431-46c1-839e-1d5fd720c337",
-      "created_time": "2025-05-05T15:51:00.346Z",
-      "updated_time": "2025-05-05T15:51:00.347Z",
-      "name": "Джейкоб Джонс",
-      "name_uz": null,
-      "name_ru": "Джейкоб Джонс",
-      "position": "Системный администратор",
-      "position_uz": null,
-      "position_ru": "Системный администратор",
-      "company": 3,
-      "avatar": "testimonials/default.jpg",
-      "text": "Курс очень интенсивный, но результат того стоит. За несколько месяцев я освоил технологии, которые сейчас востребованы на рынке труда.",
-      "text_uz": null,
-      "text_ru": "Курс очень интенсивный, но результат того стоит. За несколько месяцев я освоил технологии, которые сейчас востребованы на рынке труда.",
-      "course": 1
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 3,
-    "fields": {
-      "guid": "f8496aea-d2c6-4297-94d6-9d17c90ca3da",
-      "created_time": "2025-05-05T15:51:00.349Z",
-      "updated_time": "2025-05-05T15:51:00.349Z",
-      "name": "Аннет Блэк",
-      "name_uz": null,
-      "name_ru": "Аннет Блэк",
-      "position": "DevOps инженер",
-      "position_uz": null,
-      "position_ru": "DevOps инженер",
-      "company": 5,
-      "avatar": "testimonials/default.jpg",
-      "text": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
-      "text_uz": null,
-      "text_ru": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
-      "course": 1
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 4,
-    "fields": {
-      "guid": "d9d2068a-0a00-4fcd-a911-5963e577398c",
-      "created_time": "2025-05-05T15:51:00.352Z",
-      "updated_time": "2025-05-05T15:51:00.352Z",
-      "name": "Михаил Волков",
-      "name_uz": null,
-      "name_ru": "Михаил Волков",
-      "position": "Data аналитик",
-      "position_uz": null,
-      "position_ru": "Data аналитик",
-      "company": 3,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "text_uz": null,
-      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "course": 2
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 5,
-    "fields": {
-      "guid": "d98607ab-e2ea-44a8-92f4-e9e623d6f8c8",
-      "created_time": "2025-05-05T15:51:00.355Z",
-      "updated_time": "2025-05-05T15:51:00.355Z",
-      "name": "Эстер Ховард",
-      "name_uz": null,
-      "name_ru": "Эстер Ховард",
-      "position": "Fullstack разработчик",
-      "position_uz": null,
-      "position_ru": "Fullstack разработчик",
-      "company": 1,
-      "avatar": "testimonials/default.jpg",
-      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "text_uz": null,
-      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "course": 2
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 6,
-    "fields": {
-      "guid": "eeadeb23-cfe5-457c-9f34-c8105c9a5ec1",
-      "created_time": "2025-05-05T15:51:00.358Z",
-      "updated_time": "2025-05-05T15:51:00.358Z",
-      "name": "Дмитрий Петров",
-      "name_uz": null,
-      "name_ru": "Дмитрий Петров",
-      "position": "Проектный менеджер",
-      "position_uz": null,
-      "position_ru": "Проектный менеджер",
-      "company": 2,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "text_uz": null,
-      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "course": 3
-    }
-  },
-  {
-    "model": "courses.testimonial",
+    "model": "courses.mentor",
     "pk": 7,
     "fields": {
-      "guid": "ed4e030c-36d8-4b9c-b75f-d10fcadd8cd5",
-      "created_time": "2025-05-05T15:51:00.361Z",
-      "updated_time": "2025-05-05T15:51:00.361Z",
-      "name": "Гай Хокинс",
-      "name_uz": null,
-      "name_ru": "Гай Хокинс",
-      "position": "Системный администратор",
-      "position_uz": null,
-      "position_ru": "Системный администратор",
-      "company": 5,
-      "avatar": "testimonials/default.jpg",
-      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "text_uz": null,
-      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "course": 3
+      "guid": "a72fe6c1-69c9-47b6-b268-96168e485ab1",
+      "created_time": "2025-05-17T03:43:14.680Z",
+      "updated_time": "2025-05-17T03:43:14.680Z",
+      "name": "Азизбек Исроилов",
+      "name_uz": "Azizbek Isroilov",
+      "name_ru": "Азизбек Исроилов",
+      "name_en": "Azizbek Isroilov",
+      "position": "Разработчик PHP",
+      "position_uz": "Php dasturchi",
+      "position_ru": "Разработчик PHP",
+      "position_en": "Php developer",
+      "bio": "Опытный и профессиональный разработчик",
+      "bio_uz": "zo'r dasturchi",
+      "bio_ru": "Опытный и профессиональный разработчик",
+      "bio_en": "best one",
+      "photo": "mentors/Screenshot_from_2025-05-17_08-40-25.png"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.mentor",
     "pk": 8,
     "fields": {
-      "guid": "355f9cfe-b2c0-42ec-b87d-11c8ed87d432",
-      "created_time": "2025-05-05T15:51:00.364Z",
-      "updated_time": "2025-05-05T15:51:00.364Z",
-      "name": "Аннет Блэк",
-      "name_uz": null,
-      "name_ru": "Аннет Блэк",
-      "position": "DevOps инженер",
-      "position_uz": null,
-      "position_ru": "DevOps инженер",
-      "company": 2,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "text_uz": null,
-      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "course": 3
+      "guid": "7f95d8b9-4f5f-423e-878b-4a20e0834ef6",
+      "created_time": "2025-05-17T03:43:16.085Z",
+      "updated_time": "2025-05-17T03:43:16.086Z",
+      "name": "Азизбек Исроилов",
+      "name_uz": "Azizbek Isroilov",
+      "name_ru": "Азизбек Исроилов",
+      "name_en": "Azizbek Isroilov",
+      "position": "Разработчик PHP",
+      "position_uz": "Php dasturchi",
+      "position_ru": "Разработчик PHP",
+      "position_en": "Php developer",
+      "bio": "Опытный и профессиональный разработчик",
+      "bio_uz": "zo'r dasturchi",
+      "bio_ru": "Опытный и профессиональный разработчик",
+      "bio_en": "best one",
+      "photo": "mentors/Screenshot_from_2025-05-17_08-40-25_ZE3F2o8.png"
     }
   },
   {
-    "model": "courses.testimonial",
-    "pk": 9,
-    "fields": {
-      "guid": "1e21a3ed-e089-4e48-af8f-695f11459b14",
-      "created_time": "2025-05-05T15:51:00.367Z",
-      "updated_time": "2025-05-05T15:51:00.367Z",
-      "name": "Джейн Купер",
-      "name_uz": null,
-      "name_ru": "Джейн Купер",
-      "position": "Проектный менеджер",
-      "position_uz": null,
-      "position_ru": "Проектный менеджер",
-      "company": 1,
-      "avatar": "testimonials/default.jpg",
-      "text": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
-      "text_uz": null,
-      "text_ru": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
-      "course": 4
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 10,
-    "fields": {
-      "guid": "52218d43-7dec-49a3-b608-e38e87d86195",
-      "created_time": "2025-05-05T15:51:00.370Z",
-      "updated_time": "2025-05-05T15:51:00.370Z",
-      "name": "Лесли Александр",
-      "name_uz": null,
-      "name_ru": "Лесли Александр",
-      "position": "DevOps инженер",
-      "position_uz": null,
-      "position_ru": "DevOps инженер",
-      "company": 7,
-      "avatar": "testimonials/default.jpg",
-      "text": "Менторы курса - настоящие профессионалы своего дела. Они делятся не только теоретическими знаниями, но и практическим опытом работы в индустрии.",
-      "text_uz": null,
-      "text_ru": "Менторы курса - настоящие профессионалы своего дела. Они делятся не только теоретическими знаниями, но и практическим опытом работы в индустрии.",
-      "course": 4
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 11,
-    "fields": {
-      "guid": "f7109661-1af5-48da-87d4-b2fc71b5131a",
-      "created_time": "2025-05-05T15:51:00.373Z",
-      "updated_time": "2025-05-05T15:51:00.373Z",
-      "name": "Лесли Александр",
-      "name_uz": null,
-      "name_ru": "Лесли Александр",
-      "position": "Product менеджер",
-      "position_uz": null,
-      "position_ru": "Product менеджер",
-      "company": 8,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "text_uz": null,
-      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "course": 4
-    }
-  },
-  {
-    "model": "courses.testimonial",
-    "pk": 12,
-    "fields": {
-      "guid": "c51f4c19-ab59-4ad9-bfd7-5d8f313bcd14",
-      "created_time": "2025-05-05T15:51:00.376Z",
-      "updated_time": "2025-05-05T15:51:00.376Z",
-      "name": "Гай Хокинс",
-      "name_uz": null,
-      "name_ru": "Гай Хокинс",
-      "position": "Fullstack разработчик",
-      "position_uz": null,
-      "position_ru": "Fullstack разработчик",
-      "company": 9,
-      "avatar": "testimonials/default.jpg",
-      "text": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
-      "text_uz": null,
-      "text_ru": "Благодаря этому курсу я смог сменить профессию и найти работу мечты. Материал актуальный, много практики и поддержка менторов на высшем уровне.",
-      "course": 5
-    }
-  },
-  {
-    "model": "courses.testimonial",
+    "model": "courses.coursementor",
     "pk": 13,
     "fields": {
-      "guid": "22a83ec9-dbc0-488f-a352-ad9bab0c7dac",
-      "created_time": "2025-05-05T15:51:00.379Z",
-      "updated_time": "2025-05-05T15:51:00.379Z",
-      "name": "Екатерина Иванова",
-      "name_uz": null,
-      "name_ru": "Екатерина Иванова",
-      "position": "Product менеджер",
-      "position_uz": null,
-      "position_ru": "Product менеджер",
-      "company": 1,
-      "avatar": "testimonials/default.jpg",
-      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "text_uz": null,
-      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "course": 5
+      "guid": "0cb3eedb-707e-4926-9772-dd9af90bd9b0",
+      "created_time": "2025-05-17T03:43:48.359Z",
+      "updated_time": "2025-05-17T03:43:48.359Z",
+      "course": 1,
+      "mentor": 8
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
+    "pk": 1,
+    "fields": {
+      "guid": "c1e286d6-fd3c-43ea-9e45-0535088a6e25",
+      "created_time": "2025-05-17T06:43:34.397Z",
+      "updated_time": "2025-05-17T06:43:34.398Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 2,
+    "fields": {
+      "guid": "b80b6b21-4e04-4b2f-93b8-9ca274c1e930",
+      "created_time": "2025-05-17T06:44:29.508Z",
+      "updated_time": "2025-05-17T06:44:29.508Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_mJzCdLB.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 3,
+    "fields": {
+      "guid": "070b43cf-5841-4ec7-9b8e-852908be097a",
+      "created_time": "2025-05-17T06:44:34.225Z",
+      "updated_time": "2025-05-17T06:44:34.225Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_WUTPpv1.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 4,
+    "fields": {
+      "guid": "9fc8be70-0a08-4195-9582-4c0a38b92a89",
+      "created_time": "2025-05-17T06:44:49.997Z",
+      "updated_time": "2025-05-17T06:44:49.997Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_xDoV0qq.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 5,
+    "fields": {
+      "guid": "5db1e1fa-0fb6-4e00-b42b-3992ef34fbe8",
+      "created_time": "2025-05-17T06:47:03.357Z",
+      "updated_time": "2025-05-17T06:47:03.357Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_YwQpXRG.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 6,
+    "fields": {
+      "guid": "2152c25a-bc09-4442-b2d0-915cbcab75f7",
+      "created_time": "2025-05-17T06:48:36.095Z",
+      "updated_time": "2025-05-17T06:48:36.095Z",
+      "course": 1,
+      "last_name": "Abdukulov",
+      "first_name": "Abdulla",
+      "middle_name": "Abduqodir o'g'li",
+      "birth_date": "2025-05-17",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/amazon-logo-on-transparent-background-free-vector.jpg",
+      "pinfl": "12324354765685",
+      "phone": "998990054504",
+      "email": "abduqulovabdulla3108@gmail.com",
+      "telegram_username": "abdukulov"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 7,
+    "fields": {
+      "guid": "e7671bcc-46a9-4027-a2a8-4ca949b86b17",
+      "created_time": "2025-05-17T06:48:42.720Z",
+      "updated_time": "2025-05-17T06:48:42.720Z",
+      "course": 1,
+      "last_name": "Abdukulov",
+      "first_name": "Abdulla",
+      "middle_name": "Abduqodir o'g'li",
+      "birth_date": "2025-05-17",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/amazon-logo-on-transparent-background-free-vector_0XKmZvE.jpg",
+      "pinfl": "12324354765685",
+      "phone": "998990054504",
+      "email": "abduqulovabdulla3108@gmail.com",
+      "telegram_username": "abdukulov"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 8,
+    "fields": {
+      "guid": "68ae3424-45b1-4c3a-98b3-aed6b3f2635b",
+      "created_time": "2025-05-17T06:51:24.035Z",
+      "updated_time": "2025-05-17T06:51:24.036Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_KZT34MB.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 9,
+    "fields": {
+      "guid": "8ee2e690-c125-469e-8f51-fc92d3ac82e3",
+      "created_time": "2025-05-17T07:09:01.452Z",
+      "updated_time": "2025-05-17T07:09:01.452Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_1BpnS1u.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 10,
+    "fields": {
+      "guid": "9cef0f22-f3ca-4529-9b5e-607f94a32e67",
+      "created_time": "2025-05-17T07:14:03.064Z",
+      "updated_time": "2025-05-17T07:14:03.064Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_ge7fpm7.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 11,
+    "fields": {
+      "guid": "5d593a5c-32cc-4f3a-9fca-736a95c5ed16",
+      "created_time": "2025-05-17T07:14:15.459Z",
+      "updated_time": "2025-05-17T07:14:15.459Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_1PLGSrE.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 12,
+    "fields": {
+      "guid": "23466a3e-83f2-4fbd-aa5a-3fe773c98490",
+      "created_time": "2025-05-17T07:14:46.961Z",
+      "updated_time": "2025-05-17T07:14:46.961Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_oqRrvmA.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
+    "pk": 13,
+    "fields": {
+      "guid": "008f452f-b60f-46c4-8260-8e65eb65b801",
+      "created_time": "2025-05-17T07:22:27.236Z",
+      "updated_time": "2025-05-17T07:22:27.236Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_uGtLXEg.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
+    }
+  },
+  {
+    "model": "courses.courseregistration",
     "pk": 14,
     "fields": {
-      "guid": "5573edbd-5488-48e3-8711-e33f2852902d",
-      "created_time": "2025-05-05T15:51:00.381Z",
-      "updated_time": "2025-05-05T15:51:00.381Z",
-      "name": "Джейн Купер",
-      "name_uz": null,
-      "name_ru": "Джейн Купер",
-      "position": "Backend разработчик",
-      "position_uz": null,
-      "position_ru": "Backend разработчик",
-      "company": 5,
-      "avatar": "testimonials/default.jpg",
-      "text": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
-      "text_uz": null,
-      "text_ru": "Я прошел несколько онлайн-курсов, но этот однозначно лучший. Качество материала, поддержка и практические задания на высоте.",
-      "course": 5
+      "guid": "0063e70f-d5d7-4af5-81a6-6f889dc84e0a",
+      "created_time": "2025-05-17T07:24:29.427Z",
+      "updated_time": "2025-05-17T07:24:29.427Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_ngLNiJD.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 15,
     "fields": {
-      "guid": "169503ee-0961-4c1f-9988-d98bde70e5c3",
-      "created_time": "2025-05-05T15:51:00.384Z",
-      "updated_time": "2025-05-05T15:51:00.384Z",
-      "name": "Джейкоб Джонс",
-      "name_uz": null,
-      "name_ru": "Джейкоб Джонс",
-      "position": "UI/UX Дизайнер",
-      "position_uz": null,
-      "position_ru": "UI/UX Дизайнер",
-      "company": 3,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "text_uz": null,
-      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "course": 5
+      "guid": "e7607fa0-ca44-44a4-aadd-471eee5fae8c",
+      "created_time": "2025-05-17T07:30:20.402Z",
+      "updated_time": "2025-05-17T07:30:20.402Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_5dRrk42.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 16,
     "fields": {
-      "guid": "20ca0a12-7cd7-457b-863e-f4b7222e7c92",
-      "created_time": "2025-05-05T15:51:00.387Z",
-      "updated_time": "2025-05-05T15:51:00.387Z",
-      "name": "Эстер Ховард",
-      "name_uz": null,
-      "name_ru": "Эстер Ховард",
-      "position": "Backend разработчик",
-      "position_uz": null,
-      "position_ru": "Backend разработчик",
-      "company": 2,
-      "avatar": "testimonials/default.jpg",
-      "text": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "text_uz": null,
-      "text_ru": "После окончания курса я сразу нашел работу в крупной компании. Полученные знания полностью соответствуют требованиям рынка.",
-      "course": 6
+      "guid": "6bd65cd1-055e-40f4-b4ba-795875edc8e2",
+      "created_time": "2025-05-17T07:30:26.876Z",
+      "updated_time": "2025-05-17T07:30:26.876Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_kKMip1v.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 17,
     "fields": {
-      "guid": "39add3f3-4d10-449e-844c-d0ad63712908",
-      "created_time": "2025-05-05T15:51:00.390Z",
-      "updated_time": "2025-05-05T15:51:00.391Z",
-      "name": "Эстер Ховард",
-      "name_uz": null,
-      "name_ru": "Эстер Ховард",
-      "position": "Fullstack разработчик",
-      "position_uz": null,
-      "position_ru": "Fullstack разработчик",
-      "company": 1,
-      "avatar": "testimonials/default.jpg",
-      "text": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
-      "text_uz": null,
-      "text_ru": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
-      "course": 6
+      "guid": "e31bd6c1-498c-47a3-8185-cb5c2faeafa0",
+      "created_time": "2025-05-17T07:42:56.693Z",
+      "updated_time": "2025-05-17T07:42:56.693Z",
+      "course": 1,
+      "last_name": "Abdukulov",
+      "first_name": "Abdulla",
+      "middle_name": "Abduqodir o'g'li",
+      "birth_date": "2025-05-17",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/amazon-logo-on-transparent-background-free-vector_vrMaGz7.jpg",
+      "pinfl": "12324354765685",
+      "phone": "998990054504",
+      "email": "abduqulovabdulla3108@gmail.com",
+      "telegram_username": "abdukulov"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 18,
     "fields": {
-      "guid": "00eb17a6-78b2-41bc-8f54-d087d1bb020f",
-      "created_time": "2025-05-05T15:51:00.393Z",
-      "updated_time": "2025-05-05T15:51:00.393Z",
-      "name": "Дмитрий Петров",
-      "name_uz": null,
-      "name_ru": "Дмитрий Петров",
-      "position": "Data аналитик",
-      "position_uz": null,
-      "position_ru": "Data аналитик",
-      "company": 4,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "text_uz": null,
-      "text_ru": "Отличный курс для начинающих! Преподаватели объясняют сложные концепции простым языком. Рекомендую всем, кто хочет начать карьеру в IT.",
-      "course": 6
+      "guid": "389c97f2-9923-4330-9eb6-022b832affcb",
+      "created_time": "2025-05-17T07:56:54.285Z",
+      "updated_time": "2025-05-17T07:56:54.285Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_YVHrw7L.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 19,
     "fields": {
-      "guid": "8a2046d5-3160-4422-a855-0b451646179c",
-      "created_time": "2025-05-05T15:51:00.396Z",
-      "updated_time": "2025-05-05T15:51:00.396Z",
-      "name": "Алексей Смирнов",
-      "name_uz": null,
-      "name_ru": "Алексей Смирнов",
-      "position": "QA инженер",
-      "position_uz": null,
-      "position_ru": "QA инженер",
-      "company": 6,
-      "avatar": "testimonials/default.jpg",
-      "text": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
-      "text_uz": null,
-      "text_ru": "Прекрасная структура обучения и отзывчивые преподаватели. Всегда готовы помочь и ответить на вопросы. Я очень доволен своим выбором!",
-      "course": 6
+      "guid": "5a28a5fb-5c4e-4f5a-b881-a2d1699e006d",
+      "created_time": "2025-05-17T07:56:59.752Z",
+      "updated_time": "2025-05-17T07:56:59.752Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_tDOr6cS.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 20,
     "fields": {
-      "guid": "88b657aa-609a-4af6-9e94-f2edef09fa3b",
-      "created_time": "2025-05-05T15:51:00.399Z",
-      "updated_time": "2025-05-05T15:51:00.399Z",
-      "name": "Алексей Смирнов",
-      "name_uz": null,
-      "name_ru": "Алексей Смирнов",
-      "position": "Backend разработчик",
-      "position_uz": null,
-      "position_ru": "Backend разработчик",
-      "company": 8,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "text_uz": null,
-      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "course": 7
+      "guid": "9c33e563-2359-4f23-885c-099ac98df62c",
+      "created_time": "2025-05-17T07:57:12.831Z",
+      "updated_time": "2025-05-17T07:57:12.831Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_DOW7sdD.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 21,
     "fields": {
-      "guid": "7f3c603b-5181-402d-927a-798b5eeffea1",
-      "created_time": "2025-05-05T15:51:00.402Z",
-      "updated_time": "2025-05-05T15:51:00.402Z",
-      "name": "Джейн Купер",
-      "name_uz": null,
-      "name_ru": "Джейн Купер",
-      "position": "Product менеджер",
-      "position_uz": null,
-      "position_ru": "Product менеджер",
-      "company": 3,
-      "avatar": "testimonials/default.jpg",
-      "text": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
-      "text_uz": null,
-      "text_ru": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
-      "course": 7
+      "guid": "66d5bc53-9bc5-43e5-8a45-97140caaa00a",
+      "created_time": "2025-05-17T07:57:21.542Z",
+      "updated_time": "2025-05-17T07:57:21.542Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_qlrRsuT.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 22,
     "fields": {
-      "guid": "2e9678ff-3b3f-4ff3-8427-e8c3ac6118de",
-      "created_time": "2025-05-05T15:51:00.405Z",
-      "updated_time": "2025-05-05T15:51:00.405Z",
-      "name": "Дмитрий Петров",
-      "name_uz": null,
-      "name_ru": "Дмитрий Петров",
-      "position": "Data аналитик",
-      "position_uz": null,
-      "position_ru": "Data аналитик",
-      "company": 6,
-      "avatar": "testimonials/default.jpg",
-      "text": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
-      "text_uz": null,
-      "text_ru": "Я уже имел опыт в программировании, но этот курс помог мне структурировать знания и заполнить пробелы. Теперь я чувствую себя увереннее как специалист.",
-      "course": 7
+      "guid": "a76d1135-233a-4da6-a989-bfdba26ea628",
+      "created_time": "2025-05-17T07:58:35.870Z",
+      "updated_time": "2025-05-17T07:58:35.870Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_eVe1id6.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
+    "model": "courses.courseregistration",
     "pk": 23,
     "fields": {
-      "guid": "b8b8d589-8eee-426f-8567-4b9fc5025ade",
-      "created_time": "2025-05-05T15:51:00.408Z",
-      "updated_time": "2025-05-05T15:51:00.408Z",
-      "name": "Аннет Блэк",
-      "name_uz": null,
-      "name_ru": "Аннет Блэк",
-      "position": "Frontend разработчик",
-      "position_uz": null,
-      "position_ru": "Frontend разработчик",
-      "company": 3,
-      "avatar": "testimonials/default.jpg",
-      "text": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
-      "text_uz": null,
-      "text_ru": "Этот курс превзошел все мои ожидания! Материал подается очень понятно и структурированно. Я смог быстро освоить новые навыки и уже применяю их в работе.",
-      "course": 8
+      "guid": "3c4d94f9-c627-4530-892a-b4fd8d10a1d6",
+      "created_time": "2025-05-17T08:00:11.199Z",
+      "updated_time": "2025-05-17T08:00:11.199Z",
+      "course": 1,
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Smith",
+      "birth_date": "1990-01-01",
+      "passport_series": "AA",
+      "passport_number": "1234567",
+      "passport_image": "passport_scans/1360198_8of16uy.jpeg",
+      "pinfl": "12345678901234",
+      "phone": "998901234567",
+      "email": "john.doe@example.com",
+      "telegram_username": "johndoe"
     }
   },
   {
-    "model": "courses.testimonial",
-    "pk": 24,
+    "model": "courses.contactrequest",
+    "pk": 5,
     "fields": {
-      "guid": "ac3abd6a-da94-4f83-94f7-bd2693d2d9d4",
-      "created_time": "2025-05-05T15:51:00.410Z",
-      "updated_time": "2025-05-05T15:51:00.410Z",
-      "name": "Гай Хокинс",
-      "name_uz": null,
-      "name_ru": "Гай Хокинс",
-      "position": "Backend разработчик",
-      "position_uz": null,
-      "position_ru": "Backend разработчик",
-      "company": 8,
-      "avatar": "testimonials/default.jpg",
-      "text": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "text_uz": null,
-      "text_ru": "Отличное соотношение цены и качества. Курс дает реальные практические навыки, которые можно сразу применять в работе.",
-      "course": 8
+      "guid": "afb3bb33-f226-4083-a4a2-7c43090312b2",
+      "created_time": "2025-05-16T17:39:39.290Z",
+      "updated_time": "2025-05-16T17:39:39.290Z",
+      "name": "Leah Herman",
+      "phone": "+1 (307) 646-6491",
+      "email": "kolihyqo@mailinator.com",
+      "message": "Possimus dolorum fu"
     }
   }
 ]
