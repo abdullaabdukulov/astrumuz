@@ -54,6 +54,10 @@ class Course(BaseModel):
         verbose_name=_("Категория"),
     )
 
+    bitrix_category_id = models.IntegerField(
+        _("Bitrix категория ID"), blank=True, null=True
+    )
+
     # Detailed course information
     what_will_learn = models.TextField(_("Чему вы научитесь"), blank=True)
     video_hours = models.PositiveIntegerField(_("Часы видео"), default=0)

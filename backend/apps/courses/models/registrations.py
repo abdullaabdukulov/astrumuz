@@ -14,10 +14,29 @@ class CourseRegistration(BaseModel):
         related_name="registrations",
         verbose_name=_("Курс"),
     )
-    name = models.CharField(_("Имя"), max_length=255)
+
+    # Full name
+    last_name = models.CharField(_("Фамилия"), max_length=255)
+    first_name = models.CharField(_("Имя"), max_length=255)
+    middle_name = models.CharField(_("Отчество"), max_length=255, blank=True)
+
+    birth_date = models.DateField(_("Дата рождения"))
+
+    # Passport
+    passport_series = models.CharField(_("Серия паспорта"), max_length=10)
+    passport_number = models.CharField(_("Номер паспорта"), max_length=20)
+    passport_image = models.ImageField(
+        _("Скан паспорта"), upload_to="passport_scans/", blank=True, null=True
+    )
+
+    pinfl = models.CharField(_("ЖШШИР (PINFL)"), max_length=14)
+
+    # Contact info
     phone = models.CharField(_("Телефон"), max_length=20)
     email = models.EmailField(_("Email"))
-    message = models.TextField(_("Сообщение"), blank=True)
+    telegram_username = models.CharField(
+        _("Telegram username"), max_length=100, blank=True
+    )
 
     class Meta:
         verbose_name = _("Регистрация на курс")
@@ -25,7 +44,7 @@ class CourseRegistration(BaseModel):
         ordering = ["-created_time"]
 
     def __str__(self):
-        return f"{self.name} - {self.course.title}"
+        return f"{self.last_name} {self.first_name} - {self.course.title}"
 
 
 class ContactRequest(BaseModel):

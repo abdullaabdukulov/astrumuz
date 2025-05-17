@@ -2,11 +2,9 @@ from modeltranslation.translator import TranslationOptions, register
 
 from .models import (
     Company,
-    ContactRequest,
     Course,
     CourseCategory,
     CourseOutcome,
-    CourseRegistration,
     Mentor,
     Testimonial,
 )
@@ -40,13 +38,3 @@ class CompanyTranslationOptions(TranslationOptions):
 @register(Testimonial)
 class TestimonialTranslationOptions(TranslationOptions):
     fields = ("name", "position", "text")
-
-
-@register(CourseRegistration)
-class CourseRegistrationTranslationOptions(TranslationOptions):
-    fields = ("name", "message")
-
-
-@register(ContactRequest)
-class ContactRequestTranslationOptions(TranslationOptions):
-    fields = ("name", "message")

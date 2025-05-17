@@ -80,6 +80,7 @@ class CourseAdmin(TranslationAdmin):
                     "featured",
                     "is_new",
                     "category",
+                    "bitrix_category_id",
                 )
             },
         ),
@@ -176,41 +177,60 @@ class TestimonialAdmin(TranslationAdmin):
 
 
 @admin.register(CourseRegistration)
-class CourseRegistrationAdmin(TranslationAdmin):
-    list_display = ("name", "phone", "email", "course", "created_time")
+class CourseRegistrationAdmin(admin.ModelAdmin):
+    list_display = (
+        "last_name",
+        "first_name",
+        "middle_name",
+        "phone",
+        "email",
+        "course",
+        "created_time",
+    )
     list_filter = ("course", "created_time")
-    search_fields = ("name", "phone", "email")
+    search_fields = (
+        "last_name",
+        "first_name",
+        "middle_name",
+        "phone",
+        "email",
+    )
     readonly_fields = ("created_time",)
 
-    class Media:
-        js = (
-            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
-            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
-            "modeltranslation/js/tabbed_translation_fields.js",
-        )
-        css = {
-            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
-        }
+    fieldsets = (
+        (
+            None,
+            {
+                "fields": (
+                    "course",
+                    ("last_name", "first_name", "middle_name"),
+                    "birth_date",
+                    ("passport_series", "passport_number"),
+                    "passport_image",
+                    "pinfl",
+                    "phone",
+                    "email",
+                    "telegram_username",
+                )
+            },
+        ),
+        (
+            "Информация о создании",
+            {
+                "fields": ("created_time",),
+                "classes": ("collapse",),
+            },
+        ),
+    )
 
 
 @admin.register(ContactRequest)
-class ContactRequestAdmin(TranslationAdmin):
+class ContactRequestAdmin(admin.ModelAdmin):
     list_display = ("name", "phone", "email", "created_time")
     list_filter = ("created_time",)
     search_fields = ("name", "phone", "email", "message")
     readonly_fields = ("created_time",)
 
-    class Media:
-        js = (
-            "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
-            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
-            "modeltranslation/js/tabbed_translation_fields.js",
-        )
-        css = {
-            "screen": ("modeltranslation/css/tabbed_translation_fields.css",),
-        }
 
-
-# Register the remaining models
 admin.site.register(CourseMentor)
 admin.site.register(CourseCompany)
