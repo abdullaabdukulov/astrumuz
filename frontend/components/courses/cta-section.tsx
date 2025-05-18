@@ -3,9 +3,15 @@
 import { useState } from "react"
 import Image from "next/image"
 import { ContactFormModal } from "@/components/shared/contact-form-modal"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function CTASection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const ctaText = translations.mobileCta[language as keyof typeof translations.mobileCta] || translations.mobileCta.ru
 
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
@@ -20,17 +26,15 @@ export function CTASection() {
           <div className="flex flex-col md:flex-row items-center p-12 md:p-16 relative z-10">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Готовы стать <br />
-                <span className="text-[#00e5b0]">учеником Astrum?</span>
+                {ctaText.readyToBecome} <br />
+                <span className="text-[#00e5b0]">{ctaText.student}</span>
               </h2>
-              <p className="text-white text-lg mb-8 max-w-md">
-                Не упустите возможность записаться на курсы Astrum и начать изучать программирование.
-              </p>
+              <p className="text-white text-lg mb-8 max-w-md">{ctaText.opportunity}</p>
               <button
                 onClick={openModal}
                 className="inline-block bg-[#6a3de8] hover:bg-[#5a2ed8] text-white font-medium py-4 px-8 rounded-full transition-colors"
               >
-                Записаться на бесплатный урок
+                {ctaText.freeLesson}
               </button>
             </div>
             <div className="md:w-1/2 flex justify-end">
@@ -50,9 +54,13 @@ export function CTASection() {
       <ContactFormModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        title="Запись на курс"
-        submitButtonText="Отправить заявку"
-        initialMessage="Запись на курс"
+        title={language === "ru" ? "Запись на курс" : language === "uz" ? "Kursga yozilish" : "Course registration"}
+        submitButtonText={
+          language === "ru" ? "Отправить заявку" : language === "uz" ? "So'rov yuborish" : "Submit request"
+        }
+        initialMessage={
+          language === "ru" ? "Запись на курс" : language === "uz" ? "Kursga yozilish" : "Course registration"
+        }
       />
     </section>
   )

@@ -1,7 +1,16 @@
+"use client"
+
 import Image from "next/image"
 import { SocialLinks } from "@/components/ui/social-links"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function Footer() {
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const footerText = translations.footer[language as keyof typeof translations.footer] || translations.footer.ru
+
   return (
     <footer className="w-full">
       <div className="flex flex-col md:flex-row">
@@ -11,17 +20,15 @@ export function Footer() {
             {/* CTA Section */}
             <div className="mb-16">
               <h2 className="text-4xl font-bold mb-4">
-                Готовы стать <br />
-                учеником Astrum?
+                {footerText.readyToBecome} <br />
+                {footerText.student}
               </h2>
-              <p className="text-lg mb-6">
-                Не упустите возможность записаться на курсы Astrum и начать изучать программирование.
-              </p>
+              <p className="text-lg mb-6">{footerText.opportunity}</p>
               <a
                 href="#courses"
                 className="inline-block bg-white text-[#6a3de8] font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transition-colors"
               >
-                Хочу учиться!
+                {footerText.wantToStudy}
               </a>
             </div>
 
@@ -30,12 +37,12 @@ export function Footer() {
 
             {/* Careers Section */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">Присоединяйтесь к нашей команде. Мы ищем креативных людей!</h3>
+              <h3 className="text-2xl font-bold mb-4">{footerText.joinTeam}</h3>
               <a
                 href="#"
                 className="inline-block border border-white text-white font-medium py-3 px-8 rounded-full hover:bg-white hover:bg-opacity-10 transition-colors mt-4"
               >
-                Посмотреть вакансии
+                {footerText.viewVacancies}
               </a>
             </div>
           </div>
@@ -62,36 +69,36 @@ export function Footer() {
             <div className="grid grid-cols-3 gap-8">
               {/* Academy column */}
               <div>
-                <h4 className="text-gray-400 font-medium mb-4">АКАДЕМИЯ</h4>
+                <h4 className="text-gray-400 font-medium mb-4">{footerText.academy}</h4>
                 <ul className="space-y-3">
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      — Главная
+                      — {footerText.home}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      Новости
+                      {footerText.news}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      Блог
+                      {footerText.blog}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      Наши Партнеры
+                      {footerText.partners}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      Карьера
+                      {footerText.career}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      Корпоративное обучение
+                      {footerText.corporate}
                     </a>
                   </li>
                 </ul>
@@ -99,7 +106,7 @@ export function Footer() {
 
               {/* Courses column */}
               <div>
-                <h4 className="text-gray-400 font-medium mb-4">КУРСЫ</h4>
+                <h4 className="text-gray-400 font-medium mb-4">{footerText.courses}</h4>
                 <ul className="space-y-3">
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
@@ -131,21 +138,21 @@ export function Footer() {
 
               {/* Contact column */}
               <div>
-                <h4 className="text-gray-400 font-medium mb-4">СВЯЗЬ</h4>
+                <h4 className="text-gray-400 font-medium mb-4">{footerText.contact}</h4>
                 <ul className="space-y-3">
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      О Нас
+                      {footerText.aboutUs}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      FAQ
+                      {footerText.faq}
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#00e5b0] transition-colors">
-                      Контакты
+                      {footerText.contacts}
                     </a>
                   </li>
                 </ul>
@@ -153,7 +160,7 @@ export function Footer() {
             </div>
 
             {/* Copyright */}
-            <div className="mt-16 text-gray-400 text-sm">© 2024 - Astrum Academy</div>
+            <div className="mt-16 text-gray-400 text-sm">{footerText.copyright}</div>
           </div>
         </div>
       </div>

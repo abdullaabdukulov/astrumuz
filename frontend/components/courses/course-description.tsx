@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useLanguage } from "@/lib/context/language-context"
 
 interface CourseDescriptionProps {
   courseSlug: string
@@ -10,6 +11,26 @@ interface CourseDescriptionProps {
 
 export function CourseDescription({ courseSlug, description, whatWillLearn }: CourseDescriptionProps) {
   const [isExpanded, setIsExpanded] = useState(false)
+
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const courseTexts = {
+    ru: {
+      description: "Описание",
+      courseDescription: "Описание курса",
+    },
+    uz: {
+      description: "Tavsif",
+      courseDescription: "Kurs tavsifi",
+    },
+    en: {
+      description: "Description",
+      courseDescription: "Course Description",
+    },
+  }
+
+  const currentText = courseTexts[language as keyof typeof courseTexts] || courseTexts.ru
 
   // Split the description into paragraphs
   const descriptionParagraphs = description.split("\n").filter((p) => p.trim() !== "")
@@ -24,8 +45,8 @@ export function CourseDescription({ courseSlug, description, whatWillLearn }: Co
     <section className="py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-[#6a3de8] font-medium mb-2">Описание</div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Описание курса</h2>
+          <div className="text-[#6a3de8] font-medium mb-2">{currentText.description}</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">{currentText.courseDescription}</h2>
 
           <div className="space-y-4 mb-8">
             <p>{mainDescription}</p>
@@ -42,7 +63,7 @@ export function CourseDescription({ courseSlug, description, whatWillLearn }: Co
 
           {(additionalParagraphs.length > 0 || whatWillLearn) && (
             <button className="flex items-center text-[#6a3de8] font-medium" onClick={() => setIsExpanded(!isExpanded)}>
-              {isExpanded ? "Показать меньше" : "Показать больше"}
+              {isExpanded ? currentText.showLess || "Показать меньше" : currentText.showMore || "Показать больше"}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

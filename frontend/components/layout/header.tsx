@@ -6,10 +6,14 @@ import { MobileMenu } from "./mobile-menu"
 import { useState } from "react"
 import { ContactFormModal } from "@/components/shared/contact-form-modal"
 import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { language, setLanguage } = useLanguage()
+
+  // Get translations for the current language
+  const headerText = translations.header[language as keyof typeof translations.header] || translations.header.ru
 
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
@@ -30,38 +34,40 @@ export function Header() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center justify-between flex-1">
-            <div className="flex items-center">
-              <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-3"></div>
+          <div className="hidden md:flex items-center justify-between flex-1 flex-wrap lg:flex-nowrap">
+            {/* Contact info items - responsive for tablet */}
+            <div className="flex items-center md:mb-2 lg:mb-0 md:w-1/2 lg:w-auto xl:mr-4">
+              <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-2 md:mr-3"></div>
               <div>
-                <div className="text-gray-500 text-sm">Отвечаем на вопросы</div>
-                <div className="font-bold">+998 71 202 42 22</div>
+                <div className="text-gray-500 text-xs md:text-sm">{headerText.answering}</div>
+                <div className="font-bold text-sm md:text-base">+998 71 202 42 22</div>
               </div>
             </div>
 
-            <div className="flex items-center">
-              <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-3"></div>
+            <div className="flex items-center md:mb-2 lg:mb-0 md:w-1/2 lg:w-auto xl:mr-4">
+              <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-2 md:mr-3"></div>
               <div>
-                <div className="text-gray-500 text-sm">Напишите нам</div>
-                <div className="font-bold">info@astrum.uz</div>
+                <div className="text-gray-500 text-xs md:text-sm">{headerText.writeUs}</div>
+                <div className="font-bold text-sm md:text-base">info@astrum.uz</div>
               </div>
             </div>
 
-            <div className="flex items-center">
-              <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-3"></div>
+            <div className="flex items-center md:mb-2 lg:mb-0 md:w-1/2 lg:w-auto xl:mr-4">
+              <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-2 md:mr-3"></div>
               <div>
-                <div className="text-gray-500 text-sm">Телеграм</div>
-                <div className="font-bold">@astrumuz</div>
+                <div className="text-gray-500 text-xs md:text-sm">{headerText.telegram}</div>
+                <div className="font-bold text-sm md:text-base">@astrumuz</div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-5">
+            {/* Language and CTA buttons */}
+            <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-5 md:w-full lg:w-auto md:justify-center lg:justify-start md:mt-3 lg:mt-0">
               <div className="flex space-x-1 sm:space-x-2">
                 <button
                   onClick={() => setLanguage("ru")}
                   className={`rounded-full border ${
                     language === "ru" ? "border-[#6a3de8] bg-[#6a3de8] text-white" : "border-gray-300 text-gray-700"
-                  } w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center transition-colors text-sm sm:text-base`}
+                  } w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 flex items-center justify-center transition-colors text-xs md:text-sm`}
                 >
                   RU
                 </button>
@@ -69,7 +75,7 @@ export function Header() {
                   onClick={() => setLanguage("uz")}
                   className={`rounded-full border ${
                     language === "uz" ? "border-[#6a3de8] bg-[#6a3de8] text-white" : "border-gray-300 text-gray-700"
-                  } w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center transition-colors text-sm sm:text-base`}
+                  } w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 flex items-center justify-center transition-colors text-xs md:text-sm`}
                 >
                   UZ
                 </button>
@@ -77,16 +83,16 @@ export function Header() {
                   onClick={() => setLanguage("en")}
                   className={`rounded-full border ${
                     language === "en" ? "border-[#6a3de8] bg-[#6a3de8] text-white" : "border-gray-300 text-gray-700"
-                  } w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center transition-colors text-sm sm:text-base`}
+                  } w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 flex items-center justify-center transition-colors text-xs md:text-sm`}
                 >
                   EN
                 </button>
               </div>
               <button
                 onClick={openModal}
-                className="bg-[#f5f3ff] text-[#6a3de8] px-4 sm:px-5 md:px-7 py-2 sm:py-3 rounded-full font-medium text-sm sm:text-base"
+                className="bg-[#f5f3ff] text-[#6a3de8] px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-full font-medium text-xs md:text-sm"
               >
-                Хочу учиться!
+                {headerText.wantToStudy}
               </button>
             </div>
           </div>

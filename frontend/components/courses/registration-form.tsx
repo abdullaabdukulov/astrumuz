@@ -4,6 +4,8 @@ import type React from "react"
 
 import { useState } from "react"
 import { registerForCourse } from "@/lib/services/api"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 interface RegistrationFormProps {
   courseSlug: string
@@ -12,6 +14,12 @@ interface RegistrationFormProps {
 }
 
 export function RegistrationForm({ courseSlug, courseId, onSuccess }: RegistrationFormProps) {
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const formText =
+    translations.contactForm[language as keyof typeof translations.contactForm] || translations.contactForm.ru
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -42,14 +50,14 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
       })
 
       if (!response.success) {
-        throw new Error(response.message || "Произошла ошибка при регистрации")
+        throw new Error(response.message || formText.error)
       }
 
       setIsSubmitted(true)
       setFormData({ name: "", phone: "", email: "", message: "" })
     } catch (err) {
       console.error("Error submitting form:", err)
-      setError(err instanceof Error ? err.message : "Произошла ошибка при регистрации")
+      setError(err instanceof Error ? err.message : formText.error)
     } finally {
       setIsSubmitting(false)
     }
@@ -58,8 +66,8 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
   if (isSubmitted) {
     return (
       <div className="bg-green-50 p-6 rounded-xl text-center">
-        <h3 className="text-xl font-bold text-green-700 mb-2">Спасибо за вашу заявку!</h3>
-        <p className="text-green-600 mb-4">Наш менеджер свяжется с вами в ближайшее время.</p>
+        <h3 className="text-xl font-bold text-green-700 mb-2">{formText.thanks}</h3>
+        <p className="text-green-600 mb-4">{formText.managerContact}</p>
         <button
           onClick={() => {
             setIsSubmitted(false)
@@ -67,7 +75,7 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
           }}
           className="bg-[#6a3de8] text-white px-6 py-2 rounded-full"
         >
-          Закрыть
+          {formText.close}
         </button>
       </div>
     )
@@ -83,7 +91,7 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-          Ваше имя
+          {formText.yourName}
         </label>
         <input
           type="text"
@@ -93,13 +101,13 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
           onChange={handleChange}
           required
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#6a3de8] focus:border-transparent"
-          placeholder="Введите ваше имя"
+          placeholder={formText.enterName}
         />
       </div>
 
       <div>
         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-          Телефон
+          {formText.phone}
         </label>
         <input
           type="tel"
@@ -115,7 +123,7 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-          Email
+          {formText.email}
         </label>
         <input
           type="email"
@@ -131,7 +139,7 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-          Сообщение (необязательно)
+          {formText.message}
         </label>
         <textarea
           id="message"
@@ -140,7 +148,7 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
           onChange={handleChange}
           rows={4}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#6a3de8] focus:border-transparent"
-          placeholder="Расскажите о ваших пожеланиях"
+          placeholder={formText.wishes}
         ></textarea>
       </div>
 
@@ -149,7 +157,7 @@ export function RegistrationForm({ courseSlug, courseId, onSuccess }: Registrati
         disabled={isSubmitting}
         className="w-full bg-[#6a3de8] text-white py-3 px-6 rounded-full font-medium hover:bg-[#5a2ed8] transition-colors disabled:opacity-70"
       >
-        {isSubmitting ? "Отправка..." : "Зарегистрироваться"}
+        {isSubmitting ? formText.sending : formText.submit}
       </button>
     </form>
   )

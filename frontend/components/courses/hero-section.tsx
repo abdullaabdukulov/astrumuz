@@ -1,6 +1,9 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import { NAV_ITEMS } from "@/lib/constants"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 interface HeroSectionProps {
   title?: string
@@ -10,11 +13,21 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({
-  title = "Astrum IT Академия",
-  description = "Lorem ipsum dolor sit amet consectetur. Ipsum egestas congue ipsum dolor sed posuere dolor ornare. Fringilla vitae in ac mattis.",
+  title,
+  description,
   backgroundImage = "/images/background.jpg",
   showNavigation = true,
 }: HeroSectionProps) {
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const heroText = translations.hero[language as keyof typeof translations.hero] || translations.hero.ru
+  const navItems = translations.navItems[language as keyof typeof translations.navItems] || translations.navItems.ru
+
+  // Use provided props or fallback to translations
+  const heroTitle = title || heroText.title
+  const heroDescription = description || heroText.description
+
   return (
     <div className="relative">
       {/* Background image container */}
@@ -37,7 +50,7 @@ export function HeroSection({
             <div className="relative z-20 mt-0">
               <nav className="bg-white rounded-t-none rounded-b-[30px] shadow-lg max-w-4xl mx-auto">
                 <ul className="flex justify-center pt-1 pb-6 px-4 flex-wrap md:flex-nowrap">
-                  {NAV_ITEMS.map((item) => (
+                  {navItems.map((item) => (
                     <li key={item.title} className="mx-2 md:mx-3 whitespace-nowrap">
                       <Link
                         href={item.href}
@@ -56,9 +69,9 @@ export function HeroSection({
 
           {/* Hero content */}
           <div className="relative z-10 pt-24 pb-40 text-center">
-            <div className="text-[#00e5b0] text-3xl font-bold mb-6">Курсы</div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">{title}</h1>
-            <p className="text-white text-lg md:text-xl max-w-3xl mx-auto">{description}</p>
+            <div className="text-[#00e5b0] text-3xl font-bold mb-6">{heroText.courses}</div>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">{heroTitle}</h1>
+            <p className="text-white text-lg md:text-xl max-w-3xl mx-auto">{heroDescription}</p>
           </div>
 
           {/* Bottom curved section - similar to top navbar but inverted */}

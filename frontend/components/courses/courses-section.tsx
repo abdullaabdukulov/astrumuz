@@ -1,9 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
 import { CourseCard } from "./course-card"
-import { API_ENDPOINTS } from "@/lib/constants/api"
+import { useLanguage } from "@/lib/context/language-context"
+import { getCourses } from "@/lib/services/api"
 
 interface Course {
   id: number
@@ -24,32 +24,95 @@ interface CoursesSectionProps {
   selectedCategory?: string
 }
 
-export function CoursesSection({ selectedCategory = "all" }: CoursesSectionProps) {
+export function CoursesSection({ selectedCategory }: CoursesSectionProps) {
   const [courses, setCourses] = useState<Course[]>([])
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
+  const [currentCategory, setCurrentCategory] = useState<string>(selectedCategory || "all")
+  const { language } = useLanguage()
 
+  // Translations for section texts
+  const sectionTexts = {
+    ru: {
+      education: "Образование и курсы",
+      learnIT: "Изучайте IT сферу",
+      description:
+        "С помощью искусственного интеллекта курсы программирования в нашей академии систематизированы таким образом, что к моменту окончания учебы у вас будет достаточно знаний и хорошее портфолио",
+      loading: "Загрузка...",
+      tryAgain: "Попробовать снова",
+      noCoursesFound: "Курсы не найдены",
+    },
+    uz: {
+      education: "Ta'lim va kurslar",
+      learnIT: "IT sohasini o'rganing",
+      description:
+        "Sun'iy intellekt yordamida akademiyamizdagi dasturlash kurslari shunday tizimlashtiriladiki, o'qishni tugatganingizda sizda yetarli bilim va yaxshi portfolio bo'ladi",
+      loading: "Yuklanmoqda...",
+      tryAgain: "Qayta urinib ko'ring",
+      noCoursesFound: "Kurslar topilmadi",
+    },
+    en: {
+      education: "Education and courses",
+      learnIT: "Learn IT sphere",
+      description:
+        "With the help of artificial intelligence, programming courses in our academy are systematized in such a way that by the time you finish your studies, you will have enough knowledge and a good portfolio",
+      loading: "Loading...",
+      tryAgain: "Try again",
+      noCoursesFound: "No courses found",
+    },
+  }
+
+  const currentText = sectionTexts[language as keyof typeof sectionTexts] || sectionTexts.ru
+
+  // Listen for URL parameter changes or custom events
+  useEffect(() => {
+    // Set initial category from URL if available
+    if (typeof window !== "undefined") {
+      try {
+        const urlParams = new URLSearchParams(window.location.search)
+        const categoryParam = urlParams.get("category")
+        if (categoryParam) {
+          setCurrentCategory(categoryParam)
+        }
+      } catch (error) {
+        console.error("Error parsing URL parameters:", error)
+      }
+    }
+
+    // Listen for category changes from FilterTabs
+    const handleCategoryChange = (event: CustomEvent) => {
+      if (event.detail && event.detail.category) {
+        setCurrentCategory(event.detail.category)
+      }
+    }
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("categoryChanged", handleCategoryChange as EventListener)
+
+      return () => {
+        window.removeEventListener("categoryChanged", handleCategoryChange as EventListener)
+      }
+    }
+
+    return undefined
+  }, [])
+
+  // Update category when prop changes
+  useEffect(() => {
+    if (selectedCategory) {
+      setCurrentCategory(selectedCategory)
+    }
+  }, [selectedCategory])
+
+  // Fetch courses when category or language changes
   useEffect(() => {
     async function fetchCourses() {
       try {
         setIsLoading(true)
+        const response = await getCourses(currentCategory !== "all" ? currentCategory : undefined)
 
-        // Build the URL based on the selected category
-        let url = API_ENDPOINTS.COURSES
-        if (selectedCategory !== "all") {
-          url += `?category=${selectedCategory}`
-        }
-
-        const response = await fetch(url)
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch courses")
-        }
-
-        const data = await response.json()
-
-        if (data.success && Array.isArray(data.data)) {
-          setCourses(data.data)
+        if (response?.success && Array.isArray(response.data)) {
+          setCourses(response.data)
         } else {
           throw new Error("Invalid data format")
         }
@@ -62,168 +125,14 @@ export function CoursesSection({ selectedCategory = "all" }: CoursesSectionProps
     }
 
     fetchCourses()
-  }, [selectedCategory]) // Re-fetch when selectedCategory changes
+  }, [currentCategory, language]) // Re-fetch when currentCategory or language changes
 
   // Function to render the appropriate icon based on icon_type
-  const renderCourseIcon = (iconType: string) => {
-    switch (iconType) {
-      case "python":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 flex items-center justify-center bg-blue-50 rounded-full p-2">
-              <Image
-                src="/python-logo.png"
-                alt="Python"
-                width={48}
-                height={48}
-                className="object-contain"
-                style={{ maxWidth: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-        )
-      case "php":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-boxes"
-              >
-                <path d="M7 5v11l4-3 4 3V5" />
-                <rect width="18" height="18" x="3" y="3" rx="2" />
-              </svg>
-            </div>
-          </div>
-        )
-      case "node":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-hexagon"
-              >
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-              </svg>
-            </div>
-          </div>
-        )
-      case "csharp":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-purple-800 rounded-full flex items-center justify-center">
-              <span className="text-white text-xl font-bold">C#</span>
-            </div>
-          </div>
-        )
-      case "react":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-atom"
-              >
-                <circle cx="12" cy="12" r="1" />
-                <path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z" />
-                <path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z" />
-              </svg>
-            </div>
-          </div>
-        )
-      case "3d":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-cube"
-              >
-                <path d="m21 16-9 5-9-5V8l9-5 9 5v8z" />
-                <path d="M12 21V12" />
-                <path d="m12 12 9-4" />
-                <path d="m9 8 3 4" />
-              </svg>
-            </div>
-          </div>
-        )
-      case "security":
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-red-700 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-shield"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-          </div>
-        )
-      default:
-        return (
-          <div className="flex justify-center">
-            <div className="w-14 h-14 bg-gray-500 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-code"
-              >
-                <polyline points="16 18 22 12 16 6" />
-                <polyline points="8 6 2 12 8 18" />
-              </svg>
-            </div>
-          </div>
-        )
-    }
+  const renderCourseIcon = (course: Course) => {
+    // API-dan kelgan to'liq URL-ni ishlatamiz
+    const iconUrl = course.icon || `/images/${course.icon_type || "default"}-logo.png`
+
+    return iconUrl
   }
 
   return (
@@ -231,13 +140,10 @@ export function CoursesSection({ selectedCategory = "all" }: CoursesSectionProps
       <div className="container mx-auto">
         {/* Section header */}
         <div className="mb-6 md:mb-12 lg:mb-16 max-w-[1200px] mx-auto">
-          <div className="text-[#6a3de8] text-xl font-medium mb-2 hidden md:block">Образование и курсы</div>
+          <div className="text-[#6a3de8] text-xl font-medium mb-2 hidden md:block">{currentText.education}</div>
           <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-            <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl md:mb-0 md:w-1/3">Изучайте IT сферу</h2>
-            <p className="text-gray-700 md:w-1/2 hidden md:block lg:text-lg">
-              С помощью искусственного интеллекта курсы программирования в нашей академии систематизированы таким
-              образом, что к моменту окончания учебы у вас будет достаточно знаний и хорошее портфолио
-            </p>
+            <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl md:mb-0 md:w-1/3">{currentText.learnIT}</h2>
+            <p className="text-gray-700 md:w-1/2 hidden md:block lg:text-lg">{currentText.description}</p>
           </div>
         </div>
 
@@ -253,7 +159,7 @@ export function CoursesSection({ selectedCategory = "all" }: CoursesSectionProps
           <div className="text-center py-12">
             <p className="text-red-500 mb-4">{error}</p>
             <button onClick={() => window.location.reload()} className="bg-[#6a3de8] text-white px-4 py-2 rounded-full">
-              Попробовать снова
+              {currentText.tryAgain}
             </button>
           </div>
         )}
@@ -261,26 +167,21 @@ export function CoursesSection({ selectedCategory = "all" }: CoursesSectionProps
         {/* Course cards - responsive grid layout for all devices */}
         {!isLoading && !error && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-[1200px] mx-auto">
-            {courses.length > 0 ? (
+            {courses && courses.length > 0 ? (
               courses.map((course) => (
                 <CourseCard
                   key={course.id}
-                  title={course.title}
-                  icon={renderCourseIcon(course.icon_type)}
-                  level={
-                    course.level === "beginner"
-                      ? "Новички"
-                      : course.level === "intermediate"
-                        ? "Средний"
-                        : "Продвинутый"
-                  }
-                  duration={course.duration}
-                  slug={course.slug}
+                  title={course.title || ""}
+                  iconUrl={course.icon || ""}
+                  iconType={course.icon_type || "default"}
+                  level={course.level || ""}
+                  duration={course.duration || ""}
+                  slug={course.slug || ""}
                 />
               ))
             ) : (
               <div className="col-span-3 text-center py-12">
-                <p className="text-gray-500">Курсы не найдены</p>
+                <p className="text-gray-500">{currentText.noCoursesFound}</p>
               </div>
             )}
           </div>

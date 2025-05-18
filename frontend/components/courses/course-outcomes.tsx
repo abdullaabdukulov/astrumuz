@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { RegistrationModal } from "./registration-modal"
+import { useLanguage } from "@/lib/context/language-context"
 
 interface Outcome {
   id: number
@@ -22,16 +23,74 @@ interface CourseOutcomesProps {
 export function CourseOutcomes({
   courseSlug,
   courseId,
-  outcomes,
-  videoHours,
-  codingExercises,
-  articles,
-  hasCertificate,
+  outcomes = [],
+  videoHours = 0,
+  codingExercises = 0,
+  articles = 0,
+  hasCertificate = false,
 }: CourseOutcomesProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const { language } = useLanguage()
+
+  // Translations for course-specific texts
+  const courseTexts = {
+    ru: {
+      register: "Зарегистрироваться",
+      level: "Уровень",
+      duration: "Длительность",
+      new: "Новый",
+      popular: "Популярный",
+      courseIncludes: "Этот курс включает в себя:",
+      videoHours: "час видео по запросу",
+      codingExercises: "упражнений по кодированию",
+      articles: "статей",
+      mobileAccess: "Доступ с мобильных устройств",
+      lifetimeAccess: "Пожизненный доступ",
+      certificate: "Сертификат об окончании",
+      whatYouWillLearn: "Чему вы научитесь",
+      afterCompletion: "По окончанию курса",
+    },
+    uz: {
+      register: "Ro'yxatdan o'tish",
+      level: "Daraja",
+      duration: "Davomiyligi",
+      new: "Yangi",
+      popular: "Mashhur",
+      courseIncludes: "Bu kurs o'z ichiga oladi:",
+      videoHours: "soat video so'rov bo'yicha",
+      codingExercises: "kodlash mashqlari",
+      articles: "maqolalar",
+      mobileAccess: "Mobil qurilmalardan foydalanish imkoniyati",
+      lifetimeAccess: "Umrbod kirish",
+      certificate: "Tugatish sertifikati",
+      whatYouWillLearn: "Nimani o'rganasiz",
+      afterCompletion: "Kursni tugatgandan so'ng",
+    },
+    en: {
+      register: "Register",
+      level: "Level",
+      duration: "Duration",
+      new: "New",
+      popular: "Popular",
+      courseIncludes: "This course includes:",
+      videoHours: "hours of on-demand video",
+      codingExercises: "coding exercises",
+      articles: "articles",
+      mobileAccess: "Mobile access",
+      lifetimeAccess: "Lifetime access",
+      certificate: "Certificate of completion",
+      whatYouWillLearn: "What you will learn",
+      afterCompletion: "After course completion",
+    },
+  }
+
+  const currentCourseText = courseTexts[language as keyof typeof courseTexts] || courseTexts.ru
 
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
+
+  // Ensure outcomes is an array
+  const safeOutcomes = Array.isArray(outcomes) ? outcomes : []
 
   return (
     <section className="py-4 sm:py-6 md:py-12 lg:py-16 bg-white">
@@ -39,7 +98,7 @@ export function CourseOutcomes({
         <div className="max-w-6xl mx-auto">
           {/* Mobile Course Includes Section */}
           <div className="md:hidden mb-6 sm:mb-8">
-            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Этот курс включает в себя:</h2>
+            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{currentCourseText.courseIncludes}</h2>
 
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center">
@@ -59,7 +118,9 @@ export function CourseOutcomes({
                     <polygon points="5 3 19 12 5 21 5 3" />
                   </svg>
                 </div>
-                <span className="text-sm sm:text-base">{videoHours} час видео по запросу</span>
+                <span className="text-sm sm:text-base">
+                  {videoHours} {currentCourseText.videoHours}
+                </span>
               </div>
 
               <div className="flex items-center">
@@ -80,7 +141,9 @@ export function CourseOutcomes({
                     <polyline points="8 6 2 12 8 18" />
                   </svg>
                 </div>
-                <span className="text-sm sm:text-base">{codingExercises} упражнений по кодированию</span>
+                <span className="text-sm sm:text-base">
+                  {codingExercises} {currentCourseText.codingExercises}
+                </span>
               </div>
 
               <div className="flex items-center">
@@ -105,7 +168,9 @@ export function CourseOutcomes({
                     <path d="M8 16h.01" />
                   </svg>
                 </div>
-                <span className="text-sm sm:text-base">{articles} статей</span>
+                <span className="text-sm sm:text-base">
+                  {articles} {currentCourseText.articles}
+                </span>
               </div>
             </div>
           </div>
@@ -114,11 +179,13 @@ export function CourseOutcomes({
           <div className="hidden md:flex flex-col lg:flex-row gap-6 lg:gap-8">
             {/* Left column - What you will learn */}
             <div className="lg:w-2/3">
-              <div className="text-[#6a3de8] font-medium mb-2">По окончанию курса</div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8">Чему вы научитесь</h2>
+              <div className="text-[#6a3de8] font-medium mb-2">{currentCourseText.afterCompletion}</div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8">
+                {currentCourseText.whatYouWillLearn}
+              </h2>
 
               <ul className="space-y-3 md:space-y-4">
-                {outcomes.map((outcome) => (
+                {safeOutcomes.map((outcome) => (
                   <li key={outcome.id} className="flex items-start">
                     <span className="text-[#6a3de8] mr-2 mt-1">•</span>
                     <span>{outcome.text}</span>
@@ -130,7 +197,7 @@ export function CourseOutcomes({
             {/* Right column - Course includes */}
             <div className="lg:w-1/3">
               <div className="bg-gray-50 p-4 md:p-6 rounded-xl">
-                <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Этот курс включает в себя:</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">{currentCourseText.courseIncludes}</h3>
 
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center">
@@ -149,7 +216,9 @@ export function CourseOutcomes({
                         <polygon points="5 3 19 12 5 21 5 3" />
                       </svg>
                     </div>
-                    <span>{videoHours} час видео по запросу</span>
+                    <span>
+                      {videoHours} {currentCourseText.videoHours}
+                    </span>
                   </div>
 
                   <div className="flex items-center">
@@ -169,7 +238,9 @@ export function CourseOutcomes({
                         <polyline points="8 6 2 12 8 18" />
                       </svg>
                     </div>
-                    <span>{codingExercises} упражнений по кодированию</span>
+                    <span>
+                      {codingExercises} {currentCourseText.codingExercises}
+                    </span>
                   </div>
 
                   <div className="flex items-center">
@@ -193,7 +264,9 @@ export function CourseOutcomes({
                         <path d="M8 16h.01" />
                       </svg>
                     </div>
-                    <span>{articles} статей</span>
+                    <span>
+                      {articles} {currentCourseText.articles}
+                    </span>
                   </div>
 
                   <div className="flex items-center">
@@ -216,7 +289,7 @@ export function CourseOutcomes({
                         <line x1="10" x2="8" y1="9" y2="9" />
                       </svg>
                     </div>
-                    <span>Доступ с мобильных устройств</span>
+                    <span>{currentCourseText.mobileAccess}</span>
                   </div>
 
                   <div className="flex items-center">
@@ -237,7 +310,7 @@ export function CourseOutcomes({
                         <line x1="12" x2="12" y1="15" y2="3" />
                       </svg>
                     </div>
-                    <span>Пожизненный доступ</span>
+                    <span>{currentCourseText.lifetimeAccess}</span>
                   </div>
 
                   {hasCertificate && (
@@ -258,7 +331,7 @@ export function CourseOutcomes({
                           <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
                         </svg>
                       </div>
-                      <span>Сертификат об окончании</span>
+                      <span>{currentCourseText.certificate}</span>
                     </div>
                   )}
                 </div>
@@ -268,7 +341,7 @@ export function CourseOutcomes({
                     onClick={openModal}
                     className="block w-full bg-[#6a3de8] text-white text-center py-3 md:py-4 px-4 md:px-6 rounded-full font-bold hover:bg-[#5a2ed8] transition-colors"
                   >
-                    Зарегистрироваться
+                    {currentCourseText.register}
                   </button>
                 </div>
               </div>
@@ -277,10 +350,10 @@ export function CourseOutcomes({
 
           {/* Mobile What You Will Learn Section */}
           <div className="md:hidden">
-            <h3 className="text-sm sm:text-base text-gray-600 mb-1">По окончанию курса</h3>
-            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Чему вы научитесь</h2>
+            <h3 className="text-sm sm:text-base text-gray-600 mb-1">{currentCourseText.afterCompletion}</h3>
+            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{currentCourseText.whatYouWillLearn}</h2>
             <ul className="space-y-2 sm:space-y-3">
-              {outcomes.map((outcome) => (
+              {safeOutcomes.map((outcome) => (
                 <li key={outcome.id} className="flex items-start">
                   <span className="text-[#6a3de8] mr-2 mt-1">•</span>
                   <span className="text-xs sm:text-sm">{outcome.text}</span>

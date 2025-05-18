@@ -16,8 +16,9 @@ import { MobileCourseHeader } from "@/components/courses/mobile-course-header"
 import { MobileCompanyLogos } from "@/components/courses/mobile-company-logos"
 import { MobileCourseDescription } from "@/components/courses/mobile-course-description"
 import { MobileTestimonials } from "@/components/courses/mobile-testimonials"
-import { API_ENDPOINTS } from "@/lib/constants/api"
 import { CourseStructuredData } from "@/components/seo/structured-data"
+import { useLanguage } from "@/lib/context/language-context"
+import { getCourseDetail } from "@/lib/services/api"
 
 interface CourseParams {
   params: {
@@ -102,24 +103,23 @@ export default function CourseDetailPageClient({ params }: CourseParams) {
   const [courseData, setCourseData] = useState<CourseDetail | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
+  const { language } = useLanguage()
 
+  // Update the useEffect hook to properly handle language changes
   useEffect(() => {
     async function fetchCourseDetail() {
       try {
         setIsLoading(true)
-        const response = await fetch(`${API_ENDPOINTS.COURSES}${params.slug}/`)
+        setError(null)
 
-        if (!response.ok) {
+        // Always pass the current language to the API call
+        const response = await getCourseDetail(params.slug, language)
+
+        if (!response.success || !response.data) {
           throw new Error("Failed to fetch course details")
         }
 
-        const data = await response.json()
-
-        if (data.success && data.data) {
-          setCourseData(data.data)
-        } else {
-          throw new Error("Invalid data format")
-        }
+        setCourseData(response.data)
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred")
         console.error("Error fetching course details:", err)
@@ -128,10 +128,12 @@ export default function CourseDetailPageClient({ params }: CourseParams) {
       }
     }
 
-    if (params.slug) {
+    // Clear previous data when language changes to avoid showing stale data
+    if (language) {
+      setCourseData(null)
       fetchCourseDetail()
     }
-  }, [params.slug])
+  }, [params.slug, language]) // Re-fetch when language changes
 
   // Loading state
   if (isLoading) {
@@ -157,28 +159,34 @@ export default function CourseDetailPageClient({ params }: CourseParams) {
 
   // Format course data for components
   const course = {
-    id: courseData.id,
-    title: courseData.title,
-    description: courseData.description,
+    id: courseData.id || 0,
+    title: courseData.title || "Курс",
+    description: courseData.description || "",
     level:
       courseData.level === "beginner" ? "Новички" : courseData.level === "intermediate" ? "Средний" : "Продвинутый",
-    duration: courseData.duration,
-    icon: courseData.icon_type,
-    slug: courseData.slug,
-    videoHours: courseData.video_hours,
-    codingExercises: courseData.coding_exercises,
-    articles: courseData.articles,
-    hasCertificate: courseData.has_certificate,
-    whatWillLearn: courseData.what_will_learn,
-    outcomes: courseData.outcomes,
-    isNew: courseData.is_new,
-    featured: courseData.featured,
+    duration: courseData.duration || "8-12 месяцев",
+    icon: courseData.icon_type || "",
+    slug: courseData.slug || params.slug,
+    videoHours: courseData.video_hours || 0,
+    codingExercises: courseData.coding_exercises || 0,
+    articles: courseData.articles || 0,
+    hasCertificate: Boolean(courseData.has_certificate),
+    whatWillLearn: courseData.what_will_learn || "",
+    outcomes: Array.isArray(courseData.outcomes) ? courseData.outcomes : [],
+    isNew: Boolean(courseData.is_new),
+    featured: Boolean(courseData.featured),
   }
+
+  // Ensure arrays exist with fallbacks
+  const companies = Array.isArray(courseData.companies) ? courseData.companies : []
+  const testimonials = Array.isArray(courseData.testimonials) ? courseData.testimonials : []
+  const mentors = Array.isArray(courseData.mentors) ? courseData.mentors : []
+  const relatedCourses = Array.isArray(courseData.related_courses) ? courseData.related_courses : []
 
   return (
     <main className="min-h-screen flex flex-col">
       {/* Mobile Course Header */}
-      <MobileCourseHeader title={courseData.title} />
+      <MobileCourseHeader title={course.title} />
 
       {/* Top banner - hidden on mobile */}
       <div className="hidden md:block">
@@ -196,51 +204,51 @@ export default function CourseDetailPageClient({ params }: CourseParams) {
       {/* Course outcomes section */}
       <CourseOutcomes
         courseSlug={params.slug}
-        courseId={courseData.id}
-        outcomes={courseData.outcomes}
-        videoHours={courseData.video_hours}
-        codingExercises={courseData.coding_exercises}
-        articles={courseData.articles}
-        hasCertificate={courseData.has_certificate}
+        courseId={course.id}
+        outcomes={course.outcomes}
+        videoHours={course.videoHours}
+        codingExercises={course.codingExercises}
+        articles={course.articles}
+        hasCertificate={course.hasCertificate}
       />
 
       {/* Mobile Course Description */}
       <MobileCourseDescription
         courseSlug={params.slug}
-        description={courseData.description}
-        whatWillLearn={courseData.what_will_learn}
+        description={course.description}
+        whatWillLearn={course.whatWillLearn}
       />
 
       {/* Mobile Company Logos section */}
-      <MobileCompanyLogos companies={courseData.companies} />
+      <MobileCompanyLogos companies={companies} />
 
       {/* Mobile Testimonials section */}
-      <MobileTestimonials testimonials={courseData.testimonials} />
-
-      {/* Company logos section - hidden on mobile */}
-      <div className="hidden md:block">
-        <CompanyLogos companies={courseData.companies} />
-      </div>
+      <MobileTestimonials testimonials={testimonials} />
 
       {/* Course description section - hidden on mobile */}
       <div className="hidden md:block">
         <CourseDescription
           courseSlug={params.slug}
-          description={courseData.description}
-          whatWillLearn={courseData.what_will_learn}
+          description={course.description}
+          whatWillLearn={course.whatWillLearn}
         />
+      </div>
+
+      {/* Company logos section - hidden on mobile */}
+      <div className="hidden md:block">
+        <CompanyLogos companies={companies} />
       </div>
 
       {/* Course testimonials section - hidden on mobile */}
       <div className="hidden md:block">
-        <CourseTestimonials testimonials={courseData.testimonials} />
+        <CourseTestimonials testimonials={testimonials} />
       </div>
 
       {/* Course mentors section */}
-      <CourseMentors mentors={courseData.mentors} />
+      <CourseMentors mentors={mentors} />
 
       {/* Related courses section */}
-      <RelatedCourses currentCourseSlug={params.slug} relatedCourses={courseData.related_courses} />
+      <RelatedCourses currentCourseSlug={params.slug} relatedCourses={relatedCourses} />
 
       {/* Footer - hidden on mobile */}
       <div className="hidden md:block">
@@ -250,8 +258,8 @@ export default function CourseDetailPageClient({ params }: CourseParams) {
       {/* Mobile Navigation */}
       <MobileNavigation />
       <CourseStructuredData
-        name={courseData.title}
-        description={courseData.description}
+        name={course.title}
+        description={course.description}
         provider="Astrum IT Academy"
         url={`https://astrum.uz/courses/${params.slug}`}
         image={courseData.icon ? `https://libraryapp5.pythonanywhere.com${courseData.icon}` : undefined}

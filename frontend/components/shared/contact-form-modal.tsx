@@ -4,6 +4,7 @@ import type React from "react"
 import { useState } from "react"
 import { API_ENDPOINTS } from "@/lib/constants/api"
 import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 interface ContactFormModalProps {
   isOpen: boolean
@@ -18,13 +19,25 @@ interface ContactFormModalProps {
 export function ContactFormModal({
   isOpen,
   onClose,
-  title = "Хочу учиться!",
-  submitButtonText = "Отправить заявку",
-  successTitle = "Спасибо за вашу заявку!",
-  successMessage = "Наш менеджер свяжется с вами в ближайшее время.",
+  title,
+  submitButtonText,
+  successTitle,
+  successMessage,
   initialMessage = "",
 }: ContactFormModalProps) {
   const { language } = useLanguage()
+
+  // Get translations for the current language
+  const formText =
+    translations.contactForm[language as keyof typeof translations.contactForm] || translations.contactForm.ru
+
+  // Use provided props or fallback to translations
+  const modalTitle =
+    title || (language === "ru" ? "Хочу учиться!" : language === "uz" ? "O'qishni xohlayman!" : "I want to study!")
+  const modalSubmitButtonText = submitButtonText || formText.submit
+  const modalSuccessTitle = successTitle || formText.thanks
+  const modalSuccessMessage = successMessage || formText.managerContact
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -58,14 +71,14 @@ export function ContactFormModal({
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.message || "Произошла ошибка при отправке")
+        throw new Error(data.message || formText.error)
       }
 
       setIsSubmitted(true)
       setFormData({ name: "", phone: "", email: "", message: "" })
     } catch (err) {
       console.error("Error submitting form:", err)
-      setError(err instanceof Error ? err.message : "Произошла ошибка при отправке")
+      setError(err instanceof Error ? err.message : formText.error)
     } finally {
       setIsSubmitting(false)
     }
@@ -98,14 +111,14 @@ export function ContactFormModal({
         </button>
 
         <div className="p-6">
-          <h2 className="text-2xl font-bold mb-6 text-center">{title}</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">{modalTitle}</h2>
 
           {isSubmitted ? (
             <div className="bg-green-50 p-6 rounded-xl text-center">
-              <h3 className="text-xl font-bold text-green-700 mb-2">{successTitle}</h3>
-              <p className="text-green-600 mb-4">{successMessage}</p>
+              <h3 className="text-xl font-bold text-green-700 mb-2">{modalSuccessTitle}</h3>
+              <p className="text-green-600 mb-4">{modalSuccessMessage}</p>
               <button onClick={onClose} className="bg-[#6a3de8] text-white px-6 py-2 rounded-full">
-                Закрыть
+                {formText.close}
               </button>
             </div>
           ) : (
@@ -118,7 +131,7 @@ export function ContactFormModal({
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Ваше имя
+                  {formText.yourName}
                 </label>
                 <input
                   type="text"
@@ -128,13 +141,13 @@ export function ContactFormModal({
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#6a3de8] focus:border-transparent"
-                  placeholder="Введите ваше имя"
+                  placeholder={formText.enterName}
                 />
               </div>
 
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Телефон
+                  {formText.phone}
                 </label>
                 <input
                   type="tel"
@@ -150,7 +163,7 @@ export function ContactFormModal({
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email
+                  {formText.email}
                 </label>
                 <input
                   type="email"
@@ -166,7 +179,7 @@ export function ContactFormModal({
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Сообщение (необязательно)
+                  {formText.message}
                 </label>
                 <textarea
                   id="message"
@@ -175,7 +188,7 @@ export function ContactFormModal({
                   onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#6a3de8] focus:border-transparent"
-                  placeholder="Расскажите о ваших пожеланиях"
+                  placeholder={formText.wishes}
                 ></textarea>
               </div>
 
@@ -184,7 +197,7 @@ export function ContactFormModal({
                 disabled={isSubmitting}
                 className="w-full bg-[#6a3de8] text-white py-3 px-6 rounded-full font-medium hover:bg-[#5a2ed8] transition-colors disabled:opacity-70"
               >
-                {isSubmitting ? "Отправка..." : submitButtonText}
+                {isSubmitting ? formText.sending : modalSubmitButtonText}
               </button>
             </form>
           )}

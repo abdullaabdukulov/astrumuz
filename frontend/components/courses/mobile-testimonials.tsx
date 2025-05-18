@@ -19,19 +19,44 @@ interface MobileTestimonialsProps {
   testimonials: Testimonial[]
 }
 
-export function MobileTestimonials({ testimonials }: MobileTestimonialsProps) {
+export function MobileTestimonials({ testimonials = [] }: MobileTestimonialsProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [avatarErrors, setAvatarErrors] = useState<Record<number, boolean>>({})
+  const [logoErrors, setLogoErrors] = useState<Record<number, boolean>>({})
   const baseUrl = "https://libraryapp5.pythonanywhere.com"
 
+  // Handle errors
+  const handleAvatarError = (testimonialId: number) => {
+    setAvatarErrors((prev) => ({
+      ...prev,
+      [testimonialId]: true,
+    }))
+  }
+
+  const handleLogoError = (testimonialId: number) => {
+    setLogoErrors((prev) => ({
+      ...prev,
+      [testimonialId]: true,
+    }))
+  }
+
   const nextTestimonial = () => {
+    if (!testimonials || testimonials.length === 0) return
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
   }
 
   const prevTestimonial = () => {
+    if (!testimonials || testimonials.length === 0) return
     setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
   }
 
+  // If no testimonials, don't render the section
+  if (!testimonials || testimonials.length === 0) {
+    return null
+  }
+
   const currentTestimonial = testimonials[currentIndex]
+  if (!currentTestimonial) return null
 
   return (
     <section className="py-4 sm:py-6 px-4 md:hidden">
@@ -40,45 +65,51 @@ export function MobileTestimonials({ testimonials }: MobileTestimonialsProps) {
 
       <div className="bg-white rounded-xl p-4 sm:p-5 shadow-sm relative mb-3 sm:mb-4">
         <div className="flex items-center mb-3 sm:mb-4">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden mr-2 sm:mr-3">
-            <Image
-              src={`${baseUrl}${currentTestimonial.avatar}`}
-              alt={currentTestimonial.name}
-              width={40}
-              height={40}
-              className="object-cover"
-              onError={(e) => {
-                // Fallback to a placeholder if image fails to load
-                const target = e.target as HTMLImageElement
-                target.src = "/diverse-group.png"
-              }}
-            />
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden mr-2 sm:mr-3 bg-gray-200">
+            {!avatarErrors[currentTestimonial.id] ? (
+              <Image
+                src={`${baseUrl}${currentTestimonial.avatar || ""}`}
+                alt={currentTestimonial.name || "Person"}
+                width={40}
+                height={40}
+                className="object-cover"
+                onError={() => handleAvatarError(currentTestimonial.id)}
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center bg-gray-300">
+                <span className="text-xs text-gray-600">{currentTestimonial.name?.charAt(0) || "U"}</span>
+              </div>
+            )}
           </div>
           <div>
-            <h3 className="font-medium text-sm sm:text-base">{currentTestimonial.name}</h3>
+            <h3 className="font-medium text-sm sm:text-base">{currentTestimonial.name || "Пользователь"}</h3>
             <p className="text-xs text-gray-500 flex items-center">
-              {currentTestimonial.position}{" "}
-              <span style={{ color: currentTestimonial.company_color }} className="font-medium ml-1">
-                {currentTestimonial.company_name}
+              {currentTestimonial.position || "Студент"}{" "}
+              <span style={{ color: currentTestimonial.company_color || "#6a3de8" }} className="font-medium ml-1">
+                {currentTestimonial.company_name || ""}
               </span>
             </p>
           </div>
         </div>
-        <p className="text-xs sm:text-sm text-gray-700 mb-3 sm:mb-4">{currentTestimonial.text}</p>
+        <p className="text-xs sm:text-sm text-gray-700 mb-3 sm:mb-4">{currentTestimonial.text || "Отличный курс!"}</p>
 
         <div className="absolute bottom-4 sm:bottom-5 right-4 sm:right-5">
-          <Image
-            src={`${baseUrl}${currentTestimonial.company_logo}`}
-            alt={`${currentTestimonial.company_name} logo`}
-            width={50}
-            height={25}
-            className="object-contain sm:w-[60px] sm:h-[30px]"
-            onError={(e) => {
-              // Fallback to a placeholder if image fails to load
-              const target = e.target as HTMLImageElement
-              target.src = "/generic-company-logo.png"
-            }}
-          />
+          {!logoErrors[currentTestimonial.id] ? (
+            <Image
+              src={`${baseUrl}${currentTestimonial.company_logo || ""}`}
+              alt={`${currentTestimonial.company_name || "Company"} logo`}
+              width={50}
+              height={25}
+              className="object-contain sm:w-[60px] sm:h-[30px]"
+              onError={() => handleLogoError(currentTestimonial.id)}
+            />
+          ) : (
+            <div className="w-[50px] h-[25px] sm:w-[60px] sm:h-[30px] flex items-center justify-center bg-gray-100 rounded">
+              <span className="text-xs text-gray-500">
+                {currentTestimonial.company_name?.substring(0, 8) || "Company"}
+              </span>
+            </div>
+          )}
         </div>
       </div>
 

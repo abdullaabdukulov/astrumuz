@@ -1,14 +1,19 @@
 "use client"
 
 import type React from "react"
+import { useState } from "react"
 
 import type { ReactNode } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import { useLanguage } from "@/lib/context/language-context"
+import { SafeImage } from "@/components/ui/safe-image"
 
 interface CourseCardProps {
   title: string
-  icon: ReactNode
+  icon?: ReactNode
+  iconUrl?: string
+  iconType?: string
   level?: string
   duration?: string
   href?: string
@@ -18,12 +23,33 @@ interface CourseCardProps {
 export function CourseCard({
   title,
   icon,
+  iconUrl,
   level = "Новички",
   duration = "8-12 месяцев",
   href = "#",
   slug,
+  iconType = "default",
 }: CourseCardProps) {
   const router = useRouter()
+  const { language } = useLanguage()
+
+  // Translations for level and duration labels
+  const cardTexts = {
+    ru: {
+      level: "Уровень",
+      duration: "Длительность",
+    },
+    uz: {
+      level: "Daraja",
+      duration: "Davomiyligi",
+    },
+    en: {
+      level: "Level",
+      duration: "Duration",
+    },
+  }
+
+  const currentText = cardTexts[language as keyof typeof cardTexts] || cardTexts.ru
 
   // Use the slug for the course detail page if provided
   const courseLink = slug ? `/courses/${slug}` : href
@@ -34,11 +60,36 @@ export function CourseCard({
     router.push(courseLink)
   }
 
+  // Rasm xatoliklarini tekshirish uchun useState qo'shing
+  const [imageError, setImageError] = useState(false)
+
   return (
     <Link href={courseLink} onClick={handleClick} className="block h-full">
       <div className="bg-gray-50 rounded-xl p-6 h-full flex flex-col group hover:shadow-md transition-shadow">
         {/* Course icon */}
-        <div className="mb-6">{icon}</div>
+        <div className="mb-6">
+          {iconUrl ? (
+            <SafeImage
+              src={iconUrl}
+              alt={title}
+              width={48}
+              height={48}
+              className="object-contain"
+              fallbackSrc={`/images/${iconType}-logo.png`}
+            />
+          ) : typeof icon === "string" ? (
+            <SafeImage
+              src={`/images/${icon}-logo.png`}
+              alt={title}
+              width={48}
+              height={48}
+              className="object-contain"
+              fallbackSrc="/placeholder-uz2gk.png"
+            />
+          ) : (
+            icon
+          )}
+        </div>
 
         {/* Course title */}
         <h3 className="text-lg font-bold mb-auto text-gray-900">{title}</h3>

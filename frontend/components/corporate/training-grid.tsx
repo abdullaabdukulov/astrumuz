@@ -1,6 +1,15 @@
+"use client"
+
 import { TrainingCard } from "./training-card"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function TrainingGrid() {
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const ctaText = translations.mobileCta[language as keyof typeof translations.mobileCta] || translations.mobileCta.ru
+
   return (
     <div className="grid grid-cols-2 gap-4">
       <TrainingCard
@@ -24,8 +33,8 @@ export function TrainingGrid() {
             <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
           </svg>
         }
-        title="Повышение квалификации"
-        description="Переведём ваших сотрудников на следующий уровень"
+        title={ctaText.skillUpgrade}
+        description={ctaText.upgradeEmployees}
       />
       <TrainingCard
         icon={
@@ -44,8 +53,8 @@ export function TrainingGrid() {
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
         }
-        title="Переобучение сотрудников"
-        description="Обучим навыкам из смежной области"
+        title={ctaText.retraining}
+        description={ctaText.adjacentSkills}
       />
       <TrainingCard
         icon={
@@ -68,8 +77,8 @@ export function TrainingGrid() {
             <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
           </svg>
         }
-        title="Обучение технологиям"
-        description="Поможем освоить новую технологию для ваших проектов"
+        title={ctaText.techTraining}
+        description={ctaText.helpWithTech}
       />
       <TrainingCard
         icon={
@@ -88,8 +97,8 @@ export function TrainingGrid() {
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
         }
-        title="Работа с данными"
-        description="Поможем освоить новую технологию для ваших проектов"
+        title={ctaText.dataWork}
+        description={ctaText.helpWithProjects}
       />
     </div>
   )

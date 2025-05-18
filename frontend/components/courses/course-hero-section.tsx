@@ -3,8 +3,9 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { NAV_ITEMS } from "@/lib/constants"
 import { RegistrationModal } from "./registration-modal"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 interface CourseHeroSectionProps {
   course: {
@@ -21,6 +22,38 @@ interface CourseHeroSectionProps {
 
 export function CourseHeroSection({ course }: CourseHeroSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const heroText = translations.hero[language as keyof typeof translations.hero] || translations.hero.ru
+  const navItems = translations.navItems[language as keyof typeof translations.navItems] || translations.navItems.ru
+
+  // Translations for course-specific texts
+  const courseTexts = {
+    ru: {
+      register: "Зарегистрироваться",
+      level: "Уровень",
+      duration: "Длительность",
+      new: "Новый",
+      popular: "Популярный",
+    },
+    uz: {
+      register: "Ro'yxatdan o'tish",
+      level: "Daraja",
+      duration: "Davomiyligi",
+      new: "Yangi",
+      popular: "Mashhur",
+    },
+    en: {
+      register: "Register",
+      level: "Level",
+      duration: "Duration",
+      new: "New",
+      popular: "Popular",
+    },
+  }
+
+  const currentCourseText = courseTexts[language as keyof typeof courseTexts] || courseTexts.ru
 
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
@@ -47,7 +80,7 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
             <div className="relative z-20 mt-0">
               <nav className="bg-white rounded-t-none rounded-b-[30px] shadow-lg max-w-4xl mx-auto">
                 <ul className="flex justify-center pt-1 pb-6 px-4 flex-wrap md:flex-nowrap">
-                  {NAV_ITEMS.map((item) => (
+                  {navItems.map((item) => (
                     <li key={item.title} className="mx-2 md:mx-3 whitespace-nowrap">
                       <Link
                         href={item.href}
@@ -65,12 +98,12 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
 
             {/* Hero content */}
             <div className="relative z-10 pt-[55px] pb-[71px] text-center">
-              <div className="text-[#00e5b0] text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Курсы</div>
+              <div className="text-[#00e5b0] text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{heroText.courses}</div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-4">
                 {course.title}
                 {course.isNew && (
                   <span className="ml-3 inline-block bg-green-500 text-white text-sm px-2 py-1 rounded-full align-middle">
-                    Новый
+                    {currentCourseText.new}
                   </span>
                 )}
               </h1>
@@ -131,7 +164,7 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
                     >
                       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                     </svg>
-                    <span>Популярный</span>
+                    <span>{currentCourseText.popular}</span>
                   </div>
                 )}
               </div>
@@ -142,7 +175,7 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
                   onClick={openModal}
                   className="inline-block bg-white text-[#6a3de8] font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full hover:bg-gray-100 transition-colors text-sm sm:text-base"
                 >
-                  Зарегистрироваться
+                  {currentCourseText.register}
                 </button>
               </div>
             </div>
@@ -163,7 +196,7 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
               {course.title}
               {course.isNew && (
                 <span className="ml-2 inline-block bg-green-500 text-white text-xs px-2 py-0.5 rounded-full align-middle">
-                  Новый
+                  {currentCourseText.new}
                 </span>
               )}
             </h1>
@@ -221,7 +254,7 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
                   >
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
-                  <span>Популярный</span>
+                  <span>{currentCourseText.popular}</span>
                 </div>
               )}
             </div>
@@ -231,7 +264,7 @@ export function CourseHeroSection({ course }: CourseHeroSectionProps) {
               onClick={openModal}
               className="w-full bg-white text-[#6a3de8] font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-full text-sm"
             >
-              Зарегистрироваться
+              {currentCourseText.register}
             </button>
           </div>
         </div>

@@ -1,5 +1,7 @@
 "use client"
-import { RegistrationForm } from "./registration-form"
+import { useState } from "react"
+import { MultiStepRegistrationForm } from "./multi-step-registration-form"
+import { useLanguage } from "@/lib/context/language-context"
 
 interface RegistrationModalProps {
   isOpen: boolean
@@ -9,7 +11,16 @@ interface RegistrationModalProps {
 }
 
 export function RegistrationModal({ isOpen, onClose, courseSlug, courseId }: RegistrationModalProps) {
+  const { language } = useLanguage()
+  const [formSubmitted, setFormSubmitted] = useState(false)
+
   if (!isOpen) return null
+
+  const handleSuccess = () => {
+    setFormSubmitted(true)
+    // Don't close the modal immediately so the user can see the success message
+    // setTimeout(onClose, 3000);
+  }
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
@@ -39,8 +50,14 @@ export function RegistrationModal({ isOpen, onClose, courseSlug, courseId }: Reg
         </button>
 
         <div className="p-6 pt-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Регистрация на курс</h2>
-          <RegistrationForm courseSlug={courseSlug} courseId={courseId} onSuccess={onClose} />
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+            {language === "ru"
+              ? "Регистрация на курс"
+              : language === "uz"
+                ? "Kursga ro'yxatdan o'tish"
+                : "Course registration"}
+          </h2>
+          <MultiStepRegistrationForm courseId={courseId} onSuccess={handleSuccess} />
         </div>
       </div>
     </div>

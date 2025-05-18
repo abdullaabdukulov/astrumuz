@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 interface RelatedCourse {
   id: number
@@ -21,7 +24,17 @@ interface RelatedCoursesProps {
   relatedCourses: RelatedCourse[]
 }
 
-export function RelatedCourses({ currentCourseSlug, relatedCourses }: RelatedCoursesProps) {
+export function RelatedCourses({ currentCourseSlug, relatedCourses = [] }: RelatedCoursesProps) {
+  const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({})
+
+  // Handle image error
+  const handleImageError = (courseId: number) => {
+    setImageErrors((prev) => ({
+      ...prev,
+      [courseId]: true,
+    }))
+  }
+
   // Function to render the appropriate icon based on icon_type
   const renderCourseIcon = (iconType: string) => {
     switch (iconType) {
@@ -42,6 +55,16 @@ export function RelatedCourses({ currentCourseSlug, relatedCourses }: RelatedCou
     }
   }
 
+  // Filter out the current course and ensure we have valid courses
+  const filteredCourses = relatedCourses
+    .filter((course) => course && course.slug && course.slug !== currentCourseSlug)
+    .slice(0, 3) // Limit to 3 courses
+
+  // If no related courses, don't render the section
+  if (!filteredCourses || filteredCourses.length === 0) {
+    return null
+  }
+
   return (
     <section className="py-12 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -50,23 +73,25 @@ export function RelatedCourses({ currentCourseSlug, relatedCourses }: RelatedCou
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Так же студенты выбирают</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {relatedCourses.map((course) => (
+            {filteredCourses.map((course) => (
               <div key={course.id} className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="mb-4 h-16 flex items-center">
-                  <Image
-                    src={renderCourseIcon(course.icon_type) || "/placeholder.svg"}
-                    alt={course.title}
-                    width={64}
-                    height={64}
-                    className="object-contain"
-                    onError={(e) => {
-                      // Fallback to a placeholder if image fails to load
-                      const target = e.target as HTMLImageElement
-                      target.src = "/online-learning-platform.png"
-                    }}
-                  />
+                  {!imageErrors[course.id] ? (
+                    <Image
+                      src={renderCourseIcon(course.icon_type || "")}
+                      alt={course.title || "Course"}
+                      width={64}
+                      height={64}
+                      className="object-contain"
+                      onError={() => handleImageError(course.id)}
+                    />
+                  ) : (
+                    <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center">
+                      <span className="text-gray-500 text-xs">Курс</span>
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-xl font-bold mb-4">{course.title}</h3>
+                <h3 className="text-xl font-bold mb-4">{course.title || "Курс"}</h3>
 
                 <div className="flex flex-wrap gap-3 mb-6">
                   {/* Level badge */}
@@ -111,7 +136,7 @@ export function RelatedCourses({ currentCourseSlug, relatedCourses }: RelatedCou
                       <circle cx="12" cy="12" r="10" />
                       <polyline points="12 6 12 12 16 14" />
                     </svg>
-                    <span>{course.duration}</span>
+                    <span>{course.duration || "8-12 месяцев"}</span>
                   </div>
                 </div>
 

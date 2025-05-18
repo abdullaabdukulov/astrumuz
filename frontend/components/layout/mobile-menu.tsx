@@ -3,13 +3,42 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { NAV_ITEMS } from "@/lib/constants"
 import { SocialLinks } from "@/components/ui/social-links"
 import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
   const { language, setLanguage } = useLanguage()
+
+  // Get translations for the current language
+  const headerText = translations.header[language as keyof typeof translations.header] || translations.header.ru
+  const navItems = translations.navItems[language as keyof typeof translations.navItems] || translations.navItems.ru
+  const mobileMenuTexts = {
+    ru: {
+      menu: "Меню",
+      navigation: "Навигация",
+      contacts: "Контакты",
+      socialNetworks: "Социальные сети",
+      close: "Закрыть",
+    },
+    uz: {
+      menu: "Menyu",
+      navigation: "Navigatsiya",
+      contacts: "Kontaktlar",
+      socialNetworks: "Ijtimoiy tarmoqlar",
+      close: "Yopish",
+    },
+    en: {
+      menu: "Menu",
+      navigation: "Navigation",
+      contacts: "Contacts",
+      socialNetworks: "Social networks",
+      close: "Close",
+    },
+  }
+
+  const menuText = mobileMenuTexts[language as keyof typeof mobileMenuTexts] || mobileMenuTexts.ru
 
   // Clean up body styles when component unmounts
   useEffect(() => {
@@ -35,7 +64,7 @@ export function MobileMenu() {
       <button
         onClick={toggleMenu}
         className="flex flex-col items-center justify-center text-gray-500 hover:text-[#6a3de8] transition-colors"
-        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-label={isOpen ? menuText.close : menuText.menu}
         aria-expanded={isOpen}
       >
         <svg
@@ -54,7 +83,7 @@ export function MobileMenu() {
           <line x1="4" x2="20" y1="6" y2="6" />
           <line x1="4" x2="20" y1="18" y2="18" />
         </svg>
-        <span className="text-xs mt-1">Menu</span>
+        <span className="text-xs mt-1">{menuText.menu}</span>
       </button>
 
       {/* Mobile Menu Overlay */}
@@ -68,7 +97,7 @@ export function MobileMenu() {
             <button
               onClick={toggleMenu}
               className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gray-700 transition-colors"
-              aria-label="Close menu"
+              aria-label={menuText.close}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +122,9 @@ export function MobileMenu() {
             <nav className="space-y-8">
               {/* Main Navigation */}
               <div className="space-y-5">
-                <h3 className="text-[#00e5b0] text-sm font-bold uppercase tracking-wider">Навигация</h3>
+                <h3 className="text-[#00e5b0] text-sm font-bold uppercase tracking-wider">{menuText.navigation}</h3>
                 <ul className="space-y-5">
-                  {NAV_ITEMS.map((item) => (
+                  {navItems.map((item) => (
                     <li key={item.title}>
                       <Link
                         href={item.href}
@@ -113,26 +142,26 @@ export function MobileMenu() {
 
               {/* Contact Information */}
               <div className="space-y-5">
-                <h3 className="text-[#00e5b0] text-sm font-bold uppercase tracking-wider">Контакты</h3>
+                <h3 className="text-[#00e5b0] text-sm font-bold uppercase tracking-wider">{menuText.contacts}</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-3 flex-shrink-0"></div>
                     <div>
-                      <div className="text-gray-400 text-sm">Отвечаем на вопросы</div>
+                      <div className="text-gray-400 text-sm">{headerText.answering}</div>
                       <div className="text-white font-bold text-lg">+998 71 202 42 22</div>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-3 flex-shrink-0"></div>
                     <div>
-                      <div className="text-gray-400 text-sm">Напишите нам</div>
+                      <div className="text-gray-400 text-sm">{headerText.writeUs}</div>
                       <div className="text-white font-bold text-lg">info@astrum.uz</div>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-[#00e5b0] mr-3 flex-shrink-0"></div>
                     <div>
-                      <div className="text-gray-400 text-sm">Телеграм</div>
+                      <div className="text-gray-400 text-sm">{headerText.telegram}</div>
                       <div className="text-white font-bold text-lg">@astrumuz</div>
                     </div>
                   </div>
@@ -141,7 +170,7 @@ export function MobileMenu() {
 
               {/* Social Links */}
               <div className="space-y-4">
-                <h3 className="text-[#00e5b0] text-sm font-bold uppercase tracking-wider">Социальные сети</h3>
+                <h3 className="text-[#00e5b0] text-sm font-bold uppercase tracking-wider">{menuText.socialNetworks}</h3>
                 <SocialLinks />
               </div>
 
@@ -191,7 +220,7 @@ export function MobileMenu() {
                   }}
                   className="bg-[#6a3de8] hover:bg-[#5a2ed8] text-white w-full py-4 px-6 rounded-full font-bold text-lg transition-colors"
                 >
-                  Хочу учиться!
+                  {headerText.wantToStudy}
                 </button>
               </div>
             </nav>

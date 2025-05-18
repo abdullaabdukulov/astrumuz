@@ -1,7 +1,16 @@
+"use client"
+
 import Link from "next/link"
 import { TrainingGrid } from "../corporate/training-grid"
+import { useLanguage } from "@/lib/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function MobileCTA() {
+  const { language } = useLanguage()
+
+  // Get translations for the current language
+  const ctaText = translations.mobileCta[language as keyof typeof translations.mobileCta] || translations.mobileCta.ru
+
   return (
     <section className="px-4 py-6 md:hidden">
       {/* CTA Card */}
@@ -12,19 +21,19 @@ export function MobileCTA() {
 
         {/* Content */}
         <div className="relative z-10 text-center">
-          <h2 className="text-2xl font-bold text-white mb-1">Готовы стать</h2>
-          <h2 className="text-2xl font-bold text-[#00e5b0] mb-3">учеником Astrum?</h2>
-          <p className="text-white text-sm mb-6">
-            Не упустите возможность записаться на курсы Astrum и начать изучать программирование.
-          </p>
+          <h2 className="text-2xl font-bold text-white mb-1">{ctaText.readyToBecome}</h2>
+          <h2 className="text-2xl font-bold text-[#00e5b0] mb-3">{ctaText.student}</h2>
+          <p className="text-white text-sm mb-6">{ctaText.opportunity}</p>
           <Link href="#courses" className="inline-block bg-[#6a3de8] text-white font-medium py-3 px-8 rounded-full">
-            Бесплатный урок
+            {ctaText.freeLesson}
           </Link>
         </div>
       </div>
 
       {/* Corporate Training Section */}
-      <h3 className="text-xl font-bold mb-4">Корпоративное обучение</h3>
+      <h3 className="text-xl font-bold mb-4">
+        {language === "ru" ? "Корпоративное обучение" : language === "uz" ? "Korporativ ta'lim" : "Corporate training"}
+      </h3>
 
       {/* Corporate Training Cards */}
       <TrainingGrid />
