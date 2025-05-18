@@ -4,6 +4,8 @@ from .mentors import MentorViewSet
 from .registrations import (
     ContactRequestCreateView,
     CourseRegistrationBitrixView,
+    RequestOTPView,
+    VerifyOTPView,
 )
 from .testimonials import TestimonialViewSet
 
@@ -14,5 +16,7 @@ __all__ = [
     "CompanyViewSet",
     "TestimonialViewSet",
     "CourseRegistrationBitrixView",
+    "RequestOTPView",
+    "VerifyOTPView",
     "ContactRequestCreateView",
 ]

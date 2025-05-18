@@ -1,5 +1,30 @@
+from common.validators import validate_phone
 from courses.models import ContactRequest, Course, CourseRegistration
 from rest_framework import serializers
+
+
+class PhoneNumberSerializer(serializers.Serializer):
+    """Serializer for phone number validation"""
+
+    phone = serializers.CharField(
+        validators=[validate_phone], max_length=12, min_length=12
+    )
+
+
+class OTPVerificationSerializer(serializers.Serializer):
+    """Serializer for OTP verification"""
+
+    phone = serializers.CharField(
+        validators=[validate_phone], max_length=12, min_length=12
+    )
+    otp_code = serializers.CharField(max_length=6, min_length=6)
+
+    def validate_otp_code(self, value):
+        if not value.isdigit():
+            raise serializers.ValidationError(
+                "OTP code must contain only digits"
+            )
+        return value
 
 
 class CourseRegistrationSerializer(serializers.ModelSerializer):

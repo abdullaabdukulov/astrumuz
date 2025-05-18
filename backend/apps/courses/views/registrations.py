@@ -1,5 +1,7 @@
 from common.utils.bitrix24 import Bitrix24Integration
 from common.utils.custom_response_decorator import custom_response
+from common.utils.otp import OTPService
+from common.utils.sms import SMSService
 from courses.models import ContactRequest
 from courses.openapi_schema import (
     contact_request_schema_decorator,
@@ -9,7 +11,12 @@ from courses.serializers import (
     ContactRequestSerializer,
     CourseRegistrationSerializer,
 )
+from courses.serializers.registrations import (
+    OTPVerificationSerializer,
+    PhoneNumberSerializer,
+)
 from rest_framework import generics, status
+from rest_framework.exceptions import ValidationError
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -55,6 +62,64 @@ class CourseRegistrationBitrixView(APIView):
             {"errors": errors},
             status=status.HTTP_400_BAD_REQUEST,
             exception=True,
+        )
+
+
+@custom_response
+class RequestOTPView(APIView):
+    """API endpoint for requesting an OTP code"""
+
+    def post(self, request, *args, **kwargs):
+        serializer = PhoneNumberSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        phone_number = serializer.validated_data["phone"]
+        otp_code = OTPService.generate_otp(phone_number)
+
+        message = f"Your verification code is {otp_code}. Valid for 4 minutes."
+        sms_sent = SMSService.send_sms(phone_number, message)
+
+        if not sms_sent:
+            raise ValidationError(
+                {"errors": [{"field": "sms", "message": "Failed to send SMS"}]}
+            )
+
+        return Response(
+            {"message": "OTP code sent successfully", "phone": phone_number}
+        )
+
+
+@custom_response
+class VerifyOTPView(APIView):
+    """API endpoint for verifying an OTP code"""
+
+    def post(self, request, *args, **kwargs):
+        serializer = OTPVerificationSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        phone_number = serializer.validated_data["phone"]
+        otp_code = serializer.validated_data["otp_code"]
+
+        is_valid = OTPService.verify_otp(phone_number, otp_code)
+
+        if not is_valid:
+            raise ValidationError(
+                {
+                    "errors": [
+                        {
+                            "field": "otp_code",
+                            "message": "Invalid or expired OTP code",
+                        }
+                    ]
+                }
+            )
+
+        return Response(
+            {
+                "message": "Phone number verified successfully",
+                "phone": phone_number,
+                "verified": True,
+            }
         )
 
 

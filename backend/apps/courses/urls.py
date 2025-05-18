@@ -19,6 +19,8 @@ urlpatterns = [
         views.CourseRegistrationBitrixView.as_view(),
         name="course-registration",
     ),
+    path("request-otp/", views.RequestOTPView.as_view(), name="request-otp"),
+    path("verify-otp/", views.VerifyOTPView.as_view(), name="verify-otp"),
     path(
         "contact/",
         views.ContactRequestCreateView.as_view(),

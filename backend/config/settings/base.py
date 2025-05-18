@@ -84,6 +84,20 @@ DATABASES = {
     }
 }
 
+# Cache
+REDIS_HOST = os.environ.get("REDIS_HOST")
+REDIS_PORT = os.environ.get("REDIS_PORT")
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": f"redis://{REDIS_HOST}:{REDIS_PORT}/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            # "PASSWORD": os.environ.get("REDIS_PASSWORD"),
+        },
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -148,3 +162,8 @@ REST_FRAMEWORK = {
 
 CONTACT_API_URL = os.environ.get("CONTACT_API_URL")
 DEAL_API_URL = os.environ.get("DEAL_API_URL")
+
+SMS_API_URL = os.environ.get("SMS_API_URL")
+SMS_LOGIN = os.environ.get("SMS_LOGIN")
+SMS_PASSWORD = os.environ.get("SMS_PASSWORD")
+SMS_SENDER_ID = os.environ.get("SMS_SENDER_ID")
