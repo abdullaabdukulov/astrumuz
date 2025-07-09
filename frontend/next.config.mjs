@@ -7,11 +7,11 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['libraryapp5.pythonanywhere.com'],
+    domains: ['astrum-api.abdukulov.uz'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'libraryapp5.pythonanywhere.com',
+        hostname: 'astrum-api.abdukulov.uz',
         port: '',
         pathname: '/**',
       },

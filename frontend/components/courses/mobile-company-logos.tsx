@@ -17,7 +17,7 @@ interface MobileCompanyLogosProps {
 }
 
 export function MobileCompanyLogos({ companies = [] }: MobileCompanyLogosProps) {
-  const baseUrl = "https://libraryapp5.pythonanywhere.com"
+  const baseUrl = "https://astrum-api.abdukulov.uz"
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({})
   const { language } = useLanguage()
 

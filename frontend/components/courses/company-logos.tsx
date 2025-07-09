@@ -17,7 +17,7 @@ interface CompanyLogosProps {
 }
 
 export function CompanyLogos({ companies = [] }: CompanyLogosProps) {
-  const baseUrl = "https://libraryapp5.pythonanywhere.com"
+  const baseUrl = "https://astrum-api.abdukulov.uz"
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({})
   const { language } = useLanguage()
 

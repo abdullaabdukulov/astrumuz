@@ -23,7 +23,7 @@ export function MobileTestimonials({ testimonials = [] }: MobileTestimonialsProp
   const [currentIndex, setCurrentIndex] = useState(0)
   const [avatarErrors, setAvatarErrors] = useState<Record<number, boolean>>({})
   const [logoErrors, setLogoErrors] = useState<Record<number, boolean>>({})
-  const baseUrl = "https://libraryapp5.pythonanywhere.com"
+  const baseUrl = "https://astrum-api.abdukulov.uz"
 
   // Handle errors
   const handleAvatarError = (testimonialId: number) => {

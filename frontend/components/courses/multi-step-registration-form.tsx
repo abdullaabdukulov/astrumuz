@@ -234,7 +234,7 @@ export const MultiStepRegistrationForm: React.FC<MultiStepRegistrationFormProps>
       // Remove the + from the phone number before sending to backend
       const phoneWithoutPlus = formData.phone.replace("+", "")
 
-      const response = await fetch("https://api.programiz.uz/api/request-otp/", {
+      const response = await fetch("https://astrum-api.abdukulov.uz/api/request-otp/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -312,7 +312,7 @@ export const MultiStepRegistrationForm: React.FC<MultiStepRegistrationFormProps>
       // Remove the + from the phone number before sending to backend
       const phoneWithoutPlus = formData.phone.replace("+", "")
 
-      const response = await fetch("https://api.programiz.uz/api/verify-otp/", {
+      const response = await fetch("https://astrum-api.abdukulov.uz/api/verify-otp/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

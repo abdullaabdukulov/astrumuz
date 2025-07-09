@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { cookies } from "next/headers"
-import { API_ENDPOINTS } from "@/lib/constants/api"
 import { pageMetadata } from "@/lib/seo-config"
 import { MarqueeBanner } from "@/components/ui/marquee-banner"
 import { Header } from "@/components/layout/header"
@@ -30,7 +29,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     const language = languageCookie?.value || "ru"
 
     // Fetch course data with language header
-    const response = await fetch(`${API_ENDPOINTS.COURSES}${params.slug}/`, {
+    const response = await fetch(`https://astrum-api.abdukulov.uz/api/courses/${params.slug}/`, {
       next: { revalidate: 3600 },
       headers: { "Accept-Language": language },
       cache: "no-store", // Prevent caching to always get fresh data

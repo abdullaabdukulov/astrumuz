@@ -46,7 +46,7 @@ export function CourseStructuredData({ name, description, provider, url, image }
       sameAs: url,
     },
     url,
-    ...(image && { image }),
+    ...(image && { image: image.startsWith("http") ? image : `https://astrum-api.abdukulov.uz${image}` }),
   }
 
   return (
