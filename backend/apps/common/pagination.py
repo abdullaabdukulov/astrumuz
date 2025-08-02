@@ -29,3 +29,11 @@ class TestimonialsPagination(CustomPagination):
 
 class NewsPagination(CustomPagination):
     pass
+
+
+class BlogPagination(CustomPagination):
+    pass
+
+
+class VacancyPagination(CustomPagination):
+    pass

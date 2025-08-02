@@ -44,6 +44,9 @@ urlpatterns += [
     path("api/", include("courses.urls")),
     path("api/common/", include("common.urls")),
     path("api/news/", include("news.urls")),
+    path("api/blog/", include("blog.urls")),
+    path("api/careers/", include("careers.urls")),
+    path("api/corporations/", include("corporations.urls")),
 ]
 
 if django_settings_module == "development":
