@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Corporate, CorporateFeature, ApplyCorporateRequest
+
+from .models import ApplyCorporateRequest, Corporate, CorporateFeature
 
 
 class CorporateFeatureSerializer(serializers.ModelSerializer):
@@ -14,6 +15,7 @@ class CorporateListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Corporate
         fields = ("id", "title", "description", "features")
+
 
 class ApplyCorporateRequestSerializer(serializers.ModelSerializer):
     class Meta:

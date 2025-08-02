@@ -3,7 +3,11 @@ from common.utils.custom_response_decorator import custom_response
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from .models import News, NewsCategory
-from .serializers import NewsDetailSerializer, NewsListSerializer, NewsCategorySerializer
+from .serializers import (
+    NewsCategorySerializer,
+    NewsDetailSerializer,
+    NewsListSerializer,
+)
 
 
 @custom_response

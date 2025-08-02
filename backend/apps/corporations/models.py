@@ -1,5 +1,5 @@
-from django.db import models
 from common.models import BaseModel
+from django.db import models
 
 
 class Corporate(BaseModel):
@@ -18,8 +18,8 @@ class CorporateFeature(BaseModel):
     corporate = models.ForeignKey(
         Corporate,
         on_delete=models.CASCADE,
-        related_name='features',
-        verbose_name="Корпоратив"
+        related_name="features",
+        verbose_name="Корпоратив",
     )
     name = models.CharField("Особенность", max_length=255)
 
@@ -36,10 +36,14 @@ class ApplyCorporateRequest(BaseModel):
     last_name = models.CharField("Фамилия", max_length=100)
     phone_number = models.CharField("Телефон", max_length=20)
     email_address = models.EmailField("Email")
-    cv = models.FileField("Резюме (CV)", upload_to='corporate/cv/')
+    cv = models.FileField("Резюме (CV)", upload_to="corporate/cv/")
     message = models.TextField("Сообщение", blank=True)
-    company = models.ForeignKey("Corporate", on_delete=models.CASCADE, related_name="applications",
-                                verbose_name="Компания")
+    company = models.ForeignKey(
+        "Corporate",
+        on_delete=models.CASCADE,
+        related_name="applications",
+        verbose_name="Компания",
+    )
 
     class Meta:
         verbose_name = "Заявка на корпоратив"

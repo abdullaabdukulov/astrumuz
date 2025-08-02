@@ -1,6 +1,5 @@
-from modeltranslation.translator import TranslationOptions, register
-
 from careers.models import Vacancy
+from modeltranslation.translator import TranslationOptions, register
 
 
 @register(Vacancy)

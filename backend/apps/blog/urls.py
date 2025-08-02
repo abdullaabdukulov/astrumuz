@@ -1,12 +1,17 @@
 from django.urls import path
+
 from .views import (
-    BlogListView,
-    BlogDetailView,
     BlogCategoryListView,
+    BlogDetailView,
+    BlogListView,
 )
 
 urlpatterns = [
     path("posts/", BlogListView.as_view(), name="blog-list"),
     path("posts/<slug:slug>/", BlogDetailView.as_view(), name="blog-detail"),
-    path("categories/", BlogCategoryListView.as_view(), name="blog-category-list"),
+    path(
+        "categories/",
+        BlogCategoryListView.as_view(),
+        name="blog-category-list",
+    ),
 ]

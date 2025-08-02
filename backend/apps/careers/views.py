@@ -1,8 +1,13 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView
-from .models import Vacancy, Application
-from .serializers import VacancyListSerializer, VacancyDetailSerializer, ApplicationCreateSerializer
 from common.pagination import VacancyPagination
 from common.utils.custom_response_decorator import custom_response
+from rest_framework.generics import CreateAPIView, ListAPIView, RetrieveAPIView
+
+from .models import Application, Vacancy
+from .serializers import (
+    ApplicationCreateSerializer,
+    VacancyDetailSerializer,
+    VacancyListSerializer,
+)
 
 
 @custom_response

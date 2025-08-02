@@ -1,12 +1,16 @@
-from modeltranslation.translator import register, TranslationOptions
-from .models import BlogCategory, Blog
+from modeltranslation.translator import TranslationOptions, register
+
+from .models import Blog, BlogCategory
 
 
 @register(BlogCategory)
 class BlogCategoryTranslationOptions(TranslationOptions):
-    fields = ('name',)
+    fields = ("name",)
 
 
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
-    fields = ('title', 'content',)
+    fields = (
+        "title",
+        "content",
+    )

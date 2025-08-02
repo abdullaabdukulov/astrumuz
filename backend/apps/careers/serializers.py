@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Vacancy, Application
+
+from .models import Application, Vacancy
 
 
 class VacancyListSerializer(serializers.ModelSerializer):
@@ -42,5 +43,5 @@ class ApplicationCreateSerializer(serializers.ModelSerializer):
             "email",
             "cv",
             "cover_letter",
-            "vacancy"
+            "vacancy",
         )

@@ -1,7 +1,11 @@
-from rest_framework.generics import ListAPIView, CreateAPIView
-from .models import Corporate, ApplyCorporateRequest
-from .serializers import CorporateListSerializer, ApplyCorporateRequestSerializer
 from common.utils.custom_response_decorator import custom_response
+from rest_framework.generics import CreateAPIView, ListAPIView
+
+from .models import ApplyCorporateRequest, Corporate
+from .serializers import (
+    ApplyCorporateRequestSerializer,
+    CorporateListSerializer,
+)
 
 
 @custom_response

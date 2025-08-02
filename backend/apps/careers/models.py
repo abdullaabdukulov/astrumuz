@@ -1,5 +1,5 @@
-from django.db import models
 from common.models import BaseModel
+from django.db import models
 from tinymce.models import HTMLField
 
 
@@ -28,12 +28,14 @@ class Application(BaseModel):
     phone_number = models.CharField("Номер телефона", max_length=20)
     email = models.EmailField("Эл. почта", blank=True, null=True)
     cv = models.FileField("Резюме (CV)", upload_to="vacancy/applications/")
-    cover_letter = models.TextField("Сопроводительное письмо", blank=True, null=True)
+    cover_letter = models.TextField(
+        "Сопроводительное письмо", blank=True, null=True
+    )
     vacancy = models.ForeignKey(
         "Vacancy",
         on_delete=models.CASCADE,
         related_name="applications",
-        verbose_name="Вакансия"
+        verbose_name="Вакансия",
     )
 
     class Meta:

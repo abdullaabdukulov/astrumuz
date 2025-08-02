@@ -1,12 +1,12 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
 from common.pagination import BlogPagination
 from common.utils.custom_response_decorator import custom_response
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from .models import Blog, BlogCategory
 from .serializers import (
-    BlogListSerializer,
-    BlogDetailSerializer,
     BlogCategorySerializer,
+    BlogDetailSerializer,
+    BlogListSerializer,
 )
 
 
