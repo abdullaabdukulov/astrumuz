@@ -1,4 +1,4 @@
-from .companies import Company, CourseCompany
+from .companies import Company, CompanyStudent, CourseCompany
 from .courses import Course, CourseCategory, CourseOutcome
 from .mentors import CourseMentor, Mentor
 from .registrations import ContactRequest, CourseRegistration
@@ -11,6 +11,7 @@ __all__ = [
     "Mentor",
     "CourseMentor",
     "Company",
+    "CompanyStudent",
     "CourseCompany",
     "Testimonial",
     "CourseRegistration",

@@ -37,10 +37,13 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path("default-admin-panel/", admin.site.urls),
+    path("tinymce/", include("tinymce.urls")),
 ]
 
 urlpatterns += [
     path("api/", include("courses.urls")),
+    path("api/common/", include("common.urls")),
+    path("api/news/", include("news.urls")),
 ]
 
 if django_settings_module == "development":

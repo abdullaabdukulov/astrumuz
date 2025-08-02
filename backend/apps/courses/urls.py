@@ -26,4 +26,9 @@ urlpatterns = [
         views.ContactRequestCreateView.as_view(),
         name="contact-request",
     ),
+    path(
+        "student/companies/",
+        views.CompanyListView.as_view(),
+        name="company-student",
+    ),
 ]

@@ -1,4 +1,4 @@
-from .companies import CompanyViewSet
+from .companies import CompanyListView, CompanyViewSet
 from .courses import CourseCategoryViewSet, CourseViewSet
 from .mentors import MentorViewSet
 from .registrations import (
@@ -19,4 +19,6 @@ __all__ = [
     "RequestOTPView",
     "VerifyOTPView",
     "ContactRequestCreateView",
+    "CompanyListView",
+    "ReviewListAPIView",
 ]

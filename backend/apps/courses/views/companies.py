@@ -3,7 +3,7 @@ from common.utils.custom_response_decorator import custom_response
 from courses.models import Company
 from courses.openapi_schema import company_list_schema, company_retrieve_schema
 from courses.serializers import CompanySerializer
-from rest_framework import viewsets
+from rest_framework import generics, viewsets
 from rest_framework.views import APIView
 
 
@@ -22,3 +22,9 @@ class CompanyViewSet(viewsets.ReadOnlyModelViewSet, APIView):
     @company_retrieve_schema
     def retrieve(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
+
+
+@custom_response
+class CompanyListView(generics.ListAPIView):
+    queryset = Company.objects.all()
+    serializer_class = CompanySerializer

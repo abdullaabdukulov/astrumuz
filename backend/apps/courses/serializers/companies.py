@@ -1,8 +1,14 @@
+from courses.models import Company, CompanyStudent
 from rest_framework import serializers
-from courses.models import Company
 
 
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = Company
-        fields = ['id', 'name', 'logo', 'color']
+        fields = ["id", "name", "description", "logo", "color"]
+
+
+class CompanyStudentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CompanyStudent
+        fields = ["id", "company_name", "logo"]

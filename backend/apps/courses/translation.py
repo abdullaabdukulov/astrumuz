@@ -2,6 +2,7 @@ from modeltranslation.translator import TranslationOptions, register
 
 from .models import (
     Company,
+    CompanyStudent,
     Course,
     CourseCategory,
     CourseOutcome,
@@ -33,6 +34,11 @@ class MentorTranslationOptions(TranslationOptions):
 @register(Company)
 class CompanyTranslationOptions(TranslationOptions):
     fields = ("name",)
+
+
+@register(CompanyStudent)
+class CompanyTranslationOptions(TranslationOptions):
+    fields = ("company_name",)
 
 
 @register(Testimonial)

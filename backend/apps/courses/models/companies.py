@@ -9,6 +9,7 @@ class Company(BaseModel):
     """Model for companies that offer courses to their employees"""
 
     name = models.CharField(_("Название"), max_length=255)
+    description = models.TextField(null=True, blank=True)
     logo = models.ImageField(_("Логотип"), upload_to="companies/")
     color = models.CharField(
         _("Цвет"), max_length=20, blank=True, help_text="HEX код цвета"
@@ -20,6 +21,18 @@ class Company(BaseModel):
 
     def __str__(self):
         return self.name
+
+
+class CompanyStudent(BaseModel):
+    company_name = models.CharField(max_length=255, unique=True)
+    logo = models.ImageField(upload_to="company_logos/")
+
+    class Meta:
+        verbose_name = "Компания студента"
+        verbose_name_plural = "Компании студентов"
+
+    def __str__(self):
+        return self.company_name
 
 
 class CourseCompany(BaseModel):

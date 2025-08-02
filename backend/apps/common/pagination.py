@@ -25,3 +25,7 @@ class RegistrationPagination(CustomPagination):
 
 class TestimonialsPagination(CustomPagination):
     pass
+
+
+class NewsPagination(CustomPagination):
+    pass

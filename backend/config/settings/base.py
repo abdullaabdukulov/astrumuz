@@ -30,11 +30,15 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "drf_yasg",
     "django_cleanup.apps.CleanupSelectedConfig",
+    "tinymce",
 ]
 
 LOCAL_APPS = [
     "common",
     "courses",
+    "news",
+    "careers",
+    "blog",
 ]
 INSTALLED_APPS = BASE_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
