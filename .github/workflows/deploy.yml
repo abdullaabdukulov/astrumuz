@@ -1,0 +1,52 @@
+name: Astrum.uz deploy to production
+
+on:
+  pull_request:
+    branches: [ "master" ]
+    types: [ closed ]
+
+jobs:
+  deploy:
+    if: github.event.pull_request.merged
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY_PROD }}
+
+      - name: Deploy to production server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_PROD }}@${{ secrets.SSH_HOST_PROD }} << 'EOF'
+            echo "📦 Astrum.uz: Deploying to production..."
+
+            cd /root/astrumuz/backend
+
+            echo "🔄 Pulling latest code..."
+            git pull origin master
+
+            echo "🐍 Activating virtual environment..."
+            source venv/bin/activate
+
+            echo "📦 Installing dependencies..."
+            pip install -r requirements.txt
+
+            echo "🗃️ Running migrations..."
+            python manage.py migrate
+
+            echo "🎨 Collecting static files..."
+            python manage.py collectstatic --noinput
+
+            echo "🚀 Restarting Gunicorn..."
+            sudo systemctl restart gunicorn
+
+            echo "🌐 Restarting Nginx..."
+            sudo systemctl restart nginx
+
+            echo "✅ Deployment complete!"
+          EOF
