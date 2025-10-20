@@ -15,9 +15,10 @@ from config.settings import (
 class BothHttpAndHttpsSchemaGenerator(OpenAPISchemaGenerator):
     def get_schema(self, request=None, public=False):
         schema = super().get_schema(request, public)
-        schema.schemes = (
-            ["http"] if django_settings_module == "development" else ["https"]
-        )
+        # schema.schemes = (
+        #     ["http"] if django_settings_module == "development" else ["https"]
+        # )
+        schema.schemes = ["https"]
         return schema
 
 
