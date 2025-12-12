@@ -24,6 +24,9 @@ class News(BaseModel):
         related_name="news",
         verbose_name="Категория",
     )
+    image = models.ImageField(
+        "Изображение", upload_to="news_images/", blank=True, null=True
+    )
 
     class Meta:
         verbose_name = "Новость"
