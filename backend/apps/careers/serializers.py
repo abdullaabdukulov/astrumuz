@@ -9,6 +9,7 @@ class VacancyListSerializer(serializers.ModelSerializer):
         fields = (
             "id",
             "job_title",
+            "slug",
             "salary",
             "experience",
             "type_work",

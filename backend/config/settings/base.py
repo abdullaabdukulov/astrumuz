@@ -31,6 +31,7 @@ THIRD_PARTY_APPS = [
     "drf_yasg",
     "django_cleanup.apps.CleanupSelectedConfig",
     "tinymce",
+    "django_filters",
 ]
 
 LOCAL_APPS = [
