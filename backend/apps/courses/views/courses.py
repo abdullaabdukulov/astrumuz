@@ -12,6 +12,7 @@ from courses.openapi_schema import (
     course_testimonials_schema,
 )
 from courses.serializers import (
+    CourseCategoryDetailSerializer,
     CourseCategorySerializer,
     CourseDetailSerializer,
     CourseListSerializer,
@@ -30,7 +31,6 @@ class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet, APIView):
     """API endpoint for course categories"""
 
     queryset = CourseCategory.objects.all()
-    serializer_class = CourseCategorySerializer
     pagination_class = CoursePagination
     lookup_field = "slug"
 
@@ -41,6 +41,11 @@ class CourseCategoryViewSet(viewsets.ReadOnlyModelViewSet, APIView):
     @course_category_retrieve_schema
     def retrieve(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
+
+    def get_serializer_class(self):
+        if self.action == "retrieve":
+            return CourseCategoryDetailSerializer
+        return CourseCategorySerializer
 
 
 @custom_response

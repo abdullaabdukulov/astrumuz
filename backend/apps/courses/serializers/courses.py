@@ -40,6 +40,14 @@ class CourseListSerializer(serializers.ModelSerializer):
         }
 
 
+class CourseCategoryDetailSerializer(serializers.ModelSerializer):
+    courses = CourseListSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = CourseCategory
+        fields = ["id", "name", "slug", "courses"]
+
+
 class CourseDetailSerializer(serializers.ModelSerializer):
     category_name = serializers.CharField(
         source="category.name", read_only=True

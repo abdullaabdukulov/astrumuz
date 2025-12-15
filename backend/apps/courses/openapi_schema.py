@@ -46,13 +46,36 @@ error_response_schema = openapi.Schema(
     },
 )
 
-# Course Category schemas
+
+# Course schemas
+course_list_schema = openapi.Schema(
+    type=openapi.TYPE_OBJECT,
+    properties={
+        "id": openapi.Schema(type=openapi.TYPE_INTEGER),
+        "title": openapi.Schema(type=openapi.TYPE_STRING),
+        "slug": openapi.Schema(type=openapi.TYPE_STRING),
+        "description": openapi.Schema(type=openapi.TYPE_STRING),
+        "icon": openapi.Schema(type=openapi.TYPE_STRING, nullable=True),
+        "icon_type": openapi.Schema(type=openapi.TYPE_STRING),
+        "level": openapi.Schema(type=openapi.TYPE_STRING),
+        "duration": openapi.Schema(type=openapi.TYPE_STRING),
+        "featured": openapi.Schema(type=openapi.TYPE_BOOLEAN),
+        "is_new": openapi.Schema(type=openapi.TYPE_BOOLEAN),
+        "category": openapi.Schema(type=openapi.TYPE_INTEGER),
+        "category_name": openapi.Schema(type=openapi.TYPE_STRING),
+    },
+)
+
 course_category_schema = openapi.Schema(
     type=openapi.TYPE_OBJECT,
     properties={
         "id": openapi.Schema(type=openapi.TYPE_INTEGER),
         "name": openapi.Schema(type=openapi.TYPE_STRING),
         "slug": openapi.Schema(type=openapi.TYPE_STRING),
+        "courses": openapi.Schema(
+            type=openapi.TYPE_ARRAY,
+            items=course_list_schema,
+        ),
     },
 )
 
@@ -83,24 +106,6 @@ course_category_list_response = openapi.Schema(
     },
 )
 
-# Course schemas
-course_list_schema = openapi.Schema(
-    type=openapi.TYPE_OBJECT,
-    properties={
-        "id": openapi.Schema(type=openapi.TYPE_INTEGER),
-        "title": openapi.Schema(type=openapi.TYPE_STRING),
-        "slug": openapi.Schema(type=openapi.TYPE_STRING),
-        "description": openapi.Schema(type=openapi.TYPE_STRING),
-        "icon": openapi.Schema(type=openapi.TYPE_STRING, nullable=True),
-        "icon_type": openapi.Schema(type=openapi.TYPE_STRING),
-        "level": openapi.Schema(type=openapi.TYPE_STRING),
-        "duration": openapi.Schema(type=openapi.TYPE_STRING),
-        "featured": openapi.Schema(type=openapi.TYPE_BOOLEAN),
-        "is_new": openapi.Schema(type=openapi.TYPE_BOOLEAN),
-        "category": openapi.Schema(type=openapi.TYPE_INTEGER),
-        "category_name": openapi.Schema(type=openapi.TYPE_STRING),
-    },
-)
 
 course_outcome_schema = openapi.Schema(
     type=openapi.TYPE_OBJECT,

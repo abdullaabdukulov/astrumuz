@@ -1,5 +1,6 @@
 from .companies import CompanySerializer, CompanyStudentSerializer
 from .courses import (
+    CourseCategoryDetailSerializer,
     CourseCategorySerializer,
     CourseDetailSerializer,
     CourseListSerializer,
@@ -23,4 +24,5 @@ __all__ = [
     "TestimonialSerializer",
     "CourseRegistrationSerializer",
     "ContactRequestSerializer",
+    "CourseCategoryDetailSerializer",
 ]
