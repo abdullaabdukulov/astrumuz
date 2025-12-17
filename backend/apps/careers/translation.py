@@ -1,4 +1,4 @@
-from careers.models import Vacancy
+from careers.models import ShortRequirement, Vacancy
 from modeltranslation.translator import TranslationOptions, register
 
 
@@ -15,3 +15,8 @@ class VacancyTranslationOptions(TranslationOptions):
         "requirements",
         "advantages",
     )
+
+
+@register(ShortRequirement)
+class ShortRequirementTranslationOptions(TranslationOptions):
+    fields = ("text",)

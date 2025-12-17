@@ -23,6 +23,27 @@ class Vacancy(BaseModel):
         return self.job_title
 
 
+class ShortRequirement(models.Model):
+    vacancy = models.ForeignKey(
+        "Vacancy",
+        on_delete=models.CASCADE,
+        related_name="short_requirements_list",
+        verbose_name="Вакансия",
+    )
+    text = models.CharField("Требование", max_length=255, blank=True)
+    order = models.PositiveIntegerField(
+        "Порядок", default=0, help_text="Порядок отображения (меньше = выше)"
+    )
+
+    class Meta:
+        verbose_name = "Краткое требование"
+        verbose_name_plural = "Краткие требования"
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return f"{self.order}. {self.text[:50]}..."
+
+
 class Application(BaseModel):
     full_name = models.CharField("ФИО", max_length=255)
     phone_number = models.CharField("Номер телефона", max_length=20)
