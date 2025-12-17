@@ -42,6 +42,7 @@ class VacancyDetailSerializer(serializers.ModelSerializer):
             "responsibilities",
             "requirements",
             "advantages",
+            "created_time",
         )
 
 

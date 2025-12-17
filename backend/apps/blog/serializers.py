@@ -1,3 +1,4 @@
+from common.serializers import BadgeSerializer
 from rest_framework import serializers
 
 from .models import Blog, BlogCategory
@@ -11,10 +12,19 @@ class BlogCategorySerializer(serializers.ModelSerializer):
 
 class BlogListSerializer(serializers.ModelSerializer):
     category = BlogCategorySerializer()
+    badge = BadgeSerializer()
 
     class Meta:
         model = Blog
-        fields = ("id", "title", "slug", "category")
+        fields = (
+            "id",
+            "title",
+            "slug",
+            "category",
+            "badge",
+            "image",
+            "created_time",
+        )
 
 
 class BlogDetailSerializer(serializers.ModelSerializer):
@@ -22,4 +32,11 @@ class BlogDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        fields = ("id", "title", "content", "category")
+        fields = (
+            "id",
+            "title",
+            "content",
+            "category",
+            "image",
+            "created_time",
+        )

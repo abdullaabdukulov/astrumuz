@@ -32,6 +32,7 @@ THIRD_PARTY_APPS = [
     "django_cleanup.apps.CleanupSelectedConfig",
     "tinymce",
     "django_filters",
+    "colorfield",
 ]
 
 LOCAL_APPS = [

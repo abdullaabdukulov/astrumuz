@@ -1,4 +1,4 @@
-from common.models import BaseModel
+from common.models import Badge, BaseModel
 from django.db import models
 from tinymce.models import HTMLField
 
@@ -26,6 +26,14 @@ class News(BaseModel):
     )
     image = models.ImageField(
         "Изображение", upload_to="news_images/", blank=True, null=True
+    )
+    badge = models.ForeignKey(
+        Badge,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="news",
+        verbose_name="Бейдж",
     )
 
     class Meta:

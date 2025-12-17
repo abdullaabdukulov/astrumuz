@@ -1,3 +1,4 @@
+from common.serializers import BadgeSerializer
 from rest_framework import serializers
 
 from .models import News, NewsCategory
@@ -11,10 +12,19 @@ class NewsCategorySerializer(serializers.ModelSerializer):
 
 class NewsListSerializer(serializers.ModelSerializer):
     category = NewsCategorySerializer()
+    badge = BadgeSerializer()
 
     class Meta:
         model = News
-        fields = ("id", "title", "slug", "category", "image")
+        fields = (
+            "id",
+            "title",
+            "slug",
+            "category",
+            "badge",
+            "image",
+            "created_time",
+        )
 
 
 class NewsDetailSerializer(serializers.ModelSerializer):
@@ -22,4 +32,11 @@ class NewsDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = News
-        fields = ("id", "title", "content", "category", "image")
+        fields = (
+            "id",
+            "title",
+            "content",
+            "category",
+            "image",
+            "created_time",
+        )

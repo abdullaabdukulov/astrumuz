@@ -1,7 +1,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin
 
-from .models import Page, Setting, SocialMedia
+from .models import Badge, Page, Setting, SocialMedia
 
 
 class SocialMediaInline(admin.TabularInline):
@@ -23,3 +23,12 @@ class PageAdmin(TabbedTranslationAdmin):
     list_display = ("title", "slug")
     prepopulated_fields = {"slug": ("title",)}
     search_fields = ("title", "slug")
+
+
+@admin.register(Badge)
+class BadgeAdmin(admin.ModelAdmin):
+    list_display = ("title", "color", "created_time")
+    search_fields = ("title",)
+
+    class Media:
+        css = {"all": ("admin/css/colorfield.css",)}

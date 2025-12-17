@@ -1,4 +1,4 @@
-from common.models import Page, Setting, SocialMedia
+from common.models import Badge, Page, Setting, SocialMedia
 from rest_framework import serializers
 
 
@@ -33,3 +33,9 @@ class PageDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Page
         fields = ["slug", "title", "content"]
+
+
+class BadgeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Badge
+        fields = ("title", "color")

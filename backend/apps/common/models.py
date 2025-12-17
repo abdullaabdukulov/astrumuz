@@ -1,5 +1,6 @@
 import uuid
 
+from colorfield.fields import ColorField
 from django.db import models
 
 
@@ -59,3 +60,30 @@ class SocialMedia(BaseModel):
 
     def __str__(self):
         return self.url
+
+
+class Badge(BaseModel):
+    title = models.CharField("Название", max_length=100)
+    color = ColorField(
+        "Цвет",
+        default="#4CAF50",
+        format="hex",
+        samples=[
+            ("#FF5252", "Red"),
+            ("#4CAF50", "Green"),
+            ("#2196F3", "Blue"),
+            ("#FF9800", "Orange"),
+            ("#9C27B0", "Purple"),
+            ("#00BCD4", "Cyan"),
+            ("#FFEB3B", "Yellow"),
+            ("#795548", "Brown"),
+            ("#607D8B", "Gray"),
+        ],
+    )
+
+    class Meta:
+        verbose_name = "Бейдж"
+        verbose_name_plural = "Бейджи"
+
+    def __str__(self):
+        return f"{self.title} ({self.color})"
