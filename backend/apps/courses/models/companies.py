@@ -14,6 +14,11 @@ class Company(BaseModel):
     color = models.CharField(
         _("Цвет"), max_length=20, blank=True, help_text="HEX код цвета"
     )
+    link = models.URLField(
+        _("Ссылка на сайт"),
+        blank=True,
+        help_text="Ссылка на официальный сайт компании",
+    )
 
     class Meta:
         verbose_name = _("Компания")

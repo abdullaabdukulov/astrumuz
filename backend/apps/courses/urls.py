@@ -7,7 +7,6 @@ router = DefaultRouter()
 router.register(r"categories", views.CourseCategoryViewSet)
 router.register(r"courses", views.CourseViewSet, basename="course")
 router.register(r"mentors", views.MentorViewSet)
-router.register(r"companies", views.CompanyViewSet)
 router.register(
     r"testimonials", views.TestimonialViewSet, basename="testimonial"
 )
@@ -27,8 +26,8 @@ urlpatterns = [
         name="contact-request",
     ),
     path(
-        "student/companies/",
+        "companies/",
         views.CompanyListView.as_view(),
-        name="company-student",
+        name="companies",
     ),
 ]

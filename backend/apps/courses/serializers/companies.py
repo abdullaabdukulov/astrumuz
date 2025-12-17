@@ -5,7 +5,7 @@ from rest_framework import serializers
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = Company
-        fields = ["id", "name", "description", "logo", "color"]
+        fields = ["id", "name", "description", "logo", "color", "link"]
 
 
 class CompanyStudentSerializer(serializers.ModelSerializer):
