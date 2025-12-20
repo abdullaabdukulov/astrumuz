@@ -7,6 +7,7 @@ from .models import Page, Setting
 class SettingTranslationOptions(TranslationOptions):
     fields = (
         "location_name",
+        "location_description",
         "address",
     )
 

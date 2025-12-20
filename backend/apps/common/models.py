@@ -30,11 +30,20 @@ class Page(BaseModel):
 
 class Setting(BaseModel):
     location_name = models.CharField("Название локации", max_length=255)
+    location_description = models.TextField(
+        "Описание локации", null=True, blank=True
+    )
     phone_number = models.CharField(
         "Номер телефона", max_length=14, unique=True
     )
     address = models.CharField("Адрес", max_length=255)
     email = models.EmailField("Email", unique=True)
+    latitude = models.DecimalField(
+        "Широта", max_digits=9, decimal_places=6, null=True, blank=True
+    )
+    longitude = models.DecimalField(
+        "Долгота", max_digits=9, decimal_places=6, null=True, blank=True
+    )
 
     class Meta:
         verbose_name = "Настройка"

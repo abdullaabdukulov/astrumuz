@@ -16,9 +16,12 @@ class SettingSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "location_name",
+            "location_description",
             "phone_number",
             "address",
             "email",
+            "latitude",
+            "longitude",
             "links",
         ]
 
