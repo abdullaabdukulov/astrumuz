@@ -5,7 +5,7 @@ from .views import ApplicationCreateView, VacancyDetailView, VacancyListView
 urlpatterns = [
     path("vacancies/", VacancyListView.as_view(), name="vacancy-list"),
     path(
-        "vacancies/<int:pk>/",
+        "vacancies/<slug:slug>/",
         VacancyDetailView.as_view(),
         name="vacancy-detail",
     ),
