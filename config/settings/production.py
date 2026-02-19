@@ -2,6 +2,8 @@ from .base import *  # noqa
 
 ALLOWED_HOSTS = [
     "devuser.astrum.uz",
+    "astrum.uz",
+    "www.astrum.uz",
     "localhost",
     "127.0.0.1",
     "46.101.129.181",
